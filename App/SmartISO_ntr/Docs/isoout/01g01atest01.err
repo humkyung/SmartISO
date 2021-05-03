@@ -1,0 +1,89 @@
+.*****. PDSIDF version 07.03.00.15 - 8.11.9 (Build 20)
+
+  Begin Input ----------------------------------------------
+ 
+    Options file
+      HW-PDS-P003:e:\proj\HOLE\iso\dat\isoc_HOLE.def
+ 
+    Model design file(s)
+     EVA_P - type 63 information extracted from this model
+
+    Iso design file
+      :c:\isoout\01g01atest01.i*
+
+    Line id(s)
+     ATEST-01
+
+    Piping area
+      EVA
+
+    Project database
+      pd_HOLE
+
+    Batch options
+      Y Y N N * * N * * 11-Jun-2010 *
+
+    Extraction number
+      91
+
+  End input ------------------------------------------------
+
+  *** WARNING - W20 ***
+  Header record attribute is undefined
+  Header record number: -17
+  Partition: 18 Table: 12 Column: 40 Occ: 9437188
+
+@#, 1520, 12, 4, 18, 0, 0, 0
+
+  *** WARNING - W20 ***
+  Header record attribute is undefined
+  Header record number: -41
+  Partition: 18 Table: 12 Column: 7 Occ: 9437188
+
+@#, 1520, 12, 4, 18, 0, 0, 0
+
+  *** WARNING - W20 ***
+  Header record attribute is undefined
+  Header record number: -43
+  Partition: 18 Table: 12 Column: 41 Occ: 9437188
+
+@#, 1520, 12, 4, 18, 0, 0, 0
+
+     1 - ERROR -  key 'RV2B-001' was not found in SPECIALTY material description library.
+ 
+@#, 180, 80, 2, 18, 12, 4, 18
+ 
+  *** INFORMATION - I24 ***
+  Alternate index is used to read material description library
+  Item code       : RV2B-001 not found
+  Alternate index : PSUPPORT
+  Description     : SUPPORT DATA: A_600_-D_90_-E_1500
+
+     2 - ERROR -  key 'G3B' was not found in SPECIALTY material description library.
+ 
+@#, 180, 80, 1, 18, 12, 4, 18
+ 
+  *** INFORMATION - I24 ***
+  Alternate index is used to read material description library
+  Item code       : G3B not found
+  Alternate index : PSUPPORT
+  Description     : SUPPORT DATA:
+
+     3 - ERROR -  key 'DS8' was not found in SPECIALTY material description library.
+ 
+@#, 180, 80, 3, 18, 12, 6, 18
+ 
+  *** INFORMATION - I24 ***
+  Alternate index is used to read material description library
+  Item code       : DS8 not found
+  Alternate index : PSUPPORT
+  Description     : SUPPORT DATA: A_0
+ ISOGEN VERSION 8.11.9 (Build 20)
+ (35:1119) WARNING - INVALID DATA FOUND IN DDF(-123) FILE
+                   - IN SUB SECTION : MANDATORY CROSS REFERENCE NOT SET
+
+
+ THE FOLLOWING DRAWINGS ARE IN PLOTFILE  01g01atest01.i01
+          DRG.   1   /ATEST-01-                                         
+                     PLOTTED
+

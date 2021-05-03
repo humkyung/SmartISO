@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TABLE Name="T_LINE_LIST_DATA_MAPPING">
+	<COLUMN Name="PLANT_NO" DataType="VARCHAR(8)" />
+	<COLUMN Name="SECTION_NO" DataType="VARCHAR(8)" />
+	<COLUMN Name="SHEET_NO" DataType="VARCHAR(8)" />
+	<COLUMN Name="DRAW_NO" DataType="VARCHAR(8)" />
+	<COLUMN Name="PID_NO" DataType="VARCHAR(250)" Default="DEFAULT 'A'" />
+	<COLUMN Name="PLAN_NO" DataType="VARCHAR(250)" Default="DEFAULT 'B'" />
+	<COLUMN Name="LINE_SIZE" DataType="VARCHAR(250)" Default="DEFAULT 'C'" />
+	<COLUMN Name="FLUID" DataType="VARCHAR(250)" Default="DEFAULT 'D'" />
+	<COLUMN Name="AREA_NO" DataType="VARCHAR(8)" />
+	<COLUMN Name="UNIT_NO" DataType="VARCHAR(250)" Default="DEFAULT 'E'" />
+	<COLUMN Name="SEQUENCE" DataType="VARCHAR(250)" Default="DEFAULT 'F'" />
+	<COLUMN Name="CLASS" DataType="VARCHAR(250)" Default="DEFAULT 'G'" />
+	<COLUMN Name="LINE_NO" DataType="VARCHAR(250)" Default="DEFAULT 'H'" />
+	<COLUMN Name="INS_TYPE" DataType="VARCHAR(250)" Default="DEFAULT 'I'" />
+	<COLUMN Name="INS_THICKNESS" DataType="VARCHAR(250)" Default="DEFAULT 'J'" />
+	<COLUMN Name="ELECTRITRACE" DataType="VARCHAR(250)" Default="DEFAULT 'T'" />
+	<COLUMN Name="TEST_TYPE" DataType="VARCHAR(250)" Default="DEFAULT 'K'" />
+	<COLUMN Name="TEST_PRESS" DataType="VARCHAR(250)" Default="DEFAULT 'L'" />
+	<COLUMN Name="OPER_TEMP" DataType="VARCHAR(250)" Default="DEFAULT 'M'" />
+	<COLUMN Name="DGN_TEMP" DataType="VARCHAR(250)" Default="DEFAULT 'N'" />
+	<COLUMN Name="OPER_PRES" DataType="VARCHAR(250)" Default="DEFAULT 'O'" />
+	<COLUMN Name="DGN_PRES" DataType="VARCHAR(250)" Default="DEFAULT 'P'" />
+	<COLUMN Name="PWHT" DataType="VARCHAR(250)" Default="DEFAULT 'Q'" />
+	<COLUMN Name="REMARK" DataType="VARCHAR(8)" />
+	<COLUMN Name="RADIOGRAPHY" DataType="VARCHAR(250)" Default="DEFAULT 'R'" />
+	<COLUMN Name="STEAM_TRACE" DataType="VARCHAR(250)" Default="DEFAULT 'S'" />
+	<COLUMN Name="PAINT_CODE" DataType="VARCHAR(250)" Default="DEFAULT 'U'" />
+	<COLUMN Name="PT_MT" DataType="VARCHAR(250)" Default="DEFAULT 'V'" />
+	<COLUMN Name="HPGCL" DataType="VARCHAR(250)" Default="DEFAULT 'W'" />
+	<COLUMN Name="DCL_NO" DataType="VARCHAR(8)" />
+	<COLUMN Name="DCL_DES" DataType="VARCHAR(8)" />
+	<COLUMN Name="SPARE1" DataType="VARCHAR(250)" Default="DEFAULT 'X'" />
+	<COLUMN Name="SPARE2" DataType="VARCHAR(250)" Default="DEFAULT 'Y'" />
+	<COLUMN Name="SPARE3" DataType="VARCHAR(250)" Default="DEFAULT 'Z'" />
+	<COLUMN Name="SPARE4" DataType="VARCHAR(250)" Default="DEFAULT 'AA'" />
+	<COLUMN Name="SPARE5" DataType="VARCHAR(250)" Default="DEFAULT 'AB'" />
+	<COLUMN Name="SPARE6" DataType="VARCHAR(250)" Default="DEFAULT 'AC'" />
+	<COLUMN Name="SPARE7" DataType="VARCHAR(250)" Default="DEFAULT 'AD'" />
+	<COLUMN Name="SPARE8" DataType="VARCHAR(250)" Default="DEFAULT 'AE'" />
+	<COLUMN Name="SPARE9" DataType="VARCHAR(250)" Default="DEFAULT 'AF'" />
+	<COLUMN Name="LINE_NO_LABEL_1" DataType="VARCHAR(8)" />
+	<COLUMN Name="LINE_NO_LABEL_2" DataType="VARCHAR(8)" />
+	<COLUMN Name="LINE_NO_LABEL_3" DataType="VARCHAR(8)" />
+	<COLUMN Name="LINE_NO_LABEL_4" DataType="VARCHAR(8)" />
+	<COLUMN Name="LINE_NO_LABEL_5" DataType="VARCHAR(8)" />
+	<COLUMN Name="LINE_NO_LABEL_6" DataType="VARCHAR(8)" />
+	<COLUMN Name="LINE_NO_LABEL_7" DataType="VARCHAR(8)" />
+	<COLUMN Name="LINE_NO_LABEL_8" DataType="VARCHAR(8)" />
+	<COLUMN Name="LINE_NO_LABEL_9" DataType="VARCHAR(8)" />
+	<COLUMN Name="LINE_NO_LABEL_10" DataType="VARCHAR(8)" />
+</TABLE>

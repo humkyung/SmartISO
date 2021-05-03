@@ -1,0 +1,3 @@
+default schema pd_?;
+select count (*) from pdtable_122;
+SELECT dwg_view_index_no,dwg_view_no,dwg_view_name,dwg_view_scale,dwg_index_no,viewing_direction,composition_status,dwg_view_x_low,dwg_view_y_low,dwg_view_z_low,dwg_view_x_high,dwg_view_y_high,dwg_view_z_high FROM pdtable_122;

@@ -1,0 +1,104 @@
+! File Name : K3.pcd                                                                                                       
+! Job.No.   :                  Revision : 0                      Date : 2008.08.01                                                  
+! Material Spec Class : K3     Material : C.S                    Design Code : ASME B31.3   
+! Max Temp : -29/132           Flang Class : ASME 150#                                            
+! Service Note :                                                                                                                        
+  PIPING_MATERIALS_CLASS= K3                                                                                               
+  Single_Spacing                                                                                                                        
+  Order= 1 6 2 3 9 11 13 21 4 5 10 12 14 22 18 7 16 19 15 8 20 23 24  *17 *25                                                           
+!                                                                                                                                                                                              
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! AABBCC -----------------Green CP----------- ------------Red CP-------------       CMDTY               MODEL  GEO  MOD  Mat  Wt        
+! Code   Opt  FROM  TO    PRP RATING SC/TH TS FROM  TO    PRP RATING SC/TH TS       CODE           TMX  CODE   Std       Grd  Cd FC Nte 
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! APDX C CL400            CL330            CL576                              BMCS CODE                 APDX C CL575     CL145      ITEM
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! *** PIPE ***
+ PIPING  1    0.5   20    391 -      S-STD 8  -     -     -   -      -     -  PPDV0F601SA          -    PIPE   100  100  -    52 7  P      
+                                                                            
+! *** 90 DEG. ELBOW ***                                                     
+ 
+ 6Q2C76  1    0.5   12    421 CL3000 NREQD 8  -     -     -   -      -     -  K9DV0AYSC            -    E90    6300 -    -    52 -  E9     
+ 6Q2C76  1    14    20    421 CL3000 NREQD 8  -     -     -   -      -     -  K9DV0AYSD            -    E90    6300 -    -    52 -  E9     
+                                                                                                                 
+! *** 45 DEG. ELBOW ***                                                                                          
+                                                                                                               
+ 6Q2C56  1    0.5   12    421 CL3000 NREQD 8  -     -     -   -      -     -  K4DV0AYSC            -    E45    6300 -    -    52 -  E4     
+ 6Q2C56  1    14    20    421 CL3000 NREQD 8  -     -     -   -      -     -  K4DV0AYSD            -    E45    6300 -    -    52 -  E4     
+                                                                                                                 
+! *** STRAIGHT TEE ***                                                                                         
+ 6Q3C22  1    0.5   12    421 CL3000 NREQD 8  -     -     -   -      -     -  KTDV0AYSC            -    T      6300 -    -    52 -  T      
+ 6Q3C22  1    14    20    421 CL3000 NREQD 8  -     -     -   -      -     -  KTDV0AYSD            -    T      6300 -    -    52 -  T      
+                                                                                                               
+! *** REDUCING TEE ***                                                                                         
+ 6Q3C24  1    0.75  12    421 CL3000 NREQD 8  0.5   10    421 CL3000 NREQD 8  KRDV0AYSC            -    TRB    6300 -    -    52 -  RT     
+ 6Q3C24  1    14    20    421 CL3000 NREQD 8  0.5   18    421 CL3000 NREQD 8  KRDV0AYSD            -    TRB    6300 -    -    52 -  RT     
+                                                                                                               
+! *** CON. REDUCER ***                                                                                         
+ 6Q2C23  1    0.75  12    421 CL3000 NREQD 8  0.5   10    421 CL3000 NREQD 8  KDDV0AYSC            -    REDC   6300 -    -    52 -  CR     
+ 6Q2C23  1    14    20    421 CL3000 NREQD 8  6     18    421 CL3000 NREQD 8  KDDV0AYSD            -    REDC   6300 -    -    52 -  CR     
+                                                                                                               
+! *** ECC. REDUCER ***                                                                                         
+ 6Q2C24  1    0.75  12    421 CL3000 NREQD 8  0.5   10    421 CL3000 NREQD 8  KEDV0AYSC            -    REDE   6300 -    -    52 -  ER     
+ 6Q2C24  1    14    20    421 CL3000 NREQD 8  6     18    421 CL3000 NREQD 8  KEDV0AYSD            -    REDE   6300 -    -    52 -  ER     
+                                                                                                               
+! *** FULL COUPLING ***                                                                                        
+ 6Q2C25  1    0.5   12    421 CL3000 NREQD 8  -     -     -   -      -     -  K6DV0AYSC            -    CPL    6300 -    -    52 -  FCL    
+                                                                            
+! *** FLANGE ***                                                            
+ 6Q2C01  1    0.5   20    11  CL150  NREQD 8  -     -     421 CL150  MATCH 8  FWDV2A2SA            -    FWP    6300 -    -    52 15 F      
+ 
+ 6Q2C01  1701 0.5   20    21  CL150  NREQD 8  -     -     421 CL150  MATCH 8  FWDV2A2SA            -    FWP    6300 -    -    52 15 F      
+
+! *** BLIND FLANGE ***
+ 6Q2C08  1    0.5   20    11  CL150  NREQD 8  -     -     -   -      -     -  FBDV2A2SA            -    FBLD   6300 -    -    52 7  BF     
+
+! *** BOLT/NUT ***
+ 6Q3C97  1    0.5   20    11  150    -     8  -     -     -   -      -     -  B1A122L4             -    -      81   1    -    52 7  BT     
+ 6Q3C97  1    0.5   20    21  150    -     8  -     -     -   -      -     -  B1A122L4             -    -      81   1    -    52 7  BT     
+
+! *** GASKET ***
+ 6Q3C95  1    0.5   20    111 150    -     8  -     -     -   -      -     -  GRA2EA0052ZB         -    21     161  -    -    52 7  G      
+ 6Q3C95  1    0.5   20    11  150    -     8  -     -     -   -      -     -  GRA2EA0052ZB         -    21     161  -    -    52 7  G      
+
+ 6Q3C95  1    0.5   20    121 150    -     8  -     -     -   -      -     -  GRA2EA0052ZB         -    21     161  -    -    52 7  G      
+ 6Q3C95  1    0.5   20    21  150    -     8  -     -     -   -      -     -  GRA2EA0052ZB         -    21     161  -    -    52 7  G      
+
+! *** CHECK VALVE ***
+ 6Q1C38  1    0.5   3     11  CL150  NREQD 8  -     -     -   -      -     -  VCAQ260B4KLW         -    CKL    6300 -    -    52 7  CH     
+ 6Q1C39  1    4     20    111 CL150  NREQD 8  -     -     -   -      -     -  VCAQ26XG80L1         -    CKWF   6100 -    -    52 7  CH     
+
+! *** BUTTERFLY VALVE ***
+ 6Q1C26  1    6     6     111 CL150  NREQD 8  -     -     -   -      -     -  VUAQ26IT8900         -    BFYLP  6003 17   -    52 7  BU     
+ 6Q1C26  1    8     20    111 CL150  NREQD 8  -     -     -   -      -     -  VUAQ26IT8A00         -    BFYLP  6003 33   -    52 7  BU     
+
+! *** DIAPHRAGM VALVE ***
+ 6Q1C30  1    0.5   1.5   11  CL150  NREQD 8  -     -     -   -      -     -  VDAY2FDB4800         -    DIA    6200 3    -    52 7  DP     
+ 6Q1C30  1    2     4     11  CL150  NREQD 8  -     -     -   -      -     -  VDAY2FDA4800         -    DIA    6200 3    -    52 7  DP     
+
+! *** DIAPHRAGM VALVE (SPECIAL) ***
+ 6Q1C30  1786 0.5   4     11  CL150  NREQD 8  -     -     -   -      -     -  VDAY2PBB48ZI         -    DIA    6200 3    -    52 7  DPT    
+
+
+! =======================================================================================================================================
+
+! *** PIPE END ***
+ 6Q2C22  1    0.5   20    421 -      MATCH 8  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    0.5   20    421 -      MATCH 8  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    0.5   20    421 -      MATCH 8  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+! *** REINFORCING WELD ***
+ 6Q3C82  1    2.5   20    301 -      -     8  2     18    301 -      -     8  -                    -    RWELD  6    1    142  52 -  -   
+
+! *** FUNNEL ***
+ 6Q2C07  1    0.5   20    421 -      NREQD 8  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+
+! *** ORIFICE TAP END ***
+ 6Q9C52  1    0.5   1.5   331 -      NREQD 8  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+ 6Q9C53  1    0.5   1.5   391 -      NREQD 8  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+
+! *** ASSEMBLY FLANGE ***
+ 6Q8C60  1    0.5   20    11  CL300  NREQD 29 -     -     301 CL300  MATCH 8  ORIFICE              -    FOWNA  66   1    1080 52 -  -   
+
+! *** ORIFICE FLANGE ***
+ 6Q2C06  1    0.5   20    11  CL300  NREQD 29 -     -     301 CL300  MATCH 8  ORIFICE              -    FOWNA  66   1    1080 52 -  -   

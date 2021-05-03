@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TABLE Name="T_ISO_LINE_DATA">
+	<COLUMN Name="KEY" DataType="VARCHAR(250) NOT NULL" Constraint="True" />
+	<COLUMN Name="PLANT_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="UNIT_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="SECTION_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="SHEET_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="DRAW_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="REV_NO" DataType="VARCHAR(250)"  Constraint="True"/>
+	<COLUMN Name="PID_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_SIZE" DataType="VARCHAR(250)" />
+	<COLUMN Name="FLUID" DataType="VARCHAR(250)" />
+	<COLUMN Name="AREA_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="SEQUENCE" DataType="VARCHAR(250)" />
+	<COLUMN Name="CLASS" DataType="VARCHAR(250)" />
+	<COLUMN Name="INS_TYPE" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_ID" DataType="VARCHAR(250)" />
+	<COLUMN Name="PAINT_CODE" DataType="VARCHAR(250)" />
+	<COLUMN Name="INS_THICKNESS" DataType="VARCHAR(250)" />
+	<COLUMN Name="ELECTRITRACE" DataType="VARCHAR(250)" />
+	<COLUMN Name="TEST_TYPE" DataType="VARCHAR(250)" />
+	<COLUMN Name="TEST_PRESS" DataType="VARCHAR(250)" />
+	<COLUMN Name="OPER_TEMP" DataType="VARCHAR(250)" />
+	<COLUMN Name="DGN_TEMP" DataType="VARCHAR(250)" />
+	<COLUMN Name="OPER_PRES" DataType="VARCHAR(250)" />
+	<COLUMN Name="DGN_PRES" DataType="VARCHAR(250)" />
+	<COLUMN Name="PWHT" DataType="VARCHAR(250)" />
+	<COLUMN Name="RADIOGRAPHY" DataType="VARCHAR(250)" />
+	<COLUMN Name="STEAM_TRACE" DataType="VARCHAR(250)" />
+	<COLUMN Name="PT_MT" DataType="VARCHAR(250)" />
+	<COLUMN Name="REMARK" DataType="VARCHAR(250)" />
+	<COLUMN Name="STATUS" DataType="VARCHAR(250)" Default="DEFAULT 'IN PROGRESS'" />
+	<COLUMN Name="SITE" DataType="VARCHAR(250)" />
+	<COLUMN Name="PLAN_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="HPGCL" DataType="VARCHAR(250)" />
+	<COLUMN Name="DCL_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="DCL_DES" DataType="VARCHAR(250)" />
+	<COLUMN Name="FILE_NAME" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE1" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE2" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE3" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE4" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE5" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE6" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE7" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE8" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE9" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_NO_LABEL_1" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_NO_LABEL_2" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_NO_LABEL_3" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_NO_LABEL_4" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_NO_LABEL_5" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_NO_LABEL_6" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_NO_LABEL_7" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_NO_LABEL_8" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_NO_LABEL_9" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_NO_LABEL_10" DataType="VARCHAR(250)" />
+	<COLUMN Name="ISSUE_DATE" DataType="VARCHAR(250)" />
+</TABLE>

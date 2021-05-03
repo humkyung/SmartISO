@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<WeldTypeList>
+	<WeldType Code="301" Type="BW" />
+	<WeldType Code="391" Type="SW" />
+	<WeldType Code="421" Type="SW" />
+	<WeldType Code="331" Type="TW" />
+	<WeldType Code="441" Type="TW" />
+	<WeldType Code="11" Type="FW" />
+	<WeldType Code="21" Type="FW" />
+	<WeldType Code="31" Type="FW" />
+	<WeldType Code="32" Type="FW" />
+	<WeldType Code="51" Type="FW" />
+	<WeldType Code="61" Type="FW" />
+	<WeldType Code="71" Type="FW" />
+	<WeldType Code="81" Type="FW" />
+	<WeldType Code="91" Type="FW" />
+	<WeldType Code="111" Type="TF" />
+	<WeldType Code="121" Type="TF" />
+	<WeldType Code="131" Type="TF" />
+</WeldTypeList>

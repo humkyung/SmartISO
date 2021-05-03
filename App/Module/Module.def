@@ -1,0 +1,7 @@
+; Module.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Module"
+DESCRIPTION  'Module Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{846F60AE-B45B-476D-89A0-5589D574D4F7}</ProjectGuid>
+    <RootNamespace>SmartISODiff</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Setup\Plugin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\shared\istools;..\..\..\shared\istools\inc;..\..\..\shared\istools\DgnV7Lib;..\..\..\shared\istools\vftlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;winNT;FN_REVISO_MODULE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>..\Bin\Plugin\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\shared\istools\lib\vc100;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\SmartISODiff.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\shared\istools;..\..\..\shared\istools\vftlib;..\..\..\shared\istools\inc;..\..\..\shared\istools\DgnV7Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;winNT;FN_REVISO_MODULE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\shared\istools\lib\vc100;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\SmartISODiff.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ArrowElement.cpp" />
+    <ClCompile Include="AttributeElement.cpp" />
+    <ClCompile Include="ConvexHull.cpp" />
+    <ClCompile Include="DimElement.cpp" />
+    <ClCompile Include="DimExtLineElement.cpp" />
+    <ClCompile Include="DimLineElement.cpp" />
+    <ClCompile Include="ElbowElement.cpp" />
+    <ClCompile Include="InlineElement.cpp" />
+    <ClCompile Include="IsoArea.cpp" />
+    <ClCompile Include="IsoBMArea.cpp" />
+    <ClCompile Include="IsoBMData.cpp" />
+    <ClCompile Include="ISOElement.cpp" />
+    <ClCompile Include="IsoModel.cpp" />
+    <ClCompile Include="IsoModelDocData.cpp" />
+    <ClCompile Include="IsoTitleBlockArea.cpp" />
+    <ClCompile Include="IsoTitleBlockData.cpp" />
+    <ClCompile Include="LeaderElement.cpp" />
+    <ClCompile Include="Minball2dImpl.cpp" />
+    <ClCompile Include="OletElement.cpp" />
+    <ClCompile Include="PageConnectionElement.cpp" />
+    <ClCompile Include="PipeElement.cpp" />
+    <ClCompile Include="PipeRoutine.cpp" />
+    <ClCompile Include="PipeSupportElement.cpp" />
+    <ClCompile Include="ReducerElement.cpp" />
+    <ClCompile Include="RWeldElement.cpp" />
+    <ClCompile Include="SlopeAreaMarkElement.cpp" />
+    <ClCompile Include="SmartISODiff.cpp" />
+    <ClCompile Include="SmartISODiffDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TeeElement.cpp" />
+    <ClCompile Include="WeldMarkElement.cpp" />
+    <ClCompile Include="aLineDiff\diff.cpp" />
+    <ClCompile Include="aLineDiff\DiffData.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SmartISODiff.def" />
+    <None Include="SmartISODiff.bmp" />
+    <None Include="res\SmartISODiff.rc2" />
+    <None Include="toolbar1.bmp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArrowElement.h" />
+    <ClInclude Include="AttributeElement.h" />
+    <ClInclude Include="ConvexHull.h" />
+    <ClInclude Include="DefineISO.h" />
+    <ClInclude Include="DimElement.h" />
+    <ClInclude Include="DimExtLineElement.h" />
+    <ClInclude Include="DimLineElement.h" />
+    <ClInclude Include="ElbowElement.h" />
+    <ClInclude Include="InlineElement.h" />
+    <ClInclude Include="IsoArea.h" />
+    <ClInclude Include="IsoBMArea.h" />
+    <ClInclude Include="IsoBMData.h" />
+    <ClInclude Include="ISOElement.h" />
+    <ClInclude Include="IsoModel.h" />
+    <ClInclude Include="IsoModelDocData.h" />
+    <ClInclude Include="IsoTitleBlockArea.h" />
+    <ClInclude Include="IsoTitleBlockData.h" />
+    <ClInclude Include="LeaderElement.h" />
+    <ClInclude Include="Minball2dImpl.h" />
+    <ClInclude Include="OletElement.h" />
+    <ClInclude Include="PageConnectionElement.h" />
+    <ClInclude Include="PipeElement.h" />
+    <ClInclude Include="PipeRoutine.h" />
+    <ClInclude Include="PipeSupportElement.h" />
+    <ClInclude Include="ReducerElement.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Rev_Elem_Data.h" />
+    <ClInclude Include="RWeldElement.h" />
+    <ClInclude Include="SlopeAreaMarkElement.h" />
+    <ClInclude Include="SmartISODiff.h" />
+    <ClInclude Include="SmartISODiffDlg.h" />
+    <ClInclude Include="SmartISODiffInf.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TeeElement.h" />
+    <ClInclude Include="WeldMarkElement.h" />
+    <ClInclude Include="aLineDiff\diff.h" />
+    <ClInclude Include="aLineDiff\DiffData.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SmartISODiff.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,96 @@
+! 2010-03-10 9:05¿ÀÀü File Name : G.pcd                                                                                                       
+! Job.No.   :                  Revision : 0                      Date : 2010.01.25                                                  
+! Material Spec Class : G      Material :                     Design Code :    
+! Max Temp : -29/132           Flang Class :                                             
+! Service Note :                                                                                                                        
+  PIPING_MATERIALS_CLASS= G                                                                                               
+  Single_Spacing                                                                                                                        
+  Order= 1 6 2 3 9 11 13 21 4 5 10 12 14 22 18 7 16 19 15 8 20 23 24  *17 *25                                                           
+!                                                                                                                                       
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! AABBCC -----------------Green CP----------- ------------Red CP-------------       CMDTY               MODEL  GEO  MOD  Mat  Wt        
+! Code   Opt  FROM  TO    PRP RATING SC/TH TS FROM  TO    PRP RATING SC/TH TS       CODE           TMX  CODE   Std       Grd  Cd FC Nte 
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! APDX C CL400            CL330            CL576                              BMCS CODE                 APDX C CL575     CL145      ITEM
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! *** PIPE ***
+ PIPING  1    0.75  1.375 331 -      S-STD 2  -     -     -   -      -     -  TUBT1G               -    PIPE   100  100  -    52 15 T1      
+
+! *** PIPE BEND ***
+ 6Q2C56  1    1.375 1.375 331 -      S-STD 2  -     -     -   -      -     -  E45S16G              -    PIPB   6100 152.4 -    52 15 S16     
+ 6Q2C76  1    1.375 1.375 331 -      S-STD 2  -     -     -   -      -     -  E90S15G              -    PIPB   6100 152.4 -    52 15 S15     
+   
+! *** PLUG ***
+!6Q2C19  1    1.375 1.375 331 -      NREQD 2  -     -     -   -      -     - *PLGS23G              -    PLUG   6100 -    -    52 15 S23   
+!6Q2C19  5001 1.375 1.375 331 -      NREQD 2  -     -     -   -      -     -  NUTS59G              -    NUT    6100 -    -    52 15 S59     
+
+! *** NIPPLE (TBE) * 150 MM ***
+!6Q3C88  1    1.375 1.375 331 -      S-STD 2  -     -     -   -      -     - *NPLS81G              -    NIP    100  6    -    52 15 S81  
+!6Q3C88  5001 1.375 1.375 331 -      S-STD 2  -     -     -   -      -     -  COLS27G              -    COL    100  6    -    52 15 S27 
+
+! *** S59=GLAND NUT, S29= SUPPORT NUT, S28=SPECIAL GLAND NUT***
+!6Q2C01  1    1.375 1.375 11  CL2000 NREQD 2  0.563 0.563 441 CL2000 MATCH 2  NUTS59G              -    FRTHD  6100 -    -    52 -  S28     
+!6Q2C01  1    1.375 1.375 11  CL2000 NREQD 2  0.563 0.563 441 CL2000 MATCH 2  NUTS59G              -    FRTHD  6100 -    -    52 -  S29     
+ 
+! *** BLOCK STRAIGHT TEE (FOR FLANGE) ***
+ 6Q3C22  1    1.375 1.375 11  CL2000 NREQD 2  -     -     -   -      -     - +BTNS43G              -    TBX    6100 -    -    52 15 S8      
+
+! *** BLOCK STRAIGHT TEE ***
+!6Q3C22  1571 1.375 1.375 441 CL2000 NREQD 2  -     -     -   -      -     - +BTNS43G              -    TBX    6100 -    -    52 15 S8      
+
+! *** BOLT/NUT ****
+ 6Q3C97  901  1.375 1.375 11  2000   -     2  -     -     -   -      -     -  BTNS43G              -    -      81   0    -    52 -  S43     
+ 6Q3C97  902  1.375 1.375 11  2000   -     2  -     -     -   -      -     -  BTNS44G              -    -      81   1    -    52 -  S44     
+ 6Q3C97  903  1.375 1.375 16  2000   -     2  -     -     -   -      -     -  BTNS45G              -    -      81   2    -    52 -  S45     
+! 6Q3C97  904  1.375 1.375 11  2000   -     2  -     -     -   -      -     -  BTNS47G              -    -      81   3    -    52 -  S47     
+! 6Q3C97  905  1.375 1.375 11  2000   -     2  -     -     -   -      -     -  BTNS48G              -    -      81   4    -    52 -  S48     
+! 6Q3C97  906  1.375 1.375 11  2000   -     2  -     -     -   -      -     -  BTNS49G              -    -      81   5    -    52 -  S49     
+! 6Q3C97  907  1.375 1.375 11  2000   -     2  -     -     -   -      -     -  BTNS50G              -    -      81   6    -    52 -  S50     
+! 6Q3C97  908  1.375 1.375 11  2000   -     2  -     -     -   -      -     -  BTNS51G              -    -      81   7    -    52 -  S51     
+
+! *** CONE RING TEE = DRIP RING TEE GASKET ***
+ 6Q3C36  1    1.375 1.375 116 CL2000 NREQD 2  -     -     441 -      -     2  CRTS37G              -    TDRB   6100 1    -    52 15 S37    
+
+! *** CONE RINGS = GASKET ***
+ 6Q3C95  1    1.375 1.375 11  2000   -     2  -     -     -   -      -     -  CNRS4G               -    -      6100 -    -    52 7  S4     
+
+! *** FLANGE ***
+  6Q2C01  1860 1.375 1.375 11  CL2000 NREQD 2  -     -     441 CL2000 NREQD 2  FLGS1G               -    FSQT   6100 -    -    52 15 S1      
+  6Q2C01  216  1.375 1.375 16  CL2000 NREQD 2  -     -     441 CL2000 NREQD 2  FLGS1G               -    FSQT   6100 -    -    52 15 S1      
+! 6Q2C01  1861 1.375 1.375 11  CL2000 NREQD 2  -     -     441 CL2000 NREQD 2  FLGS2G               -    FWN    6100 -    -    52 15 S2     
+! 6Q2C01  1862 1.375 1.375 11  CL2000 NREQD 2  -     -     441 CL2000 NREQD 2  FLGS3G               -    FWN    6100 -    -    52 15 S3      
+
+
+
+
+
+
+! =======================================================================================================================================
+
+! *** PIPE END ***
+ 6Q2C22  1    1     4     301 -      MATCH 2  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    1     4     301 -      MATCH 2  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    1     4     301 -      MATCH 2  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+ 6Q2C22  1    6     24    301 -      MATCH 2  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    6     24    301 -      MATCH 2  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    6     24    301 -      MATCH 2  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+! *** REINFORCING WELD ***
+ 6Q3C82  1    2.5   24    301 -      -     2  2     22    301 -      -     2  -                    -    RWELD  6    1    142  52 -  -   
+
+! *** FUNNEL ***
+ 6Q2C07  1    1     4     301 -      NREQD 2  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+ 6Q2C07  1    6     24    301 -      MATCH 2  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+
+! *** ORIFICE TAP END ***
+ 6Q9C52  1    0.5   1.5   331 -      NREQD 2  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+ 6Q9C53  1    0.5   1.5   391 -      NREQD 2  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+
+! *** ASSEMBLY FLANGE ***
+ 6Q8C60  1    1     4     21  CL300  NREQD 29 -     -     301 CL300  MATCH 2  ORIFICE              -    FOWNA  66   1    1080 52 -  -   
+ 6Q8C60  1    6     24    21  CL300  NREQD 29 -     -     301 CL300  MATCH 2  ORIFICE              -    FOWNA  66   1    1080 52 -  -   
+
+! *** ORIFICE FLANGE ***
+ 6Q2C06  1    1     4     21  CL300  NREQD 29 -     -     301 CL300  MATCH 2  ORIFICE              -    FOWNA  66   1    1080 52 -  -   
+ 6Q2C06  1    6     24    21  CL300  NREQD 29 -     -     301 CL300  MATCH 2  ORIFICE              -    FOWNA  66   1    1080 52 -  -   

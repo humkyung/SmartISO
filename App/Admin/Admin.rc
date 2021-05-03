@@ -1,0 +1,1073 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Admin.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.kor\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Admin.ico"
+IDR_ADMINTYPE           ICON                    "res\\AdminDoc.ico"
+IDI_DEL                 ICON                    "res\\Del.ico"
+IDI_SAVE                ICON                    "res\\Save.ico"
+IDI_NEW                 ICON                    "res\\New.ico"
+IDI_OK                  ICON                    "res\\ico00006.ico"
+IDI_ADD                 ICON                    "res\\add.ico"
+IDI_REMOVE              ICON                    "res\\ico00001.ico"
+IDI_ORACLE              ICON                    "res\\ora.ico"
+IDI_REFRESH2            ICON                    "res\\refresh18x18.ico"
+IDI_UNSELECT_ALL        ICON                    "res\\ico00013.ico"
+IDI_SELECT_ALL          ICON                    "res\\ico00012.ico"
+IDI_SETTING             ICON                    "res\\ico00009.ico"
+IDI_ISO_EDIT_SETTING    ICON                    "res\\iso_edit_setting.ico"
+IDI_BM_REPORT           ICON                    "res\\BMReport.ico"
+IDI_LENGTH              ICON                    "res\\length.ico"
+IDI_SITE                ICON                    "res\\site.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_LEDS                BITMAP                  "res\\leds.bmp"
+IDB_LIST_HEADER         BITMAP                  "res\\list_hea.bmp"
+IDB_HICOLOR_TOOLBAR     BITMAP                  "res\\HiColorToolbar.bmp"
+IDB_SETTING             BITMAP                  "res\\setting.bmp"
+IDB_ADMIN_TREE          BITMAP                  "res\\tree.bmp"
+IDB_LOGO                BITMAP                  "res\\LOGO.bmp"
+IDB_CLOUD_MARK          BITMAP                  "res\\cloudmark.bmp"
+IDB_BUTTONS             BITMAP                  "res\\buttons.bmp"
+IDB_MAIN                BITMAP                  "res\\main.bmp"
+IDB_FILELARGE           BITMAP                  "res\\filelarge.bmp"
+IDB_FILESMALL           BITMAP                  "res\\filesmall.bmp"
+IDB_CHECKBOXES          BITMAP                  "res\\checkboxes.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_TOOLS_LINELIST_DATA
+    BUTTON      ID_TOOLS_SETTING
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "닫기",                          ID_APP_CLOSE
+        MENUITEM "UserApp로 돌아가기",               ID_TO_USERAPP
+        MENUITEM "종료(&X)",                      ID_APP_EXIT
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "Admin 정보(&A)...",             ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SmartAdmin 정보"
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SmartAdmin 버전 1.0",IDC_STATIC_ABOUT,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright SolutionWare(C) 2006~",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ADMIN_FORM DIALOG 0, 0, 320, 227
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+END
+
+IDD_DIALOG_USER DIALOGEX 0, 0, 228, 188
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST_ASSIGNED_USER,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,9,37,212,46,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Save",IDC_BUTTON_SAVE,41,2,34,20
+    CONTROL         "List2",IDC_LIST_PROJECT_USER,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,9,137,212,43
+    PUSHBUTTON      "Refresh",IDC_BUTTON_REFRESH,1,2,39,20
+    CTEXT           "User List",IDC_STATIC_USER,9,120,212,12,SS_CENTERIMAGE
+    CTEXT           "Assigned Users",IDC_STATIC_ASSIGN_USER,9,20,212,14,SS_CENTERIMAGE
+    PUSHBUTTON      "",IDC_BUTTON_ADD,0,91,14,14
+    LTEXT           "ID :",IDC_STATIC_ID,21,91,25,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ID,48,91,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Area :",IDC_STATIC_AREA,107,91,20,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_AREA,129,91,55,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_PROJECT_SETTING DIALOGEX 0, 0, 320, 227
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPCHILDREN
+FONT 10, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Save",IDC_BUTTON_SAVE,262,209,58,18
+END
+
+IDD_BORDER_SETTING DIALOGEX 0, 0, 267, 58
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPCHILDREN
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CTEXT           "Border File : ",IDC_STATIC,7,11,41,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_BORDER_FILE_PATH,49,7,57,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BUTTON_BORDER_FILE,107,7,15,17
+    LTEXT           "Ignore character for data area :",IDC_STATIC_EX,7,31,105,13
+    EDITTEXT        IDC_EDIT_IGNORE_CHAR,113,27,57,17,ES_CENTER | ES_AUTOHSCROLL
+END
+
+IDD_LINE_DATA_SETTING DIALOGEX 0, 0, 324, 345
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Issue Date",IDC_STATIC_ISSUE_DATE,104,69,58,180
+    PUSHBUTTON      "",IDC_BUTTON_NEW,124,84,16,16
+    PUSHBUTTON      "",IDC_BUTTON_REMOVE,140,84,16,16
+    CONTROL         "List1",IDC_LIST_LINE_DATA_MODULE_KEY,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,14,155,46,49,0,HIDC_LIST_LINE_DATA_MODULE_KEY
+    CONTROL         "Year + Month + Day",IDC_RADIO_ISSUE_DATE_FORMAT_NO_1,
+                    "Button",BS_AUTORADIOBUTTON,88,104,76,10,WS_EX_TRANSPARENT
+    CONTROL         "Month + Day + Year",IDC_RADIO_ISSUE_DATE_FORMAT_NO_2,
+                    "Button",BS_AUTORADIOBUTTON,88,119,76,10,WS_EX_TRANSPARENT
+    LTEXT           "Delimiter : ",IDC_STATIC_ISSUE_DATE_DELIMITER,102,187,32,8
+    EDITTEXT        IDC_EDIT_ISSUE_DATE_DELIMITER,139,184,16,14,ES_AUTOHSCROLL
+    CONTROL         "Day + Month + Year",IDC_RADIO_ISSUE_DATE_FORMAT_NO_3,
+                    "Button",BS_AUTORADIOBUTTON,88,135,75,10,WS_EX_TRANSPARENT
+    CONTROL         "Month + Day + Year",IDC_RADIO_ISSUE_DATE_FORMAT_NO_4,
+                    "Button",BS_AUTORADIOBUTTON,88,151,73,10
+END
+
+IDD_ISO_EDIT_SETTING DIALOGEX 0, 0, 549, 432
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "...",IDC_BUTTON_INPUT_FILE_NAME,162,20,13,19
+    PUSHBUTTON      "...",IDC_BUTTON_OUTPUT_FILE_NAME,162,40,13,18
+    GROUPBOX        "Iso File Name Format",IDC_STATIC_GROUP_BOX1,7,7,535,60
+    LTEXT           "Source Iso File Name Format : ",IDC_STATIC,13,23,99,8
+    LTEXT           "Product Iso File Name Format : ",IDC_STATIC,13,43,99,8
+    EDITTEXT        IDC_EDIT_INPUT_FILE_NAME,117,20,45,18,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_OUTPUT_FILE_NAME,117,40,45,17,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BUTTON_OUTPUT_FILE_EXT,229,39,13,18
+    EDITTEXT        IDC_EDIT_OUTPUT_FILE_EXT,184,39,45,17,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           ".",IDC_STATIC_DOT,176,48,8,8
+    GROUPBOX        "Header Text Setting",IDC_GROUPBOX_HEADER_INFO,7,208,535,111
+    GROUPBOX        "BOM Format Setting",IDC_GROUPBOX_BM_FORMAT,7,130,535,66
+    GROUPBOX        "Text Modified Error(Exception)",IDC_STATIC,7,77,338,43
+    CONTROL         "Level",IDC_CHECK_LEVEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,99,32,10
+    CONTROL         "Color",IDC_CHECK_COLOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,98,99,27,10
+    CONTROL         "Style",IDC_CHECK_STYLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,181,99,26,10
+    CONTROL         "Weight",IDC_CHECK_WEIGHT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,262,99,33,10
+    EDITTEXT        IDC_EDIT_LEVEL,46,96,37,16,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    EDITTEXT        IDC_EDIT_COLOR,131,96,37,16,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    EDITTEXT        IDC_EDIT_STYLE,210,96,37,16,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    EDITTEXT        IDC_EDIT_WEIGHT,299,96,37,16,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    LTEXT           "Bolt Length Location :",IDC_STATIC,13,224,70,8
+    GROUPBOX        "",IDC_STATIC_HEADER_TEXT_GRID_CTRL,13,259,127,55,NOT WS_VISIBLE
+    CONTROL         "Column Data",IDC_RADIO_COLUMN_DATA,"Button",BS_AUTORADIOBUTTON,90,224,55,10
+    CONTROL         "Matl Desc",IDC_RADIO_MATL_DESC,"Button",BS_AUTORADIOBUTTON,150,224,55,10
+    LTEXT           "Keyword for Bolt Length :",IDC_STATIC,13,242,80,8
+    EDITTEXT        IDC_EDIT_KEYWORD_FOR_BOLT_LENGTH,94,240,99,14,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",IDC_BUTTON_REFRESH,143,280,16,16
+END
+
+IDD_FILE_NAME_FORMAT DIALOGEX 0, 0, 222, 208
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Name Format Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,120,181,42,22
+    PUSHBUTTON      "Cancel",IDCANCEL,165,181,50,22
+    LISTBOX         IDC_LIST_FILE_NAME_ITEM,12,39,196,131,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    CONTROL         "File Name Item",IDC_LISTBUDDY,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,46,19,162,16,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_DELIMITER,12,19,18,16,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BUTTON_ADD,31,18,15,17
+    GROUPBOX        "File Name Formatting",IDC_STATIC,7,7,208,170
+END
+
+IDD_DRAWING_REPORT DIALOGEX 0, 0, 553, 210
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Start Row :",IDC_STATIC_ROW,240,47,39,10
+    LTEXT           "Next Start Column :",IDC_STATIC_COL,122,47,62,10
+    EDITTEXT        IDC_EDIT_ROW_COUNT_PER_SHEET,426,44,24,13,ES_CENTER | ES_UPPERCASE | ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    LTEXT           "Row count per sheet :",IDC_STATIC_ROW_COUNT_PER_SHEET,349,45,73,13
+    CONTROL         "Write all on one sheet",IDC_CHECK_ONE_SHEET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,47,106,10
+    GROUPBOX        "Configuration",IDC_STATIC_SETTING_BOX,7,29,539,39
+    EDITTEXT        IDC_EDIT_DWG_REPORT_TEMPLATE,150,7,396,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Select excel template file for drawing report :",IDC_STATIC_DWG_REPORT_TEMPLATE,7,9,142,11,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_START_ROW,279,44,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_NEXT_COLUMN,187,45,48,234,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ORACLE_SETTING DIALOGEX 0, 0, 412, 374
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Data Exchange Key Setting between PDS and SmartISO",IDC_STATIC_IDMS_KEY,6,214,196,65
+    LTEXT           "Select a 'design.ddl' file : ",IDC_STATIC,6,13,85,8
+    EDITTEXT        IDC_EDIT_DESIGN_DDL_FILE_PATH,92,10,98,16,ES_AUTOHSCROLL
+    LTEXT           "Oracle DB Field",IDC_STATIC_ORAKEY,14,230,53,11
+    COMBOBOX        IDC_COMBO_ORAKEY,77,229,108,16,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "SmartISO Map Key",IDC_STATIC_IDMSKEY,14,254,62,9
+    EDITTEXT        IDC_EDIT_IDMSKEY,77,253,107,15,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BUTTON_IDMSKEY,182,251,13,16
+    LTEXT           "(EX)\\\\server01\\train\\SmartISO\\setting\\design.ddl",IDC_STATIC_EX,92,30,190,11
+    GROUPBOX        "Loading Rule",IDC_STATIC_LOADING_RULE,6,290,270,76
+    GROUPBOX        "Mapping For Insert Data to PDS",IDC_GROUP_MAPPING_FOR_INSERT,286,269,118,98
+    CONTROL         "If data does not match, this program is a instend of this value :",IDC_CHECK_LOADING_RULE1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,311,214,10
+    EDITTEXT        IDC_EDIT_LOADING_RULE1,232,309,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "If number and letter are mixed, this program should input by the first data.",IDC_CHECK_LOADING_RULE2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,333,254,10
+    LTEXT           "40,50 or 40-50 or 40~50",IDC_STATIC,23,347,237,8
+    PUSHBUTTON      "",IDC_BUTTON_DELETE_MAPPING,309,282,16,16
+    PUSHBUTTON      "",IDC_BUTTON_NEW_MAPPING,291,282,16,16
+    EDITTEXT        IDC_EDIT_HOST,62,63,75,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SERVICE_NAME,62,83,75,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USER_NAME,62,127,75,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,62,148,75,17,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Connection Test",IDC_BUTTON_CONNECTION_TEST,62,169,75,20,BS_CENTER
+    GROUPBOX        "",IDC_STATIC_GROUP_CHECK_BOX,6,46,279,153
+    LTEXT           "Service :",IDC_STATIC,13,87,25,9
+    LTEXT           "User :",IDC_STATIC,21,130,17,9
+    LTEXT           "Password :",IDC_STATIC,21,152,39,9
+    LTEXT           "Host :",IDC_STATIC,14,66,17,9
+    CONTROL         "PDS Data Update",IDC_CHECK_PDS_DATA_UPDATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,45,72,10
+    GROUPBOX        "Project Database",IDC_STATIC,14,110,131,84
+    EDITTEXT        IDC_EDIT_DESIGN_USER_NAME,199,126,75,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DESIGN_PASSWORD,199,148,75,17,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Connection Test",IDC_BUTTON_DESIGN_CONNECTION_TEST,199,168,75,20,BS_CENTER
+    LTEXT           "User :",IDC_STATIC,158,130,17,9
+    LTEXT           "Password :",IDC_STATIC,158,151,39,9
+    GROUPBOX        "Design Database",IDC_STATIC,151,109,131,84
+END
+
+IDD_REF_DATA_SETTING DIALOGEX 0, 0, 481, 461
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+END
+
+IDD_REVISION_STAGE DIALOGEX 0, 0, 703, 301
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_GRADE_ADD,662,39,16,16
+    PUSHBUTTON      "",IDC_BUTTON_GRADE_DEL,680,39,16,16
+    GROUPBOX        "Rev. User",IDC_STATIC_REV_USER,7,220,689,74
+    GROUPBOX        "Rev. No Define",IDC_STATIC_REV_NO_DEFINE,7,55,689,159
+    GROUPBOX        "Select Revision No",IDC_STATIC_SELECT_REV_NO,7,7,112,40
+    CONTROL         "Automatic",IDC_RADIO_AUTOMATIC,"Button",BS_AUTORADIOBUTTON,15,25,45,10
+    CONTROL         "Manual",IDC_RADIO_MANUAL,"Button",BS_AUTORADIOBUTTON,75,25,37,10
+END
+
+IDD_WORK_STATUS DIALOG 0, 0, 229, 60
+STYLE DS_SETFONT | WS_POPUP | WS_THICKFRAME
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Work Progress",IDC_STATIC,7,7,215,46
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,12,26,205,14
+END
+
+IDD_SMART_ISO_DIFF_SETTING DIALOGEX 0, 0, 374, 148
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Cloud Mark",IDC_STATIC_CLOUD_MARK,7,7,360,127
+    CONTROL         202,IDC_STATIC,"Static",SS_BITMAP,15,25,345,101
+END
+
+IDD_GENERAL_SETTING DIALOGEX 0, 0, 481, 461
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+END
+
+IDD_SETTING DIALOGEX 0, 0, 223, 174
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION
+CAPTION "Microstation Path Setting"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Setting",IDC_STATIC,4,4,214,163
+    LTEXT           "MicroStation Path :",IDC_STATIC,11,64,62,8
+    EDITTEXT        IDC_EDIT_MSTATION_PATH,11,78,200,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_MSTATION,200,65,11,14
+END
+
+IDD_BM_REPORT_SETTING DIALOGEX 0, 0, 226, 173
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pipe Cut Length"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Pipe Cut Length",IDC_STATIC,7,7,214,159
+    CONTROL         "ETC",IDC_CHECK_ETC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,70,24,10
+    EDITTEXT        IDC_EDIT_PIPE_CUT_LENGTH,13,88,173,15,ES_AUTOHSCROLL
+    CTEXT           "(mm)",IDC_STATIC,190,91,24,9
+    GROUPBOX        "주의",IDC_STATIC,72,20,141,56
+    LTEXT           "Pipe Cut Length가 6000mm가\n\n아닐 경우에만 설정해 주세요. ",IDC_STATIC,78,37,129,28
+END
+
+IDD_ISO_FILE_SETTING DIALOGEX 0, 0, 226, 173
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Iso File Setting"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Iso Edit Setting",IDC_STATIC,7,7,214,159
+    LTEXT           "Source Iso Drawing File Name Ext : ",IDC_STATIC,13,83,115,8
+    EDITTEXT        IDC_EDIT_FILE_NAME_EXT,129,80,86,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,5,2416
+ PRODUCTVERSION 1,0,5,2416
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "CompanyName", "SolutionWare(C)"
+            VALUE "FileDescription", "Admin MFC 응용 프로그램"
+            VALUE "FileVersion", "1,0,5,2416"
+            VALUE "InternalName", "Admin"
+            VALUE "LegalCopyright", "Copyright (C) 2006"
+            VALUE "OriginalFilename", "Admin.EXE"
+            VALUE "ProductName", "Admin 응용 프로그램"
+            VALUE "ProductVersion", "1,0,5,2416"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ADMIN_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+        HORZGUIDE, 205
+    END
+
+    IDD_DIALOG_USER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 221
+        VERTGUIDE, 9
+        VERTGUIDE, 127
+        BOTTOMMARGIN, 181
+        HORZGUIDE, 2
+        HORZGUIDE, 22
+        HORZGUIDE, 91
+        HORZGUIDE, 105
+    END
+
+    IDD_DIALOG_PROJECT_SETTING, DIALOG
+    BEGIN
+    END
+
+    IDD_BORDER_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+        HORZGUIDE, 24
+    END
+
+    IDD_LINE_DATA_SETTING, DIALOG
+    BEGIN
+        RIGHTMARGIN, 319
+        VERTGUIDE, 4
+        VERTGUIDE, 14
+        VERTGUIDE, 88
+        VERTGUIDE, 112
+        VERTGUIDE, 128
+        VERTGUIDE, 137
+        TOPMARGIN, 7
+        HORZGUIDE, 25
+        HORZGUIDE, 69
+        HORZGUIDE, 98
+        HORZGUIDE, 249
+    END
+
+    IDD_ISO_EDIT_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 542
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 425
+    END
+
+    IDD_FILE_NAME_FORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        VERTGUIDE, 12
+        VERTGUIDE, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+        HORZGUIDE, 23
+        HORZGUIDE, 170
+        HORZGUIDE, 181
+    END
+
+    IDD_DRAWING_REPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 546
+        VERTGUIDE, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_ORACLE_SETTING, DIALOG
+    BEGIN
+        VERTGUIDE, 6
+        VERTGUIDE, 14
+        VERTGUIDE, 62
+        VERTGUIDE, 276
+        BOTTOMMARGIN, 369
+        HORZGUIDE, 109
+    END
+
+    IDD_REF_DATA_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 474
+        VERTGUIDE, 18
+        VERTGUIDE, 99
+        VERTGUIDE, 171
+        VERTGUIDE, 182
+        VERTGUIDE, 195
+        VERTGUIDE, 213
+        VERTGUIDE, 300
+        VERTGUIDE, 465
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 454
+        HORZGUIDE, 249
+    END
+
+    IDD_REVISION_STAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 696
+        VERTGUIDE, 13
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 294
+        HORZGUIDE, 35
+        HORZGUIDE, 55
+        HORZGUIDE, 214
+    END
+
+    IDD_WORK_STATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        VERTGUIDE, 12
+        VERTGUIDE, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_SMART_ISO_DIFF_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        VERTGUIDE, 15
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+        HORZGUIDE, 83
+    END
+
+    IDD_GENERAL_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 474
+        VERTGUIDE, 18
+        VERTGUIDE, 99
+        VERTGUIDE, 171
+        VERTGUIDE, 182
+        VERTGUIDE, 195
+        VERTGUIDE, 213
+        VERTGUIDE, 300
+        VERTGUIDE, 465
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 454
+        HORZGUIDE, 249
+    END
+
+    IDD_SETTING, DIALOG
+    BEGIN
+        VERTGUIDE, 11
+        VERTGUIDE, 81
+        VERTGUIDE, 211
+    END
+
+    IDD_BM_REPORT_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        VERTGUIDE, 13
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_ISO_FILE_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        VERTGUIDE, 13
+        VERTGUIDE, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_PEN          CURSOR                  "res\\cursor1.cur"
+IDC_CURSOR_CROSS        CURSOR                  "res\\cur00001.cur"
+IDC_HAND_CUR            CURSOR                  "res\\fpoint.cur"
+IDC_CURSOR_SELECT       CURSOR                  "res\\cursor_s.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "res\\default1.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DRAWING_REPORT DLGINIT
+BEGIN
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_START_ROW, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_START_ROW, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_START_ROW, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_START_ROW, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_START_ROW, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_START_ROW, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0041, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0042, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0043, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0044, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0045, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0046, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0047, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0048, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0049, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x004a, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x004b, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x004c, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x004d, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x004e, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x004f, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0050, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0051, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0052, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0053, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0054, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0055, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0056, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0057, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0058, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x0059, 
+    IDC_COMBO_NEXT_COLUMN, 0x403, 2, 0
+0x005a, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "SmartAdmin\n\nSmartAdmin\n\n\nSmartAdmin.Document\nSmartAdmin Document"
+    IDS_RIBBON_FILE         "File"
+    IDS_RIBBON_EXIT         "E&xit"
+    ID_TOOLS_GENERAL_SETTING "General Settings\nSet general settings"
+    IDS_ADMIN_SETTING_TITLE "SmartAdmin Setting"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "SmartAdmin"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "새 문서를 작성합니다\n새 파일"
+    ID_FILE_OPEN            "기존 문서를 엽니다\n열기"
+    ID_FILE_CLOSE           "현재 열린 문서를 닫습니다\n닫기"
+    ID_FILE_SAVE            "현재 열린 문서를 저장합니다\n저장"
+    ID_FILE_SAVE_AS         "현재 열린 문서를 다른 이름으로 저장합니다\n다른 이름으로 저장"
+    ID_FILE_PAGE_SETUP      "인쇄 옵션을 변경합니다\n쪽 설정"
+    ID_FILE_PRINT_SETUP     "프린터와 인쇄 옵션을 변경합니다\n인쇄 설정"
+    ID_FILE_PRINT           "현재 열린 문서를 인쇄합니다\n인쇄"
+    ID_FILE_PRINT_PREVIEW   "쪽 전체를 표시합니다\n인쇄 미리 보기"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보와 버전 정보, 저작권 정보를 표시합니다\n정보"
+    ID_APP_EXIT             "응용 프로그램을 종료하기 위해 문서를 저장할 것인지 묻습니다\n종료"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE2       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE3       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE4       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE5       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE6       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE7       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE8       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE9       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE10      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE11      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE12      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE13      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE14      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE15      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE16      "이 문서를 엽니다"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다\n이전 창"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "현재 열린 창을 나눕니다\n나누기"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "선택 부분을 지웁니다\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다\n모두 지우기"
+    ID_EDIT_COPY            "선택 부분을 복사하여 클립보드에 넣습니다\n복사"
+    ID_EDIT_CUT             "선택 부분을 잘라내어 클립보드에 넣습니다\n잘라내기"
+    ID_EDIT_FIND            "지정한 문자열을 찾습니다\n찾기"
+    ID_EDIT_PASTE           "클립보드의 내용을 붙여 넣습니다\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막으로 실행한 동작을 반복합니다\n반복"
+    ID_EDIT_REPLACE         "지정한 문자열을 다른 문자열로 바꿉니다\n바꾸기"
+    ID_EDIT_SELECT_ALL      "문서 전체를 선택합니다\n전체 선택"
+    ID_EDIT_UNDO            "마지막으로 한 동작을 취소합니다\n실행 취소"
+    ID_EDIT_REDO            "이전에 취소한 동작을 다시 수행합니다\n다시 실행"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 보이거나 감춥니다\n도구 모음 전환"
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 감춥니다\n상태 표시줄 전환"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "창의 크기를 변경합니다"
+    AFX_IDS_SCMOVE          "창의 위치를 변경합니다"
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 줄여서 표시합니다"
+    AFX_IDS_SCMAXIMIZE      "창을 최대 크기로 확장합니다"
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다"
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다"
+    AFX_IDS_SCCLOSE         "현재 열린 창을 닫고 문서를 저장할 것인지를 묻습니다"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 원래 크기로 복원합니다"
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "인쇄 미리 보기 모드를 닫습니다\n미리 보기 취소"
+    IDS_ISO_DWG_FILE_FOLDER "Iso Drawing의 폴더를 설정하세요."
+    IDS_ASK_CREATE_TABLE    "Table already exist. Do you want to create new Table?"
+    IDS_ASK_DELETE_COLUMN   "Do you want to delete selected column?"
+    IDS_WARNING_DELETE_COLUMN "Can't delete this column."
+    IDS_WARNING_CHANGE_COLUMN "Can't change this column."
+    IDS_ERROR_WRITE_INI_FILE "Fail to write ini file."
+    IDS_WARNING_DUPLICATED_DESC "Duplicated Field Desc."
+    IDS_WARNING_DELETE_ISSUE_DATE "Can't delete this issue date."
+    IDS_WARNING_LESS_OR_EQUAL_ISSUE_DATE "Can't add this issue date."
+    IDS_ERROR_CREATE_WND    "Can't create a window."
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_CLOSE            "종료하고 처음으로 돌아갑니다.\n종료하고 처음으로 돌아갑니다."
+    ID_TO_USERAPP           "Return to SmartISO\nReturn to SmartISO"
+    ID_TOOLS_LINELIST_DATA  "Line list\nImport line list"
+    ID_TOOLS_SETTING        "Project Options\nSet project options"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NEED_FIELD          "Need fields to create a table."
+    IDS_DB_CONNECTION_FAIL  "DB Connection Failure!!"
+    IDS_TREE_USER           "User"
+    IDS_TREE_IDMS_DATABSE_SETTING "Table Definition"
+    IDS_TREE_SETTING        "Setting"
+    IDS_TREE_PROJECT_ACCESS "Project Access"
+    IDS_TREE_ADMINISTRATOR  "Administrator"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NOT_ADMITTED_CHAR   "Not admitted character."
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_UPDATE     " "
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_PROJECT_DEF DIALOGEX 0, 0, 823, 496
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Line List Table",IDC_STATIC_LINE_DATA,1,-1,819,80
+    PUSHBUTTON      "...",IDC_BUTTON_SelectExcel,799,102,14,19,WS_GROUP
+    CONTROL         "",IDC_LIST_SHEET_NAME,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | WS_BORDER | WS_GROUP | WS_TABSTOP,17,162,788,71,WS_EX_DLGMODALFRAME
+    LTEXT           "Start Row Number : ",IDC_STATIC_ROW_NUMBER,688,124,65,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC_ShowExcelName,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,95,104,718,16,WS_EX_STATICEDGE
+    GROUPBOX        "Select sheet name to convert",IDC_STATIC_3,6,147,807,93,WS_GROUP
+    LTEXT           "Select LineList Data File :",1122,6,102,84,17,SS_CENTERIMAGE
+    GROUPBOX        "LineList Data Import",IDC_STATIC_LINE_LIST_IMPORT,1,87,819,161,WS_GROUP
+    CONTROL         "",IDC_LIST_CURRENT_LINE_DATA,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,1,265,819,159
+    LTEXT           "Current Line List",IDC_STATIC,1,252,54,9
+    PUSHBUTTON      "...",IDC_BUTTON_DATABASE_REFERENCE_KEY,663,122,13,19
+    EDITTEXT        IDC_EDIT_DATABASE_REFERENCE_KEY,95,125,582,16,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_START_ROW,757,126,56,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Database Reference Key :",1124,6,123,84,17,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_PROJECT_DEF, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 820
+        VERTGUIDE, 6
+        VERTGUIDE, 17
+        VERTGUIDE, 68
+        VERTGUIDE, 95
+        VERTGUIDE, 813
+        BOTTOMMARGIN, 489
+        HORZGUIDE, 6
+        HORZGUIDE, 25
+        HORZGUIDE, 29
+        HORZGUIDE, 59
+        HORZGUIDE, 79
+        HORZGUIDE, 89
+        HORZGUIDE, 131
+        HORZGUIDE, 240
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_PROJECT_DEF DLGINIT
+BEGIN
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_START_ROW, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_START_ROW, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_START_ROW, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_START_ROW, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_START_ROW, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_START_ROW, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_START_ROW, 0x403, 3, 0
+0x3531, "\000" 
+    0
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\Admin.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#include "l.kor\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

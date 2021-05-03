@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TABLE Name="T_ISO_DWG_FILE">
+	<COLUMN Name="KEY" DataType="VARCHAR(250)" default="" English="Key" Japanese="Key" />
+	<COLUMN Name="REV_NO" DataType="VARCHAR(250)" default="" English="Rev No" Japanese="Rev No" />
+	<COLUMN Name="FILE_DESC" DataType="VARCHAR(250)" default="" English="File Description" Japanese="File Description" />
+	<COLUMN Name="FILE" DataType="oid" default="" English="" Japanese="" />
+</TABLE>

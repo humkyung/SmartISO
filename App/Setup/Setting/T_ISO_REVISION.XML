@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TABLE Name="T_ISO_REVISION">
+	<COLUMN Name="KEY" DataType="VARCHAR(250)" Constraint="True"/>
+	<COLUMN Name="REV_NO" DataType="VARCHAR(50)"  Constraint="True"/>
+	<COLUMN Name="REV_DATE" DataType="VARCHAR(50)" />
+	<COLUMN Name="REV_DESC" DataType="VARCHAR(250)" />
+	<COLUMN Name="REV_DRWN_BY" DataType="VARCHAR(50)" />
+	<COLUMN Name="REV_CHECKED_BY" DataType="VARCHAR(50)" />
+	<COLUMN Name="REV_REVIEWED_BY" DataType="VARCHAR(50)" />
+	<COLUMN Name="REV_APPROVED_BY" DataType="VARCHAR(50)" />
+</TABLE>

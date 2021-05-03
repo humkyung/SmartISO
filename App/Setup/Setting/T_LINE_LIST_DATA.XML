@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TABLE Name="T_LINE_LIST_DATA">
+	<COLUMN Name="PID_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_SIZE" DataType="VARCHAR(250)" />
+	<COLUMN Name="FLUID" DataType="VARCHAR(250)" />
+	<COLUMN Name="UNIT_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="SEQUENCE" DataType="VARCHAR(250)" />
+	<COLUMN Name="CLASS" DataType="VARCHAR(250)" />
+	<COLUMN Name="INS_TYPE" DataType="VARCHAR(250)" />
+	<COLUMN Name="LINE_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="PAINT_CODE" DataType="VARCHAR(250)" />
+	<COLUMN Name="INS_THICKNESS" DataType="VARCHAR(250)" />
+	<COLUMN Name="ELECTRITRACE" DataType="VARCHAR(250)" />
+	<COLUMN Name="TEST_TYPE" DataType="VARCHAR(250)" />
+	<COLUMN Name="TEST_PRESS" DataType="VARCHAR(250)" />
+	<COLUMN Name="OPER_TEMP" DataType="VARCHAR(250)" />
+	<COLUMN Name="DGN_TEMP" DataType="VARCHAR(250)" />
+	<COLUMN Name="OPER_PRES" DataType="VARCHAR(250)" />
+	<COLUMN Name="DGN_PRES" DataType="VARCHAR(250)" />
+	<COLUMN Name="PWHT" DataType="VARCHAR(250)" />
+	<COLUMN Name="RADIOGRAPHY" DataType="VARCHAR(250)" />
+	<COLUMN Name="STEAM_TRACE" DataType="VARCHAR(250)" />
+	<COLUMN Name="PT_MT" DataType="VARCHAR(250)" />
+	<COLUMN Name="PLAN_NO" DataType="VARCHAR(250)" />
+	<COLUMN Name="HPGCL" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE1" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE2" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE3" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE4" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE5" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE6" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE7" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE8" DataType="VARCHAR(250)" />
+	<COLUMN Name="SPARE9" DataType="VARCHAR(250)" />
+</TABLE>

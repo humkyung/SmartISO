@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SmartISODiff", "SmartISODiff.vcproj", "{846F60AE-B45B-476D-89A0-5589D574D4F7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestSuit", "TestSuit\TestSuit.vcproj", "{68E5C835-C85F-401D-BAF3-B1DAE2F04156}"
+	ProjectSection(ProjectDependencies) = postProject
+		{846F60AE-B45B-476D-89A0-5589D574D4F7} = {846F60AE-B45B-476D-89A0-5589D574D4F7}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{846F60AE-B45B-476D-89A0-5589D574D4F7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{846F60AE-B45B-476D-89A0-5589D574D4F7}.Debug|Win32.Build.0 = Debug|Win32
+		{846F60AE-B45B-476D-89A0-5589D574D4F7}.Release|Win32.ActiveCfg = Release|Win32
+		{846F60AE-B45B-476D-89A0-5589D574D4F7}.Release|Win32.Build.0 = Release|Win32
+		{68E5C835-C85F-401D-BAF3-B1DAE2F04156}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68E5C835-C85F-401D-BAF3-B1DAE2F04156}.Debug|Win32.Build.0 = Debug|Win32
+		{68E5C835-C85F-401D-BAF3-B1DAE2F04156}.Release|Win32.ActiveCfg = Release|Win32
+		{68E5C835-C85F-401D-BAF3-B1DAE2F04156}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

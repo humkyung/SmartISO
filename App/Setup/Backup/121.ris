@@ -1,0 +1,3 @@
+default schema pd_?;
+select count (*) from pdtable_121;
+select * from pdtable_121;

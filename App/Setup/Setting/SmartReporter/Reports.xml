@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SmartReporter>
+<Report Name="Line List Report" SqlFile="LineList.xml" ExcelFile="Check_linelist.xls" StartRow="5" Discipline="1"/>
+<Report Name="Nozzle Report" SqlFile="NozzleReport.xml" ExcelFile="Nozzle_Report.xls" StartRow="5" Discipline="2"/>
+<Report Name="Inst. Report" SqlFile="InstReport.xml" ExcelFile="instrument_excel.xls" StartRow="5" Discipline="1"/>
+<Report Name="Special Item Report" SqlFile="SpecialItemReport.xml" ExcelFile="special_excel.xls" StartRow="5" Discipline="1"/>
+</SmartReporter>

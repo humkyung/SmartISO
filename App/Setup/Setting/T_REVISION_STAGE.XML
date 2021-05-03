@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TABLE Name="T_REVISION_STAGE">
+	<COLUMN Name="FROM_GRADE_DEFINE" DataType="VARCHAR(50)" />
+	<COLUMN Name="REVISION_NO" DataType="SMALLINT" Constraint="True"/>
+	<COLUMN Name="REVISION_TEXT" DataType="VARCHAR(250)" />
+</TABLE>
+

@@ -1,0 +1,112 @@
+! File Name : C2L.pcd                                                                                                       
+! Job.No.   :                  Revision : 0                      Date : 2008.10.29                                                  
+! Material Spec Class : C2L    Material : FRP                    Design Code : ASME B31.3   
+! Max Temp : 121               Flang Class : ASME 150#                                            
+! Service Note :                                                                                                                        
+  PIPING_MATERIALS_CLASS= C2L                                                                                               
+  Single_Spacing                                                                                                                        
+  Order= 1 6 2 3 9 11 13 21 4 5 10 12 14 22 18 7 16 19 15 8 20 23 24  *17 *25                                                           
+!                                                                                                                                       
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! AABBCC -----------------Green CP----------- ------------Red CP-------------       CMDTY               MODEL  GEO  MOD  Mat  Wt        
+! Code   Opt  FROM  TO    PRP RATING SC/TH TS FROM  TO    PRP RATING SC/TH TS       CODE           TMX  CODE   Std       Grd  Cd FC Nte 
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! APDX C CL400            CL330            CL576                              BMCS CODE                 APDX C CL575     CL145      ITEM
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! *** PIPE ***
+ PIPING  1    1     24    301 -      0.089 6  -     -     -   -      -     -  PPDV0FA02ZY          -    PIPE   100  -    -    52 15 P      
+
+! *** 90 DEG. ELBOW ***
+ 6Q2C75  1    2     24    301 -      MATCH 6  -     -     -   -      -     -  K9DV0J2ZY            -    E90TLR 6100 -    -    52 15 E9     
+ 6Q2C76  1    1     24    301 -      MATCH 6  -     -     -   -      -     -  K9DV0J2ZY            -    E90LR  6100 -    -    52 15 E9     
+
+! *** 45 DEG. ELBOW ***
+ 6Q2C55  1    2     24    301 -      MATCH 6  -     -     -   -      -     -  K4DV0J2ZY            -    E45TLR 6100 -    -    52 15 E4     
+ 6Q2C56  1    1     24    301 -      MATCH 6  -     -     -   -      -     -  K4DV0J2ZY            -    E45LR  6100 -    -    52 15 E4     
+
+! *** STRAIGHT TEE ***
+ 6Q3C22  1    1     24    301 -      MATCH 6  -     -     -   -      -     -  KTDV0J2ZY            -    T      6100 -    -    52 15 T      
+
+! *** REDUCING TEE ***
+ 6Q3C24  1    1     24    301 -      MATCH 6  0.5   20    301 -      MATCH 6  KRDV0J2ZY            -    TRB    6100 -    -    52 15 RT     
+
+! *** CON. REDUCER ***
+ 6Q2C23  1    1     24    301 -      MATCH 6  0.5   20    301 -      MATCH 6  KDDV0J2ZY            -    REDC   6100 -    -    52 15 CR     
+
+! *** ECC. REDUCER ***
+ 6Q2C24  1    1     24    301 -      MATCH 6  0.5   20    301 -      MATCH 6  KEDV0J2ZY            -    REDE   6100 -    -    52 15 ER     
+
+! *** CAP ***
+ 6Q2C21  1    1     24    301 -      MATCH 6  -     -     -   -      -     -  KCDV0J2ZY            -    CAPBV  5150 -    -    52 15 C      
+
+! *** FLANGE ***
+ 6Q2C01  1    1     24    11  CL150  NREQD 6  -     -     301 CL150  MATCH 6  FWDV2J2ZY            -    FWN    6110 -    -    52 15 F      
+ 6Q2C01  1701 1     24    21  CL150  NREQD 6  -     -     301 CL150  MATCH 6  FWDV2J2ZY            -    FWN    6110 -    -    52 15 F      
+
+! *** BLIND FLANGE ***
+ 6Q2C08  1    1     24    11  CL150  NREQD 6  -     -     -   -      -     -  FBDV2J2ZY            -    FBLD   6100 -    -    52 15 BF     
+
+! *** BOLT/NUT ***
+ 6Q3C97  1    0.5   24    21  150    -     6  -     -     -   -      -     -  B1A122L4             -    -      81   1    -    52 -  BT     
+ 6Q3C97  1    0.5   24    11  150    -     6  -     -     -   -      -     -  B1A122L4             -    -      81   1    -    52 -  BT     
+
+! *** GASKET ***
+ 6Q3C95  1    0.5   24    111 150    -     6  -     -     -   -      -     -  GRA2EA0052ZB         -    21     161  -    -    52 7  G      
+ 6Q3C95  1    0.5   24    11  150    -     6  -     -     -   -      -     -  GRA2EA0052ZB         -    21     161  -    -    52 7  G      
+
+ 6Q3C95  1    0.5   24    121 150    -     6  -     -     -   -      -     -  GRA2EA0052ZB         -    21     161  -    -    52 7  G      
+ 6Q3C95  1    0.5   24    21  150    -     6  -     -     -   -      -     -  GRA2EA0052ZB         -    21     161  -    -    52 7  G      
+
+! *** CHECK VALVE ***
+ 6Q1C38  1    0.5   3     11  CL150  NREQD 6  -     -     -   -      -     -  VCAQ260B4KLW         -    CKL    6100 -    -    52 7  CH     
+ 6Q1C39  1    4     16    111 CL150  NREQD 6  -     -     -   -      -     -  VCAQ26XG80L1         -    CKWF   6100 -    -    52 7  CH     
+
+! *** BALL VALVE ***
+ 6Q1C06  1    1     6     11  CL150  NREQD 6  -     -     -   -      -     -  VBAY2AV34900         -    BALSP  6100 17   -    52 7  BA     
+
+! === VENT(6Q9C40)/DRAIN(6Q9C50) ===
+ 6Q9C40  1    1     1.5   11  CL150  NREQD 6  -     -     -   -      -     -  VBAY2AV34900         -    BALSP  6100 17   -    52 7  BA     
+ 6Q9C50  1    1     1.5   11  CL150  NREQD 6  -     -     -   -      -     -  VBAY2AV34900         -    BALSP  6100 17   -    52 7  BA     
+
+! *** BALL VALVE (EXT-STEM) ***
+ 6Q1C06  1756 1     6     11  CL150  NREQD 6  -     -     -   -      -     -  VBAY2AV3490C         -    BALSP  6100 17   -    52 7  BAE    
+
+! === VENT(6Q9C40)/DRAIN(6Q9C50) ===
+ 6Q9C40  1756 1     1.5   11  CL150  NREQD 6  -     -     -   -      -     -  VBAY2AV3490C         -    BALSP  6100 17   -    52 7  BAE    
+ 6Q9C50  1756 1     1.5   11  CL150  NREQD 6  -     -     -   -      -     -  VBAY2AV3490C         -    BALSP  6100 17   -    52 7  BAE    
+
+! *** BUTTERFLY VALVE ***
+ 6Q1C26  1    2     6     111 CL150  NREQD 6  -     -     -   -      -     -  VUAQ26IZC900         -    BFYLP  6003 17   -    52 7  BU     
+ 6Q1C26  1    8     18    111 CL150  NREQD 6  -     -     -   -      -     -  VUAQ26IZCA00         -    BFYLP  6003 33   -    52 7  BU     
+
+! *** PLUG VALVE ***
+ 6Q1C16  1    1     4     11  CL150  NREQD 6  -     -     -   -      -     -  VPAQ260F4B00         -    PLUSP  6100 9    -    52 7  PV     
+ 6Q1C16  1    6     12    11  CL150  NREQD 6  -     -     -   -      -     -  VPAQ260F4A00         -    PLUSP  6100 33   -    52 7  PV     
+
+! === VENT(6Q9C20)/DRAIN(6Q9C30) ===
+ 6Q9C20  1    1     1.5   11  CL150  NREQD 6  -     -     -   -      -     -  VPAQ260F4B00         -    PLUSP  6100 9    -    52 7  PV     
+ 6Q9C30  1    1     1.5   11  CL150  NREQD 6  -     -     -   -      -     -  VPAQ260F4B00         -    PLUSP  6100 9    -    52 7  PV     
+
+! *** DIAPHRAGM VALVE ***
+ 6Q1C30  1    1     8     11  CL150  NREQD 6  -     -     -   -      -     -  VDAY2FBB4800         -    DIA    6200 3    -    52 7  DP     
+
+
+! =======================================================================================================================================
+
+! *** PIPE END ***
+ 6Q2C22  1    1     24    301 -      MATCH 6  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    1     24    301 -      MATCH 6  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    1     24    301 -      MATCH 6  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+! *** REINFORCING WELD ***
+ 6Q3C82  1    2.5   24    301 -      -     6  2     22    301 -      -     6  -                    -    RWELD  6    1    142  52 -  -   
+
+! *** FUNNEL ***
+ 6Q2C07  1    1     24    301 -      NREQD 6  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+
+! *** ORIFICE TAP END ***
+ 6Q9C52  1    0.5   1.5   331 -      NREQD 6  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+ 6Q9C53  1    0.5   1.5   391 -      NREQD 6  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+
+! *** ORIFICE FLANGE ***
+ 6Q2C06  1    1     24    11  CL300  NREQD 6  -     -     301 CL300  MATCH 6  ORIFICE              -    FOWNA  66   1    1080 52 -  -   

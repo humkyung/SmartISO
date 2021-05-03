@@ -1,0 +1,23 @@
+!                    IMPLIED MATERIAL DATA
+!                    Fri May 28 16:24:25 2010
+
+
+
+!                    2=sys_commodity_code
+!                    3=gcp_from_nom_diam
+!                    4=gcp_to_nom_diam
+!                    5=rcp_from_nom_diam
+!                    6=rcp_to_nom_diam
+!                    7=commodity_code
+!                    8=quantity
+!                    9=fabrication_cat
+!                    10=standard_note_no
+
+  Single_Spacing
+  Sequence=  2  3  4  5  6  7  8  9  10
+
+! 2                3        4        5        6        7                8     9     10
+
+
+  BTNS43G          1.375"   1.375"   1.375"   1.375"   CHBTNS53G        2.    15    5G
+  BTNS43G          1.375"   1.375"   1.375"   1.375"   CHBTNS63G        2.    15    6G

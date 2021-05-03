@@ -1,0 +1,79 @@
+! File Name : O2.pcd                                                                                                       
+! Job.No.   :                  Revision : 0                      Date : 2008.08.30                                                  
+! Material Spec Class : O2     Material : C.S                    Design Code : ASME B31.3   
+! Max Temp : 80                Flang Class : ASME 2500#                                            
+! Service Note :                                                                                                                        
+  PIPING_MATERIALS_CLASS= O2                                                                                               
+  Single_Spacing                                                                                                                        
+  Order= 1 6 2 3 9 11 13 21 4 5 10 12 14 22 18 7 16 19 15 8 20 23 24  *17 *25                                                           
+!                                                                                                                                       
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! AABBCC -----------------Green CP----------- ------------Red CP-------------       CMDTY               MODEL  GEO  MOD  Mat  Wt        
+! Code   Opt  FROM  TO    PRP RATING SC/TH TS FROM  TO    PRP RATING SC/TH TS       CODE           TMX  CODE   Std       Grd  Cd FC Nte 
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! APDX C CL400            CL330            CL576                              BMCS CODE                 APDX C CL575     CL145      ITEM
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! *** PIPE ***
+ PIPING  1    0.5   1.5   301 -      S-160 5  -     -     -   -      -     -  PPAASB20200AA        -    PIPE   100  100  -    52 15 P      
+
+! *** 90 DEG. ELBOW ***
+ 6Q2C76  1    0.5   1.5   301 -      MATCH 5  -     -     -   -      -     -  K9ABSB200AA          -    E90LR  39   -    -    52 15 E9     
+
+! *** 45 DEG. ELBOW ***
+ 6Q2C56  1    0.5   1.5   301 -      MATCH 5  -     -     -   -      -     -  K4ABSB200AA          -    E45LR  39   -    -    52 15 E4     
+
+! *** STRAIGHT TEE ***
+ 6Q3C22  1    0.5   1.5   301 -      MATCH 5  -     -     -   -      -     -  KTABSB200AA          -    T      39   -    -    52 15 T      
+
+! *** REDUCING TEE ***
+ 6Q3C24  1    0.75  1.5   301 -      MATCH 5  0.5   1     301 -      MATCH 5  KRABSB200AAAA        -    TRB    39   -    -    52 15 RT     
+
+! *** CON. REDUCER ***
+ 6Q2C23  1    0.75  1.5   301 -      MATCH 5  0.5   1     301 -      MATCH 5  KDABSB200AAAA        -    REDC   39   -    -    52 15 CR     
+
+! *** ECC. REDUCER ***
+ 6Q2C24  1    0.75  1.5   301 -      MATCH 5  0.5   1     301 -      MATCH 5  KEABSB200AAAA        -    REDE   39   -    -    52 15 ER     
+
+! *** CAP ***
+ 6Q2C21  1    0.5   1.5   301 -      MATCH 5  -     -     -   -      -     -  KCABSB200AA          -    CAPBV  5150 -    -    52 15 C      
+
+! *** FLANGE ***
+ 6Q2C01  1    0.5   1.5   31  CL2500 NREQD 5  -     -     301 CL2500 MATCH 5  FWAAB13A1AA          -    FWN    35   -    -    52 15 F      
+
+! *** BLIND FLANGE ***
+ 6Q2C08  1    0.5   1.5   31  CL2500 NREQD 5  -     -     -   -      -     -  FBAAB13A1            -    FBLD   35   -    -    52 15 BF     
+
+! *** BOLT/NUT ***
+ 6Q3C97  1    0.5   1.5   31  2500   -     5  -     -     -   -      -     -  B1A12200             -    -      81   1    -    52 -  BT     
+
+! *** GASKET ***
+ 6Q3C95  1    0.5   1.5   31  2500   -     5  -     -     -   -      -     -  G7A2S000T001         -    30     161  -    -    52 7  G      
+ 6Q3C95  1    0.5   1.5   131 2500   -     5  -     -     -   -      -     -  G7A2S000T001         -    30     161  -    -    52 7  G      
+
+! *** GLOBE VALVE ***
+ 6Q1C11  1    0.5   1.5   31  CL2500 NREQD 5  -     -     -   -      -     -  VLAAB11U5300         -    GLO    40   3    -    52 7  GL     
+
+! === VENT(6Q9C80)/DRAIN(6Q9C90) ===
+ 6Q9C80  1    0.5   1.5   31  CL2500 NREQD 5  -     -     -   -      -     -  VLAAB11U5300         -    GLO    40   3    -    52 7  GL     
+ 6Q9C90  1    0.5   1.5   31  CL2500 NREQD 5  -     -     -   -      -     -  VLAAB11U5300         -    GLO    40   3    -    52 7  GL     
+
+
+! =======================================================================================================================================
+
+! *** PIPE END ***
+ 6Q2C22  1    0.5   1.5   301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    0.5   1.5   301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    0.5   1.5   301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+! *** FUNNEL ***
+ 6Q2C07  1    0.5   1.5   301 -      NREQD 5  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+
+! *** ORIFICE TAP END ***
+ 6Q9C52  1    0.5   1.5   331 -      NREQD 5  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+ 6Q9C53  1    0.5   1.5   391 -      NREQD 5  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+
+! *** ASSEMBLY FLANGE ***
+ 6Q8C60  1    0.5   1.5   31  CL2500 NREQD 29 -     -     301 CL300  MATCH 5  ORIFICE              -    FOWNA  66   1    1080 52 -  -   
+
+! *** ORIFICE FLANGE ***
+ 6Q2C06  1    0.5   1.5   31  CL2500 NREQD 29 -     -     301 CL300  MATCH 5  ORIFICE              -    FOWNA  66   1    1080 52 -  -   

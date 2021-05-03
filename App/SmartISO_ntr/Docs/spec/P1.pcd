@@ -1,0 +1,192 @@
+! File Name : P1.pcd                                                                                                       
+! Job.No.   :                  Revision : 0                      Date : 2008.08.30                                                  
+! Material Spec Class : P1     Material : 304 S.S                Design Code : ASME B31.3   
+! Max Temp : 66                Flang Class : ASME 150#                                            
+! Service Note :                                                                                                                        
+  PIPING_MATERIALS_CLASS= P1                                                                                               
+  Single_Spacing                                                                                                                        
+  Order= 1 6 2 3 9 11 13 21 4 5 10 12 14 22 18 7 16 19 15 8 20 23 24  *17 *25                                                           
+!                                                                                                                                       
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! AABBCC -----------------Green CP----------- ------------Red CP-------------       CMDTY               MODEL  GEO  MOD  Mat  Wt        
+! Code   Opt  FROM  TO    PRP RATING SC/TH TS FROM  TO    PRP RATING SC/TH TS       CODE           TMX  CODE   Std       Grd  Cd FC Nte 
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! APDX C CL400            CL330            CL576                              BMCS CODE                 APDX C CL575     CL145      ITEM
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! *** PIPE ***
+ PIPING  1    0.5   1     391 -      S-40S 5  -     -     -   -      -     -  PPACSA10100AH        -    PIPE   100  100  -    52 15 P      
+ PIPING  1    1.5   6     301 -      S-10S 5  -     -     -   -      -     -  PPACSA10200AF        -    PIPE   100  100  -    52 15 P      
+
+! *** NIPPLE (PBE) * 75 MM ***
+ 6Q3C88  1    0.5   1     391 -      S-40S 5  -     -     -   -      -     -  PNACSA103L1AH        -    NIP    100  3    -    52 15 NPPD   
+
+! *** NIPPLE (TOE) * 75 MM ***
+ 6Q3C88  1526 0.5   1     391 -      S-40S 5  -     -     331 -      S-40S 5  PNACSA104L1AH        -    NIP    100  3    -    52 15 NPTD   
+
+! *** CON. SWAGE (LB*SP) ***
+ 6Q2C23  1    1.5   3     301 -      MATCH 5  0.5   1     391 -      MATCH 5  K1ADS1500AFAH        -    SWGC   297  -    -    52 15 CBP    
+
+! *** CON. SWAGE (LB*ST) ***
+ 6Q2C23  1532 0.75  1     301 -      MATCH 5  0.5   0.75  331 -      MATCH 5  K1ADS1900AHAH        -    SWGC   297  -    -    52 15 CBT    
+
+! *** CON. SWAGE (PBE) ***
+ 6Q2C23  1    0.75  1     391 -      MATCH 5  0.5   0.75  391 -      MATCH 5  K1ADS1300AHAH        -    SWGC   297  -    -    52 15 CPP    
+
+! *** CON. SWAGE (LP*ST) ***
+ 6Q2C23  1534 0.75  1     391 -      MATCH 5  0.5   0.75  331 -      MATCH 5  K1ADS1600AHAH        -    SWGC   297  -    -    52 15 CPT    
+
+! *** ECC. SWAGE (LB*SP) ***
+ 6Q2C24  1    1.5   3     301 -      MATCH 5  0.5   1     391 -      MATCH 5  K2ADS1500AFAH        -    SWGE   297  -    -    52 15 EBP    
+
+! *** ECC. SWAGE (LB*ST) ***
+ 6Q2C24  1542 0.75  1     301 -      MATCH 5  0.5   0.75  331 -      MATCH 5  K2ADS1900AHAH        -    SWGE   297  -    -    52 15 EBT    
+
+! *** ECC. SWAGE (PBE) ***
+ 6Q2C24  1    0.75  1     391 -      MATCH 5  0.5   0.75  391 -      MATCH 5  K2ADS1300AHAH        -    SWGE   297  -    -    52 15 EPP    
+
+! *** ECC. SWAGE (LP*ST) ***
+ 6Q2C24  1544 0.75  1     391 -      MATCH 5  0.5   0.75  331 -      MATCH 5  K2ADS1600AHAH        -    SWGE   297  -    -    52 15 EPT    
+
+! *** 90 DEG. ELBOW ***
+ 6Q2C75  1    2     6     301 -      MATCH 5  -     -     -   -      -     -  K9ADS1200AF          -    E90TLR 39   -    -    52 15 E9     
+ 6Q2C76  1    0.5   1     421 CL3000 NREQD 5  -     -     -   -      -     -  K9AC21100            -    E90    41   -    -    52 15 E9     
+ 6Q2C76  1    1.5   6     301 -      MATCH 5  -     -     -   -      -     -  K9ADS1200AF          -    E90LR  39   -    -    52 15 E9     
+
+! *** 45 DEG. ELBOW ***
+ 6Q2C55  1    2     6     301 -      MATCH 5  -     -     -   -      -     -  K4ADS1200AF          -    E45TLR 39   -    -    52 15 E4     
+ 6Q2C56  1    0.5   1     421 CL3000 NREQD 5  -     -     -   -      -     -  K4AC21100            -    E45    41   -    -    52 15 E4     
+ 6Q2C56  1    1.5   6     301 -      MATCH 5  -     -     -   -      -     -  K4ADS1200AF          -    E45LR  39   -    -    52 15 E4     
+
+! *** STRAIGHT TEE ***
+ 6Q3C22  1    0.5   1     421 CL3000 NREQD 5  -     -     -   -      -     -  KTAC21100            -    T      41   -    -    52 15 T      
+ 6Q3C22  1    1.5   6     301 -      MATCH 5  -     -     -   -      -     -  KTADS1200AF          -    T      39   -    -    52 15 T      
+
+! *** STRAIGHT TEE(U/G) ***
+ 6Q3C22  1572 1.5   6     301 -      MATCH 5  -     -     -   -      -     -  KTADS12C1AF          -    T      39   -    -    52 15 TG     
+
+! *** REDUCING TEE ***
+ 6Q3C24  1    0.75  1     421 CL3000 NREQD 5  0.5   0.75  421 CL3000 NREQD 5  KRAC21100            -    TRB    41   -    -    52 15 RT     
+ 6Q3C24  1    1.5   2     301 -      MATCH 5  0.5   1     301 -      MATCH 5  KRADS1200AFAH        -    TRB    39   -    -    52 15 RT     
+ 6Q3C24  1    2     2     301 -      MATCH 5  1.5   1.5   301 -      MATCH 5  KRADS1200AFAF        -    TRB    39   -    -    52 15 RT     
+ 6Q3C24  1    2.5   2.5   301 -      MATCH 5  1     1     301 -      MATCH 5  KRADS1200AFAH        -    TRB    39   -    -    52 15 RT     
+ 6Q3C24  1    2.5   6     301 -      MATCH 5  1.5   4     301 -      MATCH 5  KRADS1200AFAF        -    TRB    39   -    -    52 15 RT     
+
+! *** CON. REDUCER ***
+ 6Q2C23  1    2     6     301 -      MATCH 5  1.5   4     301 -      MATCH 5  KDADS1200AFAF        -    REDC   39   -    -    52 15 CR     
+
+! *** ECC. REDUCER ***
+ 6Q2C24  1    2     6     301 -      MATCH 5  1.5   4     301 -      MATCH 5  KEADS1200AFAF        -    REDE   39   -    -    52 15 ER     
+
+! *** CAP ***
+ 6Q2C21  1    0.5   1     421 CL3000 NREQD 5  -     -     -   -      -     -  KCAC21100            -    CAPOT  5375 -    -    52 15 C      
+ 6Q2C21  1    1.5   6     301 -      MATCH 5  -     -     -   -      -     -  KCADS1200AF          -    CAPBV  5150 -    -    52 15 C      
+
+! *** FULL COUPLING ***
+ 6Q2C25  1    0.5   1     421 CL3000 NREQD 5  -     -     -   -      -     -  K6AC21100            -    CPL    41   -    -    52 15 FCL    
+
+! *** PLUG ***
+ 6Q2C19  1    0.5   1     331 -      NREQD 5  -     -     -   -      -     -  KPAC01B01            -    PLUG   41   -    -    52 15 PL     
+
+! *** SOCKOLET ***
+ 6Q3C74  1    2     6     301 -      NREQD 5  0.5   1     421 CL3000 NREQD 5  KVAC21100            -    SOL    1575 -    -    52 15 SO     
+
+! *** ELBOLET ***
+ 6Q3C77  1    2     6     301 -      NREQD 5  0.5   1     421 CL3000 NREQD 5  KQAC21100            -    EOLLR  1575 -    -    52 15 EO     
+
+! *** FLANGE ***
+ 6Q2C01  1    0.5   1     21  CL150  NREQD 5  -     -     421 CL150  MATCH 5  FSAC211A1AH          -    FSW    35   -    -    52 15 F      
+ 6Q2C01  1    1.5   6     21  CL150  NREQD 5  -     -     301 CL150  MATCH 5  FWAC211A1AF          -    FWN    35   -    -    52 15 F      
+
+! *** FLANGE(FF) ***
+ 6Q2C01  1668 0.5   1     11  CL150  NREQD 5  -     -     421 CL150  MATCH 5  FSAC212A1AH          -    FSW    35   -    -    52 15 FF     
+
+! *** BLIND FLANGE ***
+ 6Q2C08  1    0.5   6     21  CL150  NREQD 5  -     -     -   -      -     -  FBAC211A1            -    FBLD   35   -    -    52 15 BF     
+
+! *** BOLT/NUT ***
+ 6Q3C97  1    0.5   6     21  150    -     5  -     -     -   -      -     -  B1A12204             -    -      81   1    -    52 -  BT     
+
+! *** GASKET ***
+ 6Q3C95  1    0.5   6     21  150    -     5  -     -     -   -      -     -  G3A2550052Z9         -    25     161  -    -    52 7  G      
+ 6Q3C95  1    0.5   6     121 150    -     5  -     -     -   -      -     -  G3A2550052Z9         -    25     161  -    -    52 7  G      
+
+! *** GATE VALVE ***
+ 6Q1C01  1    0.5   1     421 CL600  NREQD 5  -     -     -   -      -     -  VAAC73N71CZ9         -    GATR   4625 3    -    52 15 GA     
+ 6Q1C01  1    1.5   1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VAAC23N73CO2         -    GAT    40   3    -    52 7  GA     
+ 6Q1C01  1    2     6     21  CL150  NREQD 5  -     -     -   -      -     -  VAAD22N83CO2         -    GAT    40   3    -    52 7  GA     
+
+! === VENT(6Q9C60)/DRAIN(6Q9C70) ===
+ 6Q9C60  1    0.5   1     421 CL600  NREQD 5  -     -     -   -      -     -  VAAC73N71CZ9         -    GATR   4625 3    -    52 15 GA     
+ 6Q9C60  1    1.5   1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VAAC23N73CO2         -    GAT    40   3    -    52 7  GA     
+ 6Q9C70  1    0.5   1     421 CL600  NREQD 5  -     -     -   -      -     -  VAAC73N71CZ9         -    GATR   4625 3    -    52 15 GA     
+ 6Q9C70  1    1.5   1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VAAC23N73CO2         -    GAT    40   3    -    52 7  GA     
+
+! *** GATE VALVE (SW *SCR'D) ***
+ 6Q1C01  1713 0.5   1     421 CL800  NREQD 5  -     -     441 CL800  NREQD 5  VAAC73N72CZ9         -    GATR   4625 3    -    52 15 GAD    
+
+! === VENT(6Q9C60)/DRAIN(6Q9C70) ===
+ 6Q9C60  1713 0.5   1     421 CL800  NREQD 5  -     -     441 CL800  NREQD 5  VAAC73N72CZ9         -    GATR   4625 3    -    52 15 GAD    
+ 6Q9C70  1713 0.5   1     421 CL800  NREQD 5  -     -     441 CL800  NREQD 5  VAAC73N72CZ9         -    GATR   4625 3    -    52 15 GAD    
+
+! *** GLOBE VALVE ***
+ 6Q1C11  1    0.5   1     421 CL600  NREQD 5  -     -     -   -      -     -  VLAC73NJ1CZ9         -    GLOR   4625 3    -    52 15 GL     
+ 6Q1C11  1    2     2     21  CL150  NREQD 5  -     -     -   -      -     -  VLAD22NJ3CZ9         -    GLO    40   3    -    52 7  GL     
+
+! === VENT(6Q9C80)/DRAIN(6Q9C90) ===
+ 6Q9C80  1    0.5   1     421 CL600  NREQD 5  -     -     -   -      -     -  VLAC73NJ1CZ9         -    GLOR   4625 3    -    52 15 GL     
+ 6Q9C90  1    0.5   1     421 CL600  NREQD 5  -     -     -   -      -     -  VLAC73NJ1CZ9         -    GLOR   4625 3    -    52 15 GL     
+
+! *** CHECK VALVE ***
+ 6Q1C38  1    0.5   1.5   421 CL600  NREQD 5  -     -     -   -      -     -  VCAC73NM1K00         -    CKLR   4625 -    -    52 15 CH     
+ 6Q1C39  1    2     6     121 CL150  NREQD 5  -     -     -   -      -     -  VCAD22NK8L00         -    CKWF   40   -    -    52 7  CH     
+
+! *** BALL VALVE ***
+ 6Q1C06  1    0.5   6     21  CL150  NREQD 5  -     -     -   -      -     -  VBAD22N33NZ9         -    BALSP  40   17   -    52 7  BA     
+
+! === VENT(6Q9C40)/DRAIN(6Q9C50) ===
+ 6Q9C40  1    0.5   1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VBAD22N33NZ9         -    BALSP  40   17   -    52 7  BA     
+ 6Q9C50  1    0.5   1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VBAD22N33NZ9         -    BALSP  40   17   -    52 7  BA     
+
+! *** BALL VALVE (EXT-STEM) ***
+ 6Q1C06  1756 0.5   6     21  CL150  NREQD 5  -     -     -   -      -     -  VBAD22N33NZW         -    BALSP  40   17   -    52 7  BAE    
+
+! === VENT(6Q9C40)/DRAIN(6Q9C50) ===
+ 6Q9C40  1756 0.5   1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VBAD22N33NZW         -    BALSP  40   17   -    52 7  BAE    
+ 6Q9C50  1756 0.5   1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VBAD22N33NZW         -    BALSP  40   17   -    52 7  BAE    
+
+! *** PLUG VALVE ***
+ 6Q1C16  1    0.5   4     21  CL150  NREQD 5  -     -     -   -      -     -  VPAD22ND3BZ9         -    PLUSP  40   9    -    52 7  PV     
+ 6Q1C16  1    6     6     21  CL150  NREQD 5  -     -     -   -      -     -  VPAD22ND3AZ9         -    PLUSP  40   33   -    52 7  PV     
+
+! === VENT(6Q9C20)/DRAIN(6Q9C30) ===
+ 6Q9C20  1    0.5   1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VPAD22ND3BZ9         -    PLUSP  40   9    -    52 7  PV     
+ 6Q9C30  1    0.5   1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VPAD22ND3BZ9         -    PLUSP  40   9    -    52 7  PV     
+
+
+! =======================================================================================================================================
+
+! *** PIPE END ***
+ 6Q2C22  1    0.5   1     421 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    0.5   1     421 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    0.5   1     421 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+ 6Q2C22  1    1.5   6     301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    1.5   6     301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    1.5   6     301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+! *** REINFORCING WELD ***
+ 6Q3C82  1    2.5   24    301 -      -     5  2     22    301 -      -     5  RWELD                -    RWELD  6    1    142  52 -  -   
+! *** REINFORCING R-PAD ***
+ 6Q3C80  1    2.5   20    301 -      -     5  2     18    301 -      -     5  RPAD                 -    RPAD   6    1    142  52 -  -   
+
+! *** FUNNEL ***
+ 6Q2C07  1    0.5   1     421 -      NREQD 5  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+ 6Q2C07  1    1.5   6     301 -      NREQD 5  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+
+! *** ORIFICE TAP END ***
+ 6Q9C52  1    0.5   1.5   331 -      NREQD 5  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+ 6Q9C53  1    0.5   1.5   391 -      NREQD 5  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+
+! *** ORIFICE FLANGE ***
+ 6Q2C06  1    0.5   1     21  CL300  NREQD 29 -     -     301 CL300  MATCH 5  ORIFICE              -    FOWNA  66   1    1080 52 -  -   
+ 6Q2C06  1    1.5   6     21  CL300  NREQD 29 -     -     301 CL300  MATCH 5  ORIFICE              -    FOWNA  66   1    1080 52 -  -   

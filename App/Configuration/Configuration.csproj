@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0916618F-B050-4A63-BE4F-750B582928C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Configuration</RootNamespace>
+    <AssemblyName>Configuration</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\172.20.121.219\ecsattach\_Common\_ClickOnce\Admin\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>CONFIGURATION</ProductName>
+    <PublisherName>DAELIM</PublisherName>
+    <SuiteName>DAELIM</SuiteName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>2017.04.03.02</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F79784F68B49C8BFA84DCC7F98FC6FCCBF0F540B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Admin.WF_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|x86'">
+    <OutputPath>bin\x86\Test\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonLib">
+      <HintPath>..\..\CommonDLL\CommonLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CSScriptLibrary, Version=3.9.10.0, Culture=neutral, PublicKeyToken=70fcc3d18c749033, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDLL\CSScriptLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet, Version=35.3.40.1025, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\GemBox Software\GemBox.Spreadsheet 3.9\Bin\NET3X4X\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="ScintillaNET, Version=2.6.0.0, Culture=neutral, PublicKeyToken=948d6c9751444115, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDLL\ScintillaNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadChart, Version=2015.2.623.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q2 2015\Bin40\Telerik.WinControls.RadChart.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2015.2.623.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q2 2015\Bin40\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2015.2.623.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q2 2015\Bin40\Telerik.WinControls.RadMarkupEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDocData.cs" />
+    <Compile Include="Command\PlugInServiceEchoCommand.cs" />
+    <Compile Include="Command\PlugInServiceOpenDwgCommand.cs" />
+    <Compile Include="Command\PlugInServiceSelectBoundsCommand.cs" />
+    <Compile Include="Command\PlugInServicePickPointCommand.cs" />
+    <Compile Include="Command\PlugInServiceGetDistanceCommand.cs" />
+    <Compile Include="Form\RadForm\RadFormCopySetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\RadForm\RadFormCopySetting.Designer.cs">
+      <DependentUpon>RadFormCopySetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\RadForm\RadFormImportLineList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\RadForm\RadFormImportLineList.Designer.cs">
+      <DependentUpon>RadFormImportLineList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\RadForm\RadFormIssueDateDisplayFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\RadForm\RadFormIssueDateDisplayFormat.Designer.cs">
+      <DependentUpon>RadFormIssueDateDisplayFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\RadForm\RadFormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\RadForm\RadFormLogin.Designer.cs">
+      <DependentUpon>RadFormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\RadForm\RadFormSA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\RadForm\RadFormSA.Designer.cs">
+      <DependentUpon>RadFormSA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\RadForm\RadFormSmartISOFormFormatting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\RadForm\RadFormSmartISOFormFormatting.Designer.cs">
+      <DependentUpon>RadFormSmartISOFormFormatting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\UserControls\ThemeChangeable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlBase.Designer.cs">
+      <DependentUpon>UserControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlBorderSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlBorderSetting.Designer.cs">
+      <DependentUpon>UserControlBorderSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlBorderSettingData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlBorderSettingData.Designer.cs">
+      <DependentUpon>UserControlBorderSettingData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlCommonProject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlCommonProject.Designer.cs">
+      <DependentUpon>UserControlCommonProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlRemoveSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlRemoveSetting.Designer.cs">
+      <DependentUpon>UserControlRemoveSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlIsoProductSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlIsoProductSetting.Designer.cs">
+      <DependentUpon>UserControlIsoProductSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlPrjSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlPrjSetting.Designer.cs">
+      <DependentUpon>UserControlPrjSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlSmartISOLinelistSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlSmartISOLinelistSetting.designer.cs">
+      <DependentUpon>UserControlSmartISOLinelistSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlSmartISORevSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlSmartISORevSetting.Designer.cs">
+      <DependentUpon>UserControlSmartISORevSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlSmartISOSiteSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\UserControls\UserControlSmartISOSiteSetting.Designer.cs">
+      <DependentUpon>UserControlSmartISOSiteSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library\AutoCADLauncher.cs" />
+    <Compile Include="Library\ControlFactory.cs" />
+    <Compile Include="Library\EchoServiceCommand.cs" />
+    <Compile Include="Library\EncryptDecryptString.cs" />
+    <Compile Include="Library\Interface\IControl.cs" />
+    <Compile Include="Library\LoginCommand.cs" />
+    <Compile Include="Library\SimpleScript.cs" />
+    <Compile Include="Library\TcpServer.cs" />
+    <Compile Include="Library\WebServiceInterface.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form\RadForm\RadFormCopySetting.resx">
+      <DependentUpon>RadFormCopySetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\RadForm\RadFormImportLineList.resx">
+      <DependentUpon>RadFormImportLineList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\RadForm\RadFormIssueDateDisplayFormat.resx">
+      <DependentUpon>RadFormIssueDateDisplayFormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\RadForm\RadFormLogin.resx">
+      <DependentUpon>RadFormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\RadForm\RadFormSA.resx">
+      <DependentUpon>RadFormSA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\RadForm\RadFormSmartISOFormFormatting.resx">
+      <DependentUpon>RadFormSmartISOFormFormatting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserControls\UserControlBorderSetting.resx">
+      <DependentUpon>UserControlBorderSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserControls\UserControlBorderSettingData.resx">
+      <DependentUpon>UserControlBorderSettingData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserControls\UserControlCommonProject.resx">
+      <DependentUpon>UserControlCommonProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserControls\UserControlRemoveSetting.resx">
+      <DependentUpon>UserControlRemoveSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserControls\UserControlIsoProductSetting.resx">
+      <DependentUpon>UserControlIsoProductSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserControls\UserControlPrjSetting.resx">
+      <DependentUpon>UserControlPrjSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserControls\UserControlSmartISOLinelistSetting.resx">
+      <DependentUpon>UserControlSmartISOLinelistSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserControls\UserControlSmartISORevSetting.resx">
+      <DependentUpon>UserControlSmartISORevSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserControls\UserControlSmartISOSiteSetting.resx">
+      <DependentUpon>UserControlSmartISOSiteSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="FarPoint.CalcEngine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FarPoint.PDF">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FarPoint.PluginCalendar.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FarPoint.Win.Chart">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="GemBox.Spreadsheet">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Oracle.ManagedDataAccess">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="SciLexer.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="SciLexer64.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.RadChart">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.RadDock">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.RadMarkupEditor">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.RichTextBox">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallAttribute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallBulkImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallCommon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallDrawingList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallEngineeringData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallEquipmentList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallExcel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallMark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallSave.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallSmartPlant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smallOrange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smallYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SciLexer.dll" />
+    <Content Include="SciLexer64.dll" />
+    <None Include="Resources\ECS.png" />
+    <None Include="Resources\EDB.png" />
+    <None Include="Resources\ico_information.png" />
+    <None Include="Resources\ico_plusadd_on.png" />
+    <None Include="Resources\ico_xdelect_on.png" />
+    <None Include="Resources\IDCS.png" />
+    <None Include="Resources\no_data.jpg" />
+    <None Include="Resources\refreshl.png" />
+    <None Include="Resources\smallMinus.png" />
+    <None Include="Resources\smallPlus.png" />
+    <None Include="Resources\SP3D.png" />
+    <None Include="Resources\16_Add.png" />
+    <None Include="Resources\16_Backup.png" />
+    <None Include="Resources\16_Check.png" />
+    <None Include="Resources\16_Close.png" />
+    <None Include="Resources\16_Compare.png" />
+    <None Include="Resources\16_Convert.png" />
+    <None Include="Resources\16_Delete.png" />
+    <None Include="Resources\16_Edit.png" />
+    <None Include="Resources\16_Export.png" />
+    <None Include="Resources\16_Import.png" />
+    <None Include="Resources\16_Inform.png" />
+    <None Include="Resources\16_Issue.png" />
+    <None Include="Resources\16_Mail.png" />
+    <None Include="Resources\16_Merge.png" />
+    <None Include="Resources\16_Restore.png" />
+    <None Include="Resources\16_Rev-Up.png" />
+    <None Include="Resources\16_Search.png" />
+    <None Include="Resources\16_Send.png" />
+    <None Include="Resources\16_Setup.png" />
+    <None Include="Resources\16_Update.png" />
+    <None Include="Resources\arrow.png" />
+    <None Include="Resources\arrow_cdown.png" />
+    <None Include="Resources\arrow_cdown_on.png" />
+    <None Include="Resources\arrow_cup.png" />
+    <None Include="Resources\arrow_cup_on.png" />
+    <None Include="Resources\arrow_down.png" />
+    <None Include="Resources\arrow_down_on.png" />
+    <None Include="Resources\arrow_first.png" />
+    <None Include="Resources\arrow_first_on.png" />
+    <None Include="Resources\arrow_last.png" />
+    <None Include="Resources\arrow_last_on.png" />
+    <None Include="Resources\arrow_next.png" />
+    <None Include="Resources\arrow_next_on.png" />
+    <None Include="Resources\arrow_prev.png" />
+    <None Include="Resources\arrow_prev_on.png" />
+    <None Include="Resources\arrow_refresh_small2.png" />
+    <None Include="Resources\arrow_up.png" />
+    <None Include="Resources\arrow_up_on.png" />
+    <None Include="Resources\arrow2.png" />
+    <None Include="Resources\BigComment_Add.png" />
+    <None Include="Resources\BigComment_Convert.png" />
+    <None Include="Resources\BigComment_Delete.png" />
+    <None Include="Resources\BigComment_Edit.png" />
+    <None Include="Resources\BigComment_Search.png" />
+    <None Include="Resources\BigComment_Update.png" />
+    <None Include="Resources\BigDwg_Add.png" />
+    <None Include="Resources\BigDwg_Check.png" />
+    <None Include="Resources\BigDwg_Compare.png" />
+    <None Include="Resources\BigDwg_Convert.png" />
+    <None Include="Resources\BigDwg_Convert_Left.png" />
+    <None Include="Resources\BigDwg_Delete.png" />
+    <None Include="Resources\BigDwg_Load.png" />
+    <None Include="Resources\BigDwg_Setting.png" />
+    <None Include="Resources\BigDwg_Update.png" />
+    <None Include="Resources\BigList_Add.png" />
+    <None Include="Resources\BigList_Backup.png" />
+    <None Include="Resources\BigList_Check.png" />
+    <None Include="Resources\BigList_Compare.png" />
+    <None Include="Resources\BigList_Convert.png" />
+    <None Include="Resources\BigList_Export.png" />
+    <None Include="Resources\BigList_Import.png" />
+    <None Include="Resources\BigList_Inform.png" />
+    <None Include="Resources\BigList_Mail.png" />
+    <None Include="Resources\BigList_Merge.png" />
+    <None Include="Resources\BigList_Restore.png" />
+    <None Include="Resources\BigList_RevUp.png" />
+    <None Include="Resources\BigList_Search.png" />
+    <None Include="Resources\BigList_Send.png" />
+    <None Include="Resources\BigList_Update.png" />
+    <None Include="Resources\BigListRevUp.png" />
+    <None Include="Resources\BigModel_Compare.png" />
+    <None Include="Resources\BigStatus_Delete.png" />
+    <None Include="Resources\BigStatus_Edit.png" />
+    <None Include="Resources\BigStatus_Search.png" />
+    <None Include="Resources\BigUser_Search.png" />
+    <None Include="Resources\BigUser_Setup.png" />
+    <None Include="Resources\close.gif" />
+    <None Include="Resources\cs_16.ico" />
+    <None Include="Resources\cs_16.png" />
+    <None Include="Resources\cs_32.png" />
+    <None Include="Resources\cs_48.png" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\disk2.png" />
+    <None Include="Resources\downsize2.gif" />
+    <None Include="Resources\excel.png" />
+    <None Include="Resources\excel2.png" />
+    <None Include="Resources\fullsize.gif" />
+    <None Include="Resources\fullsize2.gif" />
+    <None Include="Resources\ico_disk.png" />
+    <None Include="Resources\ico_plusadd.png" />
+    <None Include="Resources\ico_search.png" />
+    <None Include="Resources\ico_warning.png" />
+    <None Include="Resources\ico_xclose.png" />
+    <None Include="Resources\ico_xdelect.png" />
+    <None Include="Resources\Preloader_2.gif" />
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\redo2.png" />
+    <None Include="Resources\search_trans.png" />
+    <None Include="Resources\SmallAddBookMark.png" />
+    <None Include="Resources\smallArea.png" />
+    <None Include="Resources\SmallBookMark.png" />
+    <None Include="Resources\SmallButton.png" />
+    <None Include="Resources\SmallFolder.png" />
+    <None Include="Resources\smallGreen.png" />
+    <None Include="Resources\SmallOC.png" />
+    <None Include="Resources\SmallOCAway.gif" />
+    <None Include="Resources\SmallOCOff.gif" />
+    <None Include="Resources\SmallOCON.gif" />
+    <None Include="Resources\SmallOCUser.gif" />
+    <None Include="Resources\SmallPlant.png" />
+    <None Include="Resources\smallRed.png" />
+    <None Include="Resources\SmallRowCount.png" />
+    <None Include="Resources\SmallSaveDB.gif" />
+    <None Include="Resources\SmallSearch.png" />
+    <None Include="Resources\SmallSetting.png" />
+    <None Include="Resources\smallUnit.png" />
+    <None Include="Resources\SPPID.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\undo2.png" />
+    <None Include="Resources\pick.png" />
+    <None Include="Resources\selection.png" />
+    <Content Include="Resources\SmallNext.png" />
+    <Content Include="Resources\SmallPrevious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\SmartLMS\LicWebService\LicWS.Framework.Service\LicWS.Framework.Service.csproj">
+      <Project>{5E0CEF20-ADC7-41CA-9EF6-2E5253A70545}</Project>
+      <Name>LicWS.Framework.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SmartLMS\LicWebService\LicWS.Service.Interface\LicWS.Service.Interface.csproj">
+      <Project>{8BE389F2-E9C8-43AE-993A-6540F93AD1F9}</Project>
+      <Name>LicWS.Service.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SmartISO.Service\SmartISO.Framework.Service\SmartISO.Framework.Service.csproj">
+      <Project>{3144F76E-05EA-4ECB-863A-A27F08D93118}</Project>
+      <Name>SmartISO.Framework.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SmartISO.Service\SmartISO.Service.Interface\SmartISO.Service.Interface.csproj">
+      <Project>{3574E154-2F08-478C-8C30-6C77DFF1444C}</Project>
+      <Name>SmartISO.Service.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TechSun.Theme\TechSun.Theme.csproj">
+      <Project>{2A9BE55D-4D7C-402F-AD93-2DBA6E638D27}</Project>
+      <Name>TechSun.Theme</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

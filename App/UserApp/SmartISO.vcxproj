@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{55ED4F1B-DC55-49D5-94B2-06AEB8E0B995}</ProjectGuid>
+    <RootNamespace>UserApp</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\Bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\Bin\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\Setup\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\shared\istools\DgnV7Lib;..\Module;..\UserDLL;..\..\..\shared\istools;..\..\..\shared\istools\inc;..\..\..\shared\istools\inc\util;..\..\..\shared\istools\inc\gui;..\..\..\shared\istools\vftlib;C:\Program Files (x86)\BugTrap for Win32 &amp; .NET\Win32\BugTrap;..\..\..\shared\istools\3rdparty\sqlite3;..\..\..\shared\istools\3rdparty\soci-3.2.3\core;..\..\..\shared\istools\3rdparty\soci-3.2.3\backends\sqlite3;..\..\..\shared\istools\3rdparty\soci-3.2.3\backends\postgresql;C:\Program Files\PostgreSQL\12\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;MARKUP_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>DgnV7Lib_vc100_debug.lib;sqlite3.lib;imm32.lib;Winmm.lib;opengl32.lib;glu32.lib;glaux.lib;soci_sqlite3_3_2.lib;soci_core_3_2.lib;soci_postgresql_3_2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\..\Bin\$(TargetName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\Bin;..\Bin;..\Bin\soci_3_2_debug;..\..\..\shared\istools\lib\vc100;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\Module;..\UserDLL;..\..\..\shared\istools;..\..\..\shared\istools\inc;..\..\..\shared\istools\inc\util;..\..\..\shared\istools\inc\gui;..\..\..\shared\istools\vftlib;..\..\..\shared\istools\DgnV7Lib;..\..\..\shared\istools\3rdparty\sqlite3;..\..\..\shared\istools\3rdparty\soci-3.2.3\core;..\..\..\shared\istools\3rdparty\soci-3.2.3\backends\sqlite3;..\..\..\shared\istools\3rdparty\soci-3.2.3\backends\postgresql;C:\Program Files (x86)\PostgreSQL\10\include\;..\..\..\shared\istools\3rdparty\gsoap-2.8\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;MARKUP_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>DgnV7Lib_vc100.lib;imm32.lib;Winmm.lib;opengl32.lib;glu32.lib;glaux.lib;soci_sqlite3_3_2.lib;sqlite3.lib;soci_core_3_2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)/$(TargetName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\Bin;..\Bin;..\Bin\soci_3_2;..\..\..\shared\istools\lib\vc100;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\shared\istools\src\util\Markup\Markup.cpp" />
+    <ClCompile Include="BackupDataForm.cpp" />
+    <ClCompile Include="BackupDataOutputForm.cpp" />
+    <ClCompile Include="BackupHistoryDlg.cpp" />
+    <ClCompile Include="BitmapComboBox.cpp" />
+    <ClCompile Include="BMLine.cpp" />
+    <ClCompile Include="BMLogFileForm.cpp" />
+    <ClCompile Include="BMReportForm.cpp" />
+    <ClCompile Include="BMReportOptionDlg.cpp" />
+    <ClCompile Include="BMReportSettingPage.cpp" />
+    <ClCompile Include="..\..\..\shared\istools\extend\libcsv\src\csv_parser.cpp" />
+    <ClCompile Include="..\..\..\shared\istools\extend\libcsv\src\csv_writer.cpp" />
+    <ClCompile Include="DgnCanvas.cpp" />
+    <ClCompile Include="DgnScene.cpp" />
+    <ClCompile Include="DrawingPlottingForm.cpp" />
+    <ClCompile Include="DrawingReportForm.cpp" />
+    <ClCompile Include="DrawingReportLogFileForm.cpp" />
+    <ClCompile Include="EditLineDataForm.cpp" />
+    <ClCompile Include="EmptyOutputWnd.cpp" />
+    <ClCompile Include="EnumPrinters.cpp" />
+    <ClCompile Include="FileListCtrl.cpp" />
+    <ClCompile Include="FileNameEditListBox1.cpp" />
+    <ClCompile Include="GetDataFromIDFStartUpDlg.cpp" />
+    <ClCompile Include="GetPds.cpp" />
+    <ClCompile Include="GetPdsLineID.cpp" />
+    <ClCompile Include="IDFFile.cpp" />
+    <ClCompile Include="InPlaceEdit.cpp" />
+    <ClCompile Include="InsertToPDSAttribute.cpp" />
+    <ClCompile Include="IsoEditForm.cpp" />
+    <ClCompile Include="IsoEditFormHolder.cpp" />
+    <ClCompile Include="IsoEditOptionDlg.cpp" />
+    <ClCompile Include="IsoEditOptionDlg2.cpp" />
+    <ClCompile Include="IsoEditSettingPage.cpp" />
+    <ClCompile Include="IsoEditViewLogFileForm.cpp" />
+    <ClCompile Include="IsoFileListCtrl.cpp" />
+    <ClCompile Include="IssueDlg.cpp" />
+    <ClCompile Include="IssueLineDataSelectOption.cpp" />
+    <ClCompile Include="LineDataEditDlg.cpp" />
+    <ClCompile Include="LineListSelectOption1.cpp" />
+    <ClCompile Include="LineListSelectOption2.cpp" />
+    <ClCompile Include="LoginDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MFCButtonEx.cpp" />
+    <ClCompile Include="MFCTextColorListCtrl.cpp" />
+    <ClCompile Include="NtrData.cpp" />
+    <ClCompile Include="Options.cpp" />
+    <ClCompile Include="PDSOracle.cpp" />
+    <ClCompile Include="PdTable121.cpp" />
+    <ClCompile Include="PdTable122.cpp" />
+    <ClCompile Include="PdTable126.cpp" />
+    <ClCompile Include="Profile.cpp" />
+    <ClCompile Include="ProjectDlg.cpp" />
+    <ClCompile Include="PropertiesWnd.cpp" />
+    <ClCompile Include="QCCheck.cpp" />
+    <ClCompile Include="QualifiedLineForm.cpp" />
+    <ClCompile Include="ReplaceDlg.cpp" />
+    <ClCompile Include="ScintillaWnd.cpp" />
+    <ClCompile Include="SelectionTreeListCtrl.cpp" />
+    <ClCompile Include="SelectIssueDataDlg.cpp" />
+    <ClCompile Include="singleinstance.cpp" />
+    <ClCompile Include="SmartISOLog.cpp" />
+    <ClCompile Include="SortSettingDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StringHelper.cpp" />
+    <ClCompile Include="StringTable.cpp" />
+    <ClCompile Include="UserApp.cpp" />
+    <ClCompile Include="UserAppDoc.cpp" />
+    <ClCompile Include="UserAppDocData.cpp" />
+    <ClCompile Include="UserAppOutputWnd.cpp" />
+    <ClCompile Include="UserAppView.cpp" />
+    <ClCompile Include="ViewLogFileForm.cpp" />
+    <ClCompile Include="WeldDetailBMFile.cpp" />
+    <ClCompile Include="WeldDiaCheck.cpp" />
+    <ClCompile Include="WorkspaceWnd.cpp" />
+    <ClCompile Include="WorkStatusDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BackupDataForm.h" />
+    <ClInclude Include="BackupDataOutputForm.h" />
+    <ClInclude Include="BackupHistoryDlg.h" />
+    <ClInclude Include="BitmapComboBox.h" />
+    <ClInclude Include="BMLine.h" />
+    <ClInclude Include="BMLogFileForm.h" />
+    <ClInclude Include="BMReportForm.h" />
+    <ClInclude Include="BMReportOptionDlg.h" />
+    <ClInclude Include="BMReportSettingPage.h" />
+    <ClInclude Include="..\..\..\shared\istools\extend\libcsv\inc\csv_parser.hpp" />
+    <ClInclude Include="..\..\..\shared\istools\extend\libcsv\inc\csv_writer.hpp" />
+    <ClInclude Include="DrawingPlottingForm.h" />
+    <ClInclude Include="DrawingReportForm.h" />
+    <ClInclude Include="DrawingReportLogFileForm.h" />
+    <ClInclude Include="EditLineDataForm.h" />
+    <ClInclude Include="EmptyOutputWnd.h" />
+    <ClInclude Include="EnumPrinters.h" />
+    <ClInclude Include="FileListCtrl.h" />
+    <ClInclude Include="FileNameEditListBox1.h" />
+    <ClInclude Include="GetDataFromIDFStartUpDlg.h" />
+    <ClInclude Include="GetPds.h" />
+    <ClInclude Include="GetPdsLineID.h" />
+    <ClInclude Include="IDFFile.h" />
+    <ClInclude Include="InPlaceEdit.h" />
+    <ClInclude Include="InsertToPDSAttribute.h" />
+    <ClInclude Include="IsoEditForm.h" />
+    <ClInclude Include="IsoEditOptionDlg.h" />
+    <ClInclude Include="IsoEditOptionDlg2.h" />
+    <ClInclude Include="IsoEditSettingPage.h" />
+    <ClInclude Include="IsoEditViewLogFileForm.h" />
+    <ClInclude Include="IsoFileListCtrl.h" />
+    <ClInclude Include="IssueDlg.h" />
+    <ClInclude Include="IssueLineDataSelectOption.h" />
+    <ClInclude Include="LineDataEditDlg.h" />
+    <ClInclude Include="LineListConvertForm.h" />
+    <ClInclude Include="LineListConvertOutputForm.h" />
+    <ClInclude Include="LineListForm.h" />
+    <ClInclude Include="LineListSelectOption1.h" />
+    <ClInclude Include="LineListSelectOption2.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MFCButtonEx.h" />
+    <ClInclude Include="MFCTextColorListCtrl.h" />
+    <ClInclude Include="NtrData.h" />
+    <ClInclude Include="Options.h" />
+    <ClInclude Include="OracleSettingPage.h" />
+    <ClInclude Include="PDSOracle.h" />
+    <ClInclude Include="PdTable121.h" />
+    <ClInclude Include="PdTable122.h" />
+    <ClInclude Include="PdTable126.h" />
+    <ClInclude Include="Profile.h" />
+    <ClInclude Include="QCCheck.h" />
+    <ClInclude Include="QualifiedLineForm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResourceSwitch.h" />
+    <ClInclude Include="ScintillaWnd.h" />
+    <ClInclude Include="SelectionTreeListCtrl.h" />
+    <ClInclude Include="SelectIssueDataDlg.h" />
+    <ClInclude Include="singleinstance.h" />
+    <ClInclude Include="SmartISOLog.h" />
+    <ClInclude Include="SortSettingDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StringHelper.h" />
+    <ClInclude Include="StringTable.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UserApp.h" />
+    <ClInclude Include="UserAppDoc.h" />
+    <ClInclude Include="UserAppDocData.h" />
+    <ClInclude Include="UserAppOutputWnd.h" />
+    <ClInclude Include="UserAppSettingPage.h" />
+    <ClInclude Include="UserAppSettingSheet.h" />
+    <ClInclude Include="UserAppView.h" />
+    <ClInclude Include="UserDefineWordCell.h" />
+    <ClInclude Include="UserPropertyPage.h" />
+    <ClInclude Include="VersionNo.h" />
+    <ClInclude Include="ViewLogFileForm.h" />
+    <ClInclude Include="WeldDetailBMFile.h" />
+    <ClInclude Include="WeldDiaCheck.h" />
+    <ClInclude Include="WorkspaceWnd.h" />
+    <ClInclude Include="WorkStatusDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\add.ico" />
+    <None Include="res\area.ico" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bmp00001.bmp" />
+    <None Include="res\bmp00002.bmp" />
+    <None Include="res\bmp00003.bmp" />
+    <None Include="res\bmp00004.bmp" />
+    <None Include="res\buttons.bmp" />
+    <None Include="res\checkboxes.bmp" />
+    <None Include="res\commit.ico" />
+    <None Include="res\dabatase.ico" />
+    <None Include="res\default1.bin" />
+    <None Include="res\Del.ico" />
+    <None Include="res\filelarge.bmp" />
+    <None Include="res\filesmall.bmp" />
+    <None Include="res\fpoint.cur" />
+    <None Include="res\ico00001.ico" />
+    <None Include="res\ico00002.ico" />
+    <None Include="res\ico00003.ico" />
+    <None Include="res\ico00004.ico" />
+    <None Include="res\ico00005.ico" />
+    <None Include="res\ico00006.ico" />
+    <None Include="res\ico00007.ico" />
+    <None Include="res\ico00008.ico" />
+    <None Include="res\ico00009.ico" />
+    <None Include="res\ico00010.ico" />
+    <None Include="res\ico00011.ico" />
+    <None Include="res\ico00012.ico" />
+    <None Include="res\ico00013.ico" />
+    <None Include="res\ico00014.ico" />
+    <None Include="res\ico00015.ico" />
+    <None Include="res\ico00016.ico" />
+    <None Include="res\ico00017.ico" />
+    <None Include="res\ico00018.ico" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\ISO_DWG.ico" />
+    <None Include="res\iso_edit_setting.ico" />
+    <None Include="res\LOGO.bmp" />
+    <None Include="res\main.bmp" />
+    <None Include="res\mstn.ico" />
+    <None Include="res\new.ico" />
+    <None Include="res\OK.ico" />
+    <None Include="res\plant.ico" />
+    <None Include="res\project.bmp" />
+    <None Include="res\reset_activate_code.ico" />
+    <None Include="res\root.ico" />
+    <None Include="res\run.ico" />
+    <None Include="res\section.ico" />
+    <None Include="res\sort_incr.ico" />
+    <None Include="res\system.bmp" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="res\tree.bmp" />
+    <None Include="res\unit.ico" />
+    <None Include="res\UserApp.ico" />
+    <None Include="res\UserApp.rc2" />
+    <None Include="res\UserAppDoc.ico" />
+    <None Include="UserImages.bmp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UserApp.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Module\Module.vcxproj">
+      <Project>{12babbbe-4752-469e-a8cf-4a45483f04ea}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\UserDLL\UserDLL.vcxproj">
+      <Project>{b20d6668-bf6f-4cd7-bf6a-354499e8d8f4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="UserApp.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

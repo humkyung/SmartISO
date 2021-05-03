@@ -1,0 +1,646 @@
+<html>
+<head>
+<title>SmartISO</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="container">
+<div id="header">History</div>
+<div id="content">
+<p>
+3.3.17.4367<br>
+ 1. Login 창 변경<br>
+ </p>
+ <p>
+3.3.17.4365<br>
+ 1. Edit Line Data에서 Replace 기능 추가<br>
+ 2. C_LINE_ID 필드 추가 및 Link Key Data Area에 추가<br>
+ 3. BM Format Setting에서 누락된 SYM 추가<br>
+ </p>
+ <p>
+3.3.16.4362<br>
+ 1. #121: Update PDS 오류(upper_case를 Character형식으로 처리)<br>
+ 2. #122: Q/C Check에 B/M Over 항목 추가<br>
+ </p>
+ <p>
+3.3.16.4357<br>
+#111:Plan No를 가져올때 121테이블에서 DRAWING TITLE이 아니라 DRAWING NO를 가져오도록 수정<br>
+ </p>
+ <p>
+3.3.16.4353<br>
+#115:ISO Edit에서 "CONFIRM WITH USTATION" 옵션 삭제<br>
+#116:BOLT의 경우 SUB SIZE에서 중복되게 BOLT LENGTH가 입력됨.<br>
+#117:BM생성시 설정한 해당 Format과 같은 순서로 생성이 안됨<br>
+ </p>
+ <p>
+3.3.16.4352<br>
+#112:REPORT시 HEAD 정보 기능 추가 관련<br>
+1. $JOB 데이타는 나오지 않음<br>
+2. $DATE 기능도 추가 요청 (추가사항)<br>
+#113:BOM INTERFACE에서 죄측 상단 해당 FILE NAME 클릭시 해당 DGN 오픈 기능 요청<br>
+#114:ISSUE시 MDB ERROR 발생함.<br>
+ </p>
+ <p>
+3.3.16.4350<br>
+#108:ISO IMPORT시 다음과 같이 ERROR가 발생<br>
+#109:ISO PRODUCT의 결과 리스트를 소트 가능하게<br>
+#110:Line Data가 ISO DWG에 쓰여지지 않음<br>
+ </p>
+ <p>
+3.3.15.4347<br>
+- Edit Line Data에서 편집 기능 개선<br>
+- Iso Product에서 생성된 Product(Dgn)를 보여주는 기능<br>
+- Issue Manger Excel Export 속도 개선<br>
+ </p>
+ <p>
+3.3.15.4343<br>
+- Edit Line Data에서 최근의 Issue된 Data도 함께 볼수 있도록 수정<br>
+ </p>
+ <p>
+3.3.0.4341<br>
+#107: B/M Report Output 파일 개선<br>
+ </p>
+ <p>
+3.3.0.4339<br>
+#97: Project / BM Project No에 붙여 넣기시 다음과 같이 2번 중복해서 들어감<br>
+#98: CAN NOT FIND ISO DWG NAME 오류<br>
+#99: Drawing Report Setting의 GRID에 U가 빠져 있음<br>
+#100: BM 생성시 다음 오류<br>
+#101: Q/C Check 결과 엑셀 파일을 PRODUCT\ERR에 저장할 것<br>
+#102: 프로젝트 생성시 PROJECT DESCRIPTION 추가<br>
+#103: Line Data Setting에서 Module Key 부분 삭제<br>
+#104: Apply rev. date to all 항목을 체크하고 ISSUE Data 입력 시 Progress Bar로 나오게 수정<br>
+#105: ISO Dwg를 Import하고 난뒤 Rev. No를 제대로 표기하지 못함<br>
+ </p>
+ <p>
+3.2.12.4336<br>
+#95: Border Setting에서 Line Data Key값 입력(영역 설정)이 안되는 오류 수정<br>
+#96: Issue Date 형식 Month.Day 기능 오류 수정<br>
+ </p>
+ <p>
+3.2.15.4332<br>
+#94: Drawing Report 에러<br>
+ </p>
+ <p>
+3.2.15.4331<br>
+#92: IsoProductTemplate.xls 파일 교체<br>
+#93: IDF 파일도 PRODUCT에 보관<br>
+ </p>
+ <p>
+3.2.15.4330<br>
+- modified setup script<br>
+ </p>
+<p>
+3.2.15.4329<br>
+#67 Tools의 아이콘 위치 변경<br>
+#85 ISO PRODUCT에서 ISO FILE NAME을 더블 클릭시 파일을 오픈하도록 한다.<br>
+#87 ISO Product에서 결과값을 엑셀로 출력하는 기능 추가<br>
+</p>
+3.2.15.4328: 2012.10.12
+	revisied #81 REVISION CLOUD 표기 누락
+</p>
+<p>
+3.2.15.4327: 2012.10.11
+	#82 control working date 수정 불가  
+	#83 issue date 입력 불가
+</p>
+<p>
+3.2.15.4326<br>
+#79 REVISION CLOUND 세팅이 안되는 문제점<br>
+#80 DELETE 시 경고 메시지 이후 폴더에 저장 없어 완전히 삭제..<br>
+#81 REVISION CLOUD 표기 누락<br>
+</p>
+<p>
+3.2.15.4325<br>
+#45 리포트 생성시 템플릿의 SHEET의 행높이가 유지 안됨…<br>
+#75 Plan 값이 들오지 안음.. (C_PLAN_NO)<br>
+#76 Drawing Index에서 첫 번째 Rev No 날짜가 Format 적용이 안됨<br>
+#77 복사한 쉬트이 서식이 다름<br>
+#78 프로그램 실행시 Query Condition Tree를 모두 체크하도록 한다.<br>
+</p>
+<p>
+3,2,15,4323<br>
+#60 PDS Oracle Database update 로직 개선<br>
+#70 plotting 기능 개선<br>
+#71 Mapping For Insert Data to PDS 화면에서 SmartISO 필드를 표시하는 콤보박스로 대체<br>
+</p>
+<p>
+3,2,14,4322<br>
+#62 Mapping For Insert Data to PDS 화면에서 "New" , "Delete" 기능 추가<br>
+#64 Drawing Plotting에서 "Latest"를 선택했을 경우 Iso Drawing을 쿼리하지 못함<br>
+#65 HOST가 저장 안되는 문제<br>
+#66 Module에서 User(Defalt)/ Admin으로 나눔<br>
+#68 오라클 세팅 폼 위치 변경<br>
+</p>
+<p>
+3,2,14,4321<br>
+#56 T_BM_DATA.xml 파일 누락<br>
+#58 BM 세팅 파일(Header Start Pos)을 관련<br>
+ - PDS의 MLD 파일과 일치<br>
+#59 B/M Matl Desc. 읽기 오류<br>
+</p>
+<p>
+3,2,14,4319<br>
+#28 B/M Report 데이타를 MDB 파일에 저장<br>
+#53 CLIENT , PROJECT , JOB , DATE , SHEET OF $TOTAL 표기 위치 적용<br>
+</p>
+<p>
+3,2,13,4318: 2012.08.30
+#40 ris 실행시 command 창을 보이지 않게 한다.<br>
+#44 오라클에 문제가 없지만 연결이 안되는 문제점<br>
+#48 drawing index에서 print 버튼을 눌렀을때 엑셀 템플리슬 찾을수 없다는 메세지 박스가 뜸<br>
+ - 프로젝트 생성시 엑셀 템플릿을 복사<br>
+</p>
+<p>
+3,2,13,4317<br>
+#41 NEXT GRADE / DATE를 많이 보이게 수정<br>
+#42 Q/C Check 옵션 표기 방법 변경<br>
+#47 csv 파일 포맷 오류<br>
+</p>
+<p>
+3,2,13,4316<br>
+#43 Bolt Length 읽는 방법 개선<br>
+</p>
+<p>
+3,2,13,4315<br>
+#35 Border Setting에서 유저를 위해서 데이타 구분<br>
+#36 입력한 사용자가 database에 입력되지 않고 특정 사용자 이름이 입력됨.<br>
+#38 Border Setting에서 Latest Rev No 설정 오류<br>
+#39 Iso Drawing 임포터시 Temp , PRODUCT 폴더 안의 파일들을 지우도록 한다.<br>
+</p>
+<p>
+3,2,13,4313<br>
+#31 SmartReporter를 툴기능에서 빼기<br>
+#33 ADODB 누락<br>
+#34 Workspacebar , Outputbar가 사라져서 보이지 않음<br>
+Iso Import Button 비활성화 문제<br>
+</p>
+<p>
+3,2,13,4311<br>
+1. LINE LIST 로딩 에러 수정<br>
+</p>
+<p>
+3,2,13,4310<br>
+1. Weld Type을 정의한 xml 파일을 사용하도록 함.<br>
+2. PROJECT 생성시 ERROR 수정<br>
+3. Issue시 Issued Line Data를 Remote Database Server(Oralce)에 저장<br>
+</p>
+<p>
+3,2,12,4309<br>
+1. drawing index에 사용되는 엑셀 파일을 데이타베이스에 저장<br>
+2. 쿼리문을 데이타베이스에 저장하는 기능<br>
+</p>
+<p>
+3,2,12,4308<br>
+1. STATUS 필드 추가<br>
+2. SITE 필드 추가<br>
+</p>
+<p>
+3,2,12,4307<br>
+1. 프로그램 로딩 속도 개선<br>
+2. Line Data 테이블에서 사용자가 보기 원하는 필드 설정 기능 추가<br>
+</p>
+<p>
+3,2,12,4305<br>
+1. added help file(F1)<br>
+</p>
+<p>
+3,2,11,4304<br>
+1. added SmartReporter<br>
+</p>
+<p>
+3,2,10,4303<br>
+1. modified install script<br>
+</p>
+<p>
+3,2,10,4301<br>
+1. 자잘한 버그 수정<br>
+</p>
+<p>
+3,2,10,4301<br>
+1. 자잘한 버그 수정<br>
+</p>
+<p>
+3,2,9,4300<br>
+1. UI개선<br>
+</p>
+<p>
+3,2,8,4300<br>
+1. 리본바 적용<br>
+</p>
+<p>
+3,2,7,4298<br>
+1. 관리자 암호 설정 기능 수정<br>
+</p>
+<p>
+3,2,7,4297<br>
+1. UI 개선<br>
+2. 관리자 암호 설정 기능 추가<br>
+</p>
+<p>
+3,2,7,4293<br>
+1. BM Data에 대한 Revision Automation 기능 추가<br>
+</p>
+<p>
+3,2,6,4291<br>
+1. Revision Automation 기능 추가<br>
+</p>
+<p>
+3,1,6,4290<br>
+1. Text Modified Error(Exception) 옵션 추가<br>
+</p>
+<p>
+3,1,6,4288<br>
+1. Admin Module - Drawing Index Setting 수정<br>
+</p>
+<p>
+3,1,6,4287<br>1. Issue Manager - Delete 기능 오류 수정<br>
+2. Issue Manager - Sorting 오류 수정<br>
+</p>
+<p>
+3,1,6,4286<br>1. FILE IMPORT시 ISSUED DB에서 C_REMARK 데이터를 가져오지 못하고 ?로 데이터를 가져오는 현상 수정<br>
+2. LATEST REV. DATA를 ISO파일에 출력하는 기능 추가<br>
+</p>
+<p>
+3,1,6,4285<br>1. Revison Data 로딩 에러(소팅하여 로딩하도록 수정)<br>
+</p>
+<p>
+3,1,6,4284<br>	1. PRODUCT 폴더 안에 ERR 폴더를 생성하도록 한다.<br>
+</p>
+<p>
+3,1,6,4282<br>	1. Matl Code 분석 오류 수정<br>
+</p>
+<p>
+3,1,6,4281<br>	1. Table Insert 오류(Insert시 '을 ''로 대체)<br>
+</p>
+<p>
+3,1,6,4280<br>	1. Item별 BM Summary CSV 파일 생성<br></p>
+<p>
+3,1,6,4279<br>1. BM 출력시 BOLT LEN 출력<br>2. Line Data Field에 개개별로 Text Scale 적용<br>
+3. BM 포맷에서 PTNO , SHEET NO 제거<br>
+<p>
+3.1.5.4278<br>
+1. Iso 도면에 Rev. Date 출력 오류 수정<br>
+2. Line Data용 Text Scale 옵션 추가(REV NO에도 적용)<br>
+2. Drawing Index출력시 1줄 혹은 2줄로 출력하는 기능 추가<br>
+<p>
+3.1.5.4277<br>
+1. BM Header Text Setting 수정<br>
+2. Get Plan Data On/Off 옵션 추가<br>
+3. BM 출력시 MATL CODE / MATL SPEC이 빠지는 현상 수정<br>
+4. Border Setting시 Text Weight를 설정하는 옵션 추가<br>
+</p>
+<p>
+3.1.4.4276<br>
+1. icon 변경<br>
+</p>
+<p>
+3.1.4.4275<br>
+1. 불필요한 UI 제거 - Admin<br>
+</p>
+<p>
+3.1.4.4274<br>
+1. BM을 CSV 파일 포맷으로 출력하도록 함<br>
+</p>
+<p>
+3.1.3.4273<br>
+1. admin minor upate(grade)<br>
+</p>
+<p>
+3.1.3.4272<br>
+1. Iso Drawing header information 기입 UI 추가<br>
+</p>
+<p>
+3.1.3.4271<br>
+1. ini 파일에 Iso Drawing header information 기입<br>
+</p>
+<p>
+3.1.2.4270<br>
+1. Project 생성 오류 수정<br>
+2. UserApp UI 개선<br>
+</p>
+<p>
+3.1.2.4269<br>
+1. Revision No.를 입력하는 옵션 추가<br>
+</p>
+<p>
+3.1.1.4268<br>
+1. 첫번째 Revision 입력시 Grade가 제대로 들어가지 않는 현상 수정<br>
+2. Product iso file extension 설정 기능 추가<br>
+</p>
+<p>
+3.1.1.4267<br>
+1. File Name Format Dialog 오류 수정 - Admin<br>
+</p>
+<p>
+3.1.1.4266<br>
+1. Revision관련 Setting이 표시되지 않는 현상 수정 - Admin<br>
+2. Iso 파일이 Import 오류 수정 - UserApp<br>
+</p>
+<p>
+3.1.1.4264<br>
+1.업데이트 모듈 마이너 수정<br>
+2.Issue Date Format 변경시 UI에서 적용하도록 수정 - Admin<br>
+</p>
+<p>
+3.1.1.4263<br>
+1. vc60에서 vs90으로 변환<br>
+</p>
+<p>
+3.1.1.4261<br>
+1. Issue Date관리 로직 수정<br>
+</p>
+<p>
+3.1.0.4260<br>
+1. Issue Date관련 버그 수정<br>
+</p>
+<p>
+3.1.0.4259<br>
+1. NEXT STRAT COLUMN의 값이 -1이면 여러 시트를 만들지 않고 하나의 시트에 저장한다.<br>
+</p>
+<p>
+3.1.0.4258<br>
+1. Issue Date 날짜 형식 추가<br>
+</p>
+<p>
+3.1.0.4255<br>
+1. Issue Data Format 설정 UI 추가<br>
+</p>
+<p>
+3,1,0,4252<br>
+1. ISSUED_REVISION 테이블에 REVIEWED BY 필드 추가<br>
+</p>
+<p>
+3,1,0,4251<br>
+1. "도면을 찾을 수 없습니다"라는 메세지를 띄우는 대신 로그를 남김<br>
+</p>
+<p>
+3,1,0,4249<br>
+1. REVISION 데이타에 'REVIEWED BY' 항목 추가<br>
+</p>
+<p>
+3,0,45,4248<br>
+1. Revision Data의 Iso Drawing 출력을 Center Center로 수정<br>
+2. AutoUpdate기능 및 사용자 등록 기능 추가<br>
+</p>
+<p>
+3,0,45,4242<br>
+1. Admin 모듈의 Border Setting에서 글자 위치를 Center로 할 수 있도록 한다.(기본값 Center Center)<br>
+2. Iso도면에 출력하는 글자의 크기를 개개별로 설정할수 있도록 한다.<br>
+</p>
+<p>
+3,0,44,4241<br>
+1. Import된 Line Man Data를 삭제할수 있는 기능 추가(Delete Key)<br>
+</p>
+<p>
+3,0,43,4239<br>
+1. Drawing Index 오류 수정<br>
+2. 설치시 IDMS.ini 파일이 있으면 설치하지 않도록 한다.<br>
+3. Setting 파일들 수정(이제희)<br>
+</p>
+<p>
+3,0,43,4238<br>
+1. GRADE DEFINE 테이블의 PREFIX에는 정수만 입력하도록 한다.<br>
+2. Iso File Import시 에러난 내용만 별도의 txt 파일로 만드는 기능을 추가<br>
+3. "122번 테이블을 찾을 수 없습니다." 메시지를 "도면을 찾을 수 없습니다"로 수정<br>
+4. Admin 모듈에서 입력한 DwgArea 정보가 저장되지 않는 현상<br>
+5. Issue Manager 오류 수정<br>
+6. Default.ini , T_LINE_DATA.SQL , T_LINE_MAN_DATA_MAPPING.SQL , T_ISSUED_LINE_DATA.SQL 수정(이제희)<br>
+</p>
+<p>
+3.0.40.4233<br>
+1. 프로젝트 생성 오류 수정<br>
+</p>
+<p>
+3.0.39.4232<br>
+1. Issue Manager 수정<br>
+</p>
+<p>
+3.0.38.4231<br>
+1. Issue Manager 수정(Cancellation관련 오류 수정)<br>
+</p>
+<p>
+3.0.37.4231<br>
+1. Report기능 수정 - Issue Manager<br>
+</p>
+<p>
+3.0.36.4230<br>
+1. Issue Manager 수정<br>
+2. Cancellation 기능 추가<br>
+3. Cancellation관련 Excel Report 수정<br>
+</p>
+<p>
+3.0.35.4228<br>
+1. Issue Manager 추가<br>
+</p>
+<p>
+3.0.34.4227<br>
+1. Lineman Data Import에 Load Sheet Name 삭제 (기능은 파일 Loading 시 포함)<br>
+2. Detail Option은 다음과 같은 순서로 수정 바랍니다<br>
+3. Product 폴더의  Border 파일이 Issue 폴더에는 들어가지 않습니다 <br>
+</p>
+<p>
+3.0.34.4225<br>
+1. Line List Convert 툴팁을 Backup 으로 바꿀것<br>
+2. Issue한 MDB를 Restore할 수 있도록<br>
+3. Restore 기능은 Admin만 할수 있도록<br>
+</p>
+<p>
+3.0.33.4224<br>
+1. Line Check 체크 버튼 삭제<br>
+</p>
+<p>
+3.0.33.4223<br>
+1. Rev Modify 체크 버튼 삭제<br>
+</p>
+<p>
+3.0.33.4222<br>
+1. Issue되지 않은 Revision Data 삭제 가능하게 수정<br>
+</p>
+<p>
+3.0.33<br>
+1. Drawing Index를 PRODUCT\INDEX에 생성<br>
+2. ISSUE시 INDEX도 ISSUE 폴더에 복사<br>
+3. PRODUCT 생성시 INDEX 폴더에 EXCEL 파일이 있다면 삭제<br>
+4. B/M 생성시 INDEX 폴더에 EXCEL이 없다면 툴바에서 B/M 아이콘 비활성화<br>
+5. LineList 폼에서 List Control에서 오른쪽 마우스 클릭시 생성되는 메뉴 제거<br>
+</p>
+<p>
+3.0.32<br>
+1. Drawing Plotting 화면 수정<br>
+</p>
+<p>
+3.0.31<br>
+1. ERR폴더에 내용이 쌓이지 않음..(D:\BUTENE1\ISO_BM_DATA\PRODUCT\ERR)<br>
+</p>
+<p>
+3.0.30<br>
+1. B/M 출력시 DATA 파일 출력 항목 수정(Dawing No -> C_DRAW_NO, Revision No. -> C_REVISION_TEXT)<br>
+2. Revision Data입력시 C_REV_DESC 항목 입력<br>
+</p>
+<p>
+3.0.29<br>
+1. 환경 설정 에러 : 사용자 속성을 변경하는 부분 제거<br>
+2. Dgn에 출력시 데이타가 없는 것은 '-'로 출력할 것<br>
+3. Border 설정시 Border를 ISO_BM_DATA\Temp , ISO_BM_DATA\PRODUCT\DGN에 복사 할 것<br>
+4. ISSUE시 ERR도 함께 ISSUE 폴더에 복사 할 것<br>
+5. Printer 설정 화면을 세팅화면에서 실제 Print하는 폼으로 이동 시킬 것<br>
+6. iplot 선택한 Printer로 대체시키지 못함<br>
+</p>
+<p>
+3.0.28<br>
+1. Dgn Import시 PLAN NO가 없으면 IDF 파일에서 읽어 오도록 한다<br>
+</p>
+<p>
+3.0.27<br>
+1. B/M 로그 메세지를 화면에 표시하지 않음 <br>
+2. Revision Data 입력시 중복되어 들어 가는 현상 수정<br>
+3. 프로젝트 생성시 PDS NAME 항목을 PROJECT SETTING에 추가 <br>
+</p>
+<p>
+3.0.26<br>
+1. User App에서 Get PDS Line Data Icon을 삭제(Disable)<br>
+2. B/M시 발생하는 로그 메세지를 사용자가 알기 쉽게 수정<br>
+3. Admin에서 Get PDS Data Mapping UI 제거<br>
+</p>
+<p>
+3.0.25<br>
+1. Drawing Index에서 PLANT,AREA,UNIT,DRAWING NO 항목이 출력되지 않음<br>
+</p>
+<p>
+3.0.24<br>
+1. Dgn Import시에 C_UNIT_NO , C_PLAN_NO를 읽어오지 못하는 현상 발생<br>
+2. Dgn Import시 출력 메세지 수정<br>
+</p>
+<p>
+3.0.23<br>
+1. Dgn File import시 Border Setting에 설정된 값을 읽어 데이타베이스에 저장하도록 한다<br>
+2. B/M과 Drawing Index의 아이콘 위치를 서로 변경시킬 것<br>
+3. BOM시 날짜 없는 파일은 BOM아래의 Temp 폴더로 이동시킬 것<br>
+4. Issue시 사용자에게 Issue할 것인지 확인할 것<br>
+</p>
+<p>
+3.0.22<br>
+1. Dgn File import시 Border Setting에 설정된 값을 읽어 데이타베이스에 저장하도록 한다<br>
+2. Default.ini 파일 수정<br>
+</p>
+<p>
+3.0.21<br>
+1. Project Setting에서 Edit시 'ISO_BM_DATA' 때문에 오류 발생 수정<br>
+2. Default.ini 파일에서 C_LINE_NO_LABEL_X(1 ~ 10) 항목 제거<br>
+</p>
+<p>
+3.0.20<br>
+1. T_ISSUED_LINE_DATA에 관련된 SQL 파일과 실제 데이타베이스 테이블이 일치하지 않는 현상 수정 <br>
+2. 제공한 엑셀파일을 interface2로 저장(기존의 파일은 interface1으로 변경)<br>
+3. Dgn File Import시 오류 수정<br>
+4. ISSUE시 PRODUCT 폴더의 DGN도 복사 이후 삭제<br>
+5. 프로젝트 생성시 PRODUCT에 IDF 폴더 생성하지 않도록 <br>
+</p>
+<p>
+3.0.19<br>
+1. ISSUE시 BOM 파일 복사<br>
+</p>
+<p>
+3.0.18<br>
+1. SQL 파일 구조 변경 - 이제희<br>
+2. ISSUE시 오류 수정<br>
+</p>
+<p>
+3.0.17<br>
+1. Delete 기능 수정<br>
+2. Admin에서 Revision의 Check를 기본값으로 정할 것 <br>
+3. PDS Data Update기능<br>
+- Print 다음으로 Icon 옮김 <br>
+- Admin 에서 On/Off 할수 있는  기능 추가 <br>
+4. Q/C 기능<br>
+- Admin일 경우 Detail 표기 / User일 경우 비활성화 <br>
+- option 저장 기능(.ini 파일에 저장) <br>
+</p>
+<p>
+3.0.16<br>
+- C_PLAN_NO 필드 추가<br>
+- PLAN NO를 OUT,IDF 파일에서 구해서 DB에 저장<br>
+</p>
+<p>
+3.0.15<br>
+- Revision Description 표기<br>
+</p>
+<p>
+3.0.14<br>
+- Reivison 기입 오류 수정<br>
+- Backup 기능을 메뉴로 옮김<br>
+</p>
+<p>
+3.0.13:<br>
+- C_AREA 항목을 읽어오지 못하는 오류 수정<br>
+- Reivison 기입 오류 수정<br>
+- Line Data Record 삭제 오류<br>
+</p>
+<p>
+3.0.12<br>
+- Revision이 추가되지 않는 오류 수정<br>
+</p>
+<p>
+3.0.11<br>
+- design.ddl 파일 읽기 오류 수정<br>
+</p>
+<p>
+3.0.10<br>
+- REV. DATA 표기 오류 수정<br>
+- OPER DATA , DESIGN DATA 표기 오류 수정<br>
+</p>
+<p>
+3.0.7<br>
+- LINE MAN MAPPING TABLE에서 C_AREA_NO를 C_UNIT_NO로 수정.<br>
+</p>
+<p>
+3.0.6<br>
+- BM 산출부의 오류 Log 문제 수정.<br>
+</p>
+<p>
+3.0.5<br>
+- REVISION OPTION 콤보 박스에 뿌려지는 내용 수정.<br>
+- 'PRODUCT 파일 개수와 LINE LIST 개수가 다릅니다'가 표시되는 문제 수정.<br>
+</p>
+<p>
+3.0.4<br>
+- REVISION 정보가 사라지는 문제 수정.<br>
+</p>
+<p>
+3.0.3<br>
+- ISO 도면에 REV. NO.가 잘못 찍히는 문제 수정.<br>
+</p>
+<p>
+3.0.2:
+	- IsoEdit Form에서 생성되는 Iso 도면의 갯수가 틀린 문제점 수정.
+</p>
+<p>
+3.0.1<br>
+- Revision Date 창 수정<br>
+- 생성되는 DGN 파일의 확장자를 REVISION NO와 일치시킴.<br>
+</p>
+<p>
+2.9<br>
+- REVISION , RESERVED TABLE의 C_REF가 LINE_DATA TABLE의 C_DRAW_NO를 가지도록 수정.<br>
+- UserApp 모듈에 Admin 모듈을 호출하는 기능 추가.(2010.01.26)<br>
+- Line Data를 리스트 컨트롤에서 직접 수정할수 있도록 수정.<br>
+- Admin 모듈의 IsoEditSetting UI 수정<br>
+- IsoMan Data를 Import할때 Error Report.<br>
+</p>
+<p>
+2.8<br>
+- UNIT와 DVCS를 설정하는 UI를 ADMIN쪽으로 옮김.<br>
+- Longin 폼에 Project 생성하는 버튼 추가.<br>
+- idms_ntr 수정(dependent file을 읽어 처리하는 기능 추가)<br>
+</p>
+<p>
+2.7<br>
+- GetDataFromIDF를 실행할 때 UNIT , DVCS값을 설정하는 DIALOG를 실행시킴.<br>
+</p>
+</div>
+<div id="sideinfo"></div>
+<div id="footer"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,338 @@
+! File Name : P.pcd                                                                                                       
+! Job.No.   :                  Revision : 0                      Date : 2008.10.30                                                  
+! Material Spec Class : P      Material : C.S W/GALV             Design Code : ASME B31.3   
+! Max Temp : 66                Flang Class : ASME 150#                                            
+! Service Note :                                                                                                                        
+  PIPING_MATERIALS_CLASS= P                                                                                               
+  Single_Spacing                                                                                                                        
+  Order= 1 6 2 3 9 11 13 21 4 5 10 12 14 22 18 7 16 19 15 8 20 23 24  *17 *25                                                           
+!                                                                                                                                       
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! AABBCC -----------------Green CP----------- ------------Red CP-------------       CMDTY               MODEL  GEO  MOD  Mat  Wt        
+! Code   Opt  FROM  TO    PRP RATING SC/TH TS FROM  TO    PRP RATING SC/TH TS       CODE           TMX  CODE   Std       Grd  Cd FC Nte 
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! APDX C CL400            CL330            CL576                              BMCS CODE                 APDX C CL575     CL145      ITEM
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! *** PIPE ***
+ PIPING  1    0.5   1.5   391 -      S-XS  5  -     -     -   -      -     -  PPAASB201G1AC        -    PIPE   100  100  -    52 15 P      
+ PIPING  1    2     6     301 -      S-STD 5  -     -     -   -      -     -  PPAASB202G1AB        -    PIPE   100  100  -    52 15 P      
+ PIPING  1    8     14    301 -      S-STD 5  -     -     -   -      -     -  PPAASB20200AB        -    PIPE   100  100  -    52 15 P      
+ PIPING  1    16    34    301 -      S-STD 5  -     -     -   -      -     -  PPAA2E5A200AB        -    PIPE   100  100  -    52 15 P      
+ PIPING  1    36    42    301 -      S-XS  5  -     -     -   -      -     -  PPAA2E5A200AC        -    PIPE   100  100  -    52 15 P      
+
+! *** PIPE (U/G) ***
+ PIPING  1504 0.5   1.5   391 -      S-XS  5  -     -     -   -      -     -  PPAASB201G5AC        -    PIPE   100  100  -    52 15 PG     
+ PIPING  1504 2     6     301 -      S-STD 5  -     -     -   -      -     -  PPAASB202G5AB        -    PIPE   100  100  -    52 15 PG     
+ PIPING  1504 8     14    301 -      S-STD 5  -     -     -   -      -     -  PPAASB202C1AB        -    PIPE   100  100  -    52 15 PG     
+ PIPING  1504 16    34    301 -      S-STD 5  -     -     -   -      -     -  PPAA2E5A2C1AB        -    PIPE   100  100  -    52 15 PG     
+ PIPING  1504 36    42    301 -      S-XS  5  -     -     -   -      -     -  PPAA2E5A2C1AC        -    PIPE   100  100  -    52 15 PG     
+
+! *** NIPPLE (PBE) * 75 MM ***
+ 6Q3C88  1    0.5   1.5   391 -      S-XS  5  -     -     -   -      -     -  PNAASB203G2AC        -    NIP    100  3    -    52 15 NPPD   
+
+! *** CON. SWAGE (LB*SP) ***
+ 6Q2C23  1531 2     3     301 -      MATCH 5  0.5   1.25  391 -      MATCH 5  K1ABSB5G1ABAC        -    SWGC   297  -    -    52 15 CBP    
+
+! *** CON. SWAGE (PBE) ***
+ 6Q2C23  1    0.75  1.5   391 -      MATCH 5  0.5   1.25  391 -      MATCH 5  K1ABSB3G1ACAC        -    SWGC   297  -    -    52 15 CPP    
+
+! *** CON. SWAGE (LP*ST) ***
+ 6Q2C23  1534 0.75  1.5   391 -      MATCH 5  0.5   1.25  331 -      MATCH 5  K1ABSB6G1ACAC        -    SWGC   297  -    -    52 15 CPT    
+
+! *** ECC. SWAGE (LB*SP) ***
+ 6Q2C24  1541 2     3     301 -      MATCH 5  0.5   1.25  391 -      MATCH 5  K2ABSB5G1ABAC        -    SWGE   297  -    -    52 15 EBP    
+
+! *** ECC. SWAGE (PBE) ***
+ 6Q2C24  1    0.75  1.5   391 -      MATCH 5  0.5   1.25  391 -      MATCH 5  K2ABSB3G1ACAC        -    SWGE   297  -    -    52 15 EPP    
+
+! *** ECC. SWAGE (LP*ST) ***
+ 6Q2C24  1544 0.75  1.5   391 -      MATCH 5  0.5   1.25  331 -      MATCH 5  K2ABSB6G1ACAC        -    SWGE   297  -    -    52 15 EPT    
+
+! *** 90 DEG. ELBOW ***
+ 6Q2C75  1    2     6     301 -      MATCH 5  -     -     -   -      -     -  K9ABSB2G1AB          -    E90TLR 39   -    -    52 15 E9     
+ 6Q2C75  1    8     24    301 -      MATCH 5  -     -     -   -      -     -  K9ABSB200AB          -    E90TLR 39   -    -    52 15 E9     
+ 6Q2C75  1    26    34    301 -      MATCH 5  -     -     -   -      -     -  K9ABWB210AB          -    E90TLR 39   -    -    52 15 E9     
+ 6Q2C75  1    36    42    301 -      MATCH 5  -     -     -   -      -     -  K9ABWB210AC          -    E90TLR 39   -    -    52 15 E9     
+ 6Q2C76  1    0.5   1.5   421 CL3000 NREQD 5  -     -     -   -      -     -  K9AA2A1G1            -    E90    41   -    -    52 15 E9     
+ 6Q2C76  1    2     6     301 -      MATCH 5  -     -     -   -      -     -  K9ABSB2G1AB          -    E90LR  39   -    -    52 15 E9     
+ 6Q2C76  1    8     24    301 -      MATCH 5  -     -     -   -      -     -  K9ABSB200AB          -    E90LR  39   -    -    52 15 E9     
+ 6Q2C76  1    26    34    301 -      MATCH 5  -     -     -   -      -     -  K9ABWB210AB          -    E90LR  39   -    -    52 15 E9     
+ 6Q2C76  1    36    42    301 -      MATCH 5  -     -     -   -      -     -  K9ABWB210AC          -    E90LR  39   -    -    52 15 E9     
+
+! *** 90 DEG. ELBOW (U/G) ***
+ 6Q2C75  1552 2     4     301 -      MATCH 5  -     -     -   -      -     -  K9ABSB2G6AB          -    E90TLR 39   -    -    52 15 E9G    
+ 6Q2C75  1552 6     6     301 -      MATCH 5  -     -     -   -      -     -  K9ABSB2G5AB          -    E90TLR 39   -    -    52 15 E9G    
+ 6Q2C75  1552 8     24    301 -      MATCH 5  -     -     -   -      -     -  K9ABSB2C1AB          -    E90TLR 39   -    -    52 15 E9G    
+ 6Q2C75  1552 26    34    301 -      MATCH 5  -     -     -   -      -     -  K9ABWB2CEAB          -    E90TLR 39   -    -    52 15 E9G    
+ 6Q2C75  1552 36    42    301 -      MATCH 5  -     -     -   -      -     -  K9ABWB2CEAC          -    E90TLR 39   -    -    52 15 E9G    
+ 6Q2C76  1552 2     4     301 -      MATCH 5  -     -     -   -      -     -  K9ABSB2G6AB          -    E90LR  39   -    -    52 15 E9G    
+ 6Q2C76  1552 6     6     301 -      MATCH 5  -     -     -   -      -     -  K9ABSB2G5AB          -    E90LR  39   -    -    52 15 E9G    
+ 6Q2C76  1552 8     24    301 -      MATCH 5  -     -     -   -      -     -  K9ABSB2C1AB          -    E90LR  39   -    -    52 15 E9G    
+ 6Q2C76  1552 26    34    301 -      MATCH 5  -     -     -   -      -     -  K9ABWB2CEAB          -    E90LR  39   -    -    52 15 E9G    
+ 6Q2C76  1552 36    42    301 -      MATCH 5  -     -     -   -      -     -  K9ABWB2CEAC          -    E90LR  39   -    -    52 15 E9G    
+
+! *** 45 DEG. ELBOW ***
+ 6Q2C55  1    2     6     301 -      MATCH 5  -     -     -   -      -     -  K4ABSB2G1AB          -    E45TLR 39   -    -    52 15 E4     
+ 6Q2C55  1    8     24    301 -      MATCH 5  -     -     -   -      -     -  K4ABSB200AB          -    E45TLR 39   -    -    52 15 E4     
+ 6Q2C55  1    26    34    301 -      MATCH 5  -     -     -   -      -     -  K4ABWB210AB          -    E45TLR 39   -    -    52 15 E4     
+ 6Q2C55  1    36    42    301 -      MATCH 5  -     -     -   -      -     -  K4ABWB210AC          -    E45TLR 39   -    -    52 15 E4     
+ 6Q2C56  1    0.5   1.5   421 CL3000 NREQD 5  -     -     -   -      -     -  K4AA2A1G1            -    E45    41   -    -    52 15 E4     
+ 6Q2C56  1    2     6     301 -      MATCH 5  -     -     -   -      -     -  K4ABSB2G1AB          -    E45LR  39   -    -    52 15 E4     
+ 6Q2C56  1    8     24    301 -      MATCH 5  -     -     -   -      -     -  K4ABSB200AB          -    E45LR  39   -    -    52 15 E4     
+ 6Q2C56  1    26    34    301 -      MATCH 5  -     -     -   -      -     -  K4ABWB210AB          -    E45LR  39   -    -    52 15 E4     
+ 6Q2C56  1    36    42    301 -      MATCH 5  -     -     -   -      -     -  K4ABWB210AC          -    E45LR  39   -    -    52 15 E4     
+
+! *** 45 DEG. ELBOW (U/G) ***
+ 6Q2C55  1563 2     4     301 -      MATCH 5  -     -     -   -      -     -  K4ABSB2G6AB          -    E45TLR 39   -    -    52 15 E4G    
+ 6Q2C55  1563 6     6     301 -      MATCH 5  -     -     -   -      -     -  K4ABSB2G5AB          -    E45TLR 39   -    -    52 15 E4G    
+ 6Q2C55  1563 8     24    301 -      MATCH 5  -     -     -   -      -     -  K4ABSB2C1AB          -    E45TLR 39   -    -    52 15 E4G    
+ 6Q2C55  1563 26    34    301 -      MATCH 5  -     -     -   -      -     -  K4ABWB2CEAB          -    E45TLR 39   -    -    52 15 E4G    
+ 6Q2C55  1563 36    42    301 -      MATCH 5  -     -     -   -      -     -  K4ABWB2CEAC          -    E45TLR 39   -    -    52 15 E4G    
+ 6Q2C56  1563 2     4     301 -      MATCH 5  -     -     -   -      -     -  K4ABSB2G6AB          -    E45LR  39   -    -    52 15 E4G    
+ 6Q2C56  1563 6     6     301 -      MATCH 5  -     -     -   -      -     -  K4ABSB2G5AB          -    E45LR  39   -    -    52 15 E4G    
+ 6Q2C56  1563 8     24    301 -      MATCH 5  -     -     -   -      -     -  K4ABSB2C1AB          -    E45LR  39   -    -    52 15 E4G    
+ 6Q2C56  1563 26    34    301 -      MATCH 5  -     -     -   -      -     -  K4ABWB2CEAB          -    E45LR  39   -    -    52 15 E4G    
+ 6Q2C56  1563 36    42    301 -      MATCH 5  -     -     -   -      -     -  K4ABWB2CEAC          -    E45LR  39   -    -    52 15 E4G    
+
+! *** STRAIGHT TEE ***
+ 6Q3C22  1    0.5   1.5   421 CL3000 NREQD 5  -     -     -   -      -     -  KTAA2A1G1            -    T      41   -    -    52 15 T      
+ 6Q3C22  1    2     6     301 -      MATCH 5  -     -     -   -      -     -  KTABSB2G1AB          -    T      39   -    -    52 15 T      
+ 6Q3C22  1    8     24    301 -      MATCH 5  -     -     -   -      -     -  KTABSB200AB          -    T      39   -    -    52 15 T      
+ 6Q3C22  1    26    34    301 -      MATCH 5  -     -     -   -      -     -  KTABWB210AB          -    T      39   -    -    52 15 T      
+ 6Q3C22  1    36    42    301 -      MATCH 5  -     -     -   -      -     -  KTABWB210AC          -    T      39   -    -    52 15 T      
+
+! *** STRAIGHT TEE(U/G) ***
+ 6Q3C22  1572 2     4     301 -      MATCH 5  -     -     -   -      -     -  KTABSB2G6AB          -    T      39   -    -    52 15 TG     
+ 6Q3C22  1572 6     6     301 -      MATCH 5  -     -     -   -      -     -  KTABSB2G5AB          -    T      39   -    -    52 15 TG     
+ 6Q3C22  1572 8     24    301 -      MATCH 5  -     -     -   -      -     -  KTABSB2C1AB          -    T      39   -    -    52 15 TG     
+ 6Q3C22  1572 26    34    301 -      MATCH 5  -     -     -   -      -     -  KTABWB2CEAB          -    T      39   -    -    52 15 TG     
+ 6Q3C22  1572 36    42    301 -      MATCH 5  -     -     -   -      -     -  KTABWB2CEAC          -    T      39   -    -    52 15 TG     
+
+! *** REDUCING TEE ***
+ 6Q3C24  1    0.75  1.5   421 CL3000 NREQD 5  0.5   1     421 CL3000 NREQD 5  KRAA2A1G1            -    TRB    41   -    -    52 15 RT     
+ 6Q3C24  1    2     2.5   301 -      MATCH 5  1     1     301 -      MATCH 5  KRABSB2G1ABAC        -    TRB    39   -    -    52 15 RT     
+ 6Q3C24  1    2.5   6     301 -      MATCH 5  2     4     301 -      MATCH 5  KRABSB2G1ABAB        -    TRB    39   -    -    52 15 RT     
+ 6Q3C24  1    8     24    301 -      MATCH 5  4     20    301 -      MATCH 5  KRABSB200ABAB        -    TRB    39   -    -    52 15 RT     
+ 6Q3C24  1    26    34    301 -      MATCH 5  16    32    301 -      MATCH 5  KRABWB210ABAB        -    TRB    39   -    -    52 15 RT     
+ 6Q3C24  1    36    38    301 -      MATCH 5  24    34    301 -      MATCH 5  KRABWB210ACAB        -    TRB    39   -    -    52 15 RT     
+ 6Q3C24  1    38    38    301 -      MATCH 5  36    36    301 -      MATCH 5  KRABWB210ACAC        -    TRB    39   -    -    52 15 RT     
+ 6Q3C24  1    40    40    301 -      MATCH 5  28    34    301 -      MATCH 5  KRABWB210ACAB        -    TRB    39   -    -    52 15 RT     
+ 6Q3C24  1    40    40    301 -      MATCH 5  36    38    301 -      MATCH 5  KRABWB210ACAC        -    TRB    39   -    -    52 15 RT     
+ 6Q3C24  1    42    42    301 -      MATCH 5  24    34    301 -      MATCH 5  KRABWB210ACAB        -    TRB    39   -    -    52 15 RT     
+ 6Q3C24  1    42    42    301 -      MATCH 5  36    40    301 -      MATCH 5  KRABWB210ACAC        -    TRB    39   -    -    52 15 RT     
+
+! *** REDUCING TEE(U/G) ***
+ 6Q3C24  1577 2     2.5   301 -      MATCH 5  1     1     301 -      MATCH 5  KRABSB2G6ABAC        -    TRB    39   -    -    52 15 RTG    
+ 6Q3C24  1577 2.5   4     301 -      MATCH 5  2     3     301 -      MATCH 5  KRABSB2G6ABAB        -    TRB    39   -    -    52 15 RTG    
+ 6Q3C24  1577 6     6     301 -      MATCH 5  3     4     301 -      MATCH 5  KRABSB2G5ABAB        -    TRB    39   -    -    52 15 RTG    
+ 6Q3C24  1577 8     24    301 -      MATCH 5  4     20    301 -      MATCH 5  KRABSB2C1ABAB        -    TRB    39   -    -    52 15 RTG    
+ 6Q3C24  1577 26    34    301 -      MATCH 5  16    32    301 -      MATCH 5  KRABWB2CEABAB        -    TRB    39   -    -    52 15 RTG    
+ 6Q3C24  1577 36    38    301 -      MATCH 5  24    34    301 -      MATCH 5  KRABWB2CEACAB        -    TRB    39   -    -    52 15 RTG    
+ 6Q3C24  1577 38    38    301 -      MATCH 5  36    36    301 -      MATCH 5  KRABWB2CEACAC        -    TRB    39   -    -    52 15 RTG    
+ 6Q3C24  1577 40    40    301 -      MATCH 5  28    34    301 -      MATCH 5  KRABWB2CEACAB        -    TRB    39   -    -    52 15 RTG    
+ 6Q3C24  1577 40    40    301 -      MATCH 5  36    38    301 -      MATCH 5  KRABWB2CEACAC        -    TRB    39   -    -    52 15 RTG    
+ 6Q3C24  1577 42    42    301 -      MATCH 5  24    34    301 -      MATCH 5  KRABWB2CEACAB        -    TRB    39   -    -    52 15 RTG    
+ 6Q3C24  1577 42    42    301 -      MATCH 5  36    40    301 -      MATCH 5  KRABWB2CEACAC        -    TRB    39   -    -    52 15 RTG    
+
+! *** CON. REDUCER ***
+ 6Q2C23  1    2     2.5   301 -      MATCH 5  1.5   1.5   301 -      MATCH 5  KDABSB2G1ABAC        -    REDC   39   -    -    52 15 CR     
+ 6Q2C23  1    2.5   2.5   301 -      MATCH 5  2     2     301 -      MATCH 5  KDABSB2G1ABAB        -    REDC   39   -    -    52 15 CR     
+ 6Q2C23  1    3     3     301 -      MATCH 5  1.5   1.5   301 -      MATCH 5  KDABSB2G1ABAC        -    REDC   39   -    -    52 15 CR     
+ 6Q2C23  1    3     6     301 -      MATCH 5  2     4     301 -      MATCH 5  KDABSB2G1ABAB        -    REDC   39   -    -    52 15 CR     
+ 6Q2C23  1    8     24    301 -      MATCH 5  4     20    301 -      MATCH 5  KDABSB200ABAB        -    REDC   39   -    -    52 15 CR     
+ 6Q2C23  1    28    32    301 -      MATCH 5  24    28    301 -      MATCH 5  KDABWB210ABAB        -    REDC   39   -    -    52 15 CR     
+ 6Q2C23  1    36    42    301 -      MATCH 5  24    28    301 -      MATCH 5  KDABWB210ACAB        -    REDC   39   -    -    52 15 CR     
+ 6Q2C23  1    42    42    301 -      MATCH 5  36    36    301 -      MATCH 5  KDABWB210ACAC        -    REDC   39   -    -    52 15 CR     
+
+! *** CON. REDUCER(U/G) ***
+ 6Q2C23  1597 2     2.5   301 -      MATCH 5  1.5   1.5   301 -      MATCH 5  KDABSB2G6ABAC        -    REDC   39   -    -    52 15 CRG    
+ 6Q2C23  1597 2.5   2.5   301 -      MATCH 5  2     2     301 -      MATCH 5  KDABSB2G6ABAB        -    REDC   39   -    -    52 15 CRG    
+ 6Q2C23  1597 3     3     301 -      MATCH 5  1.5   1.5   301 -      MATCH 5  KDABSB2G6ABAC        -    REDC   39   -    -    52 15 CRG    
+ 6Q2C23  1597 3     4     301 -      MATCH 5  2     3     301 -      MATCH 5  KDABSB2G6ABAB        -    REDC   39   -    -    52 15 CRG    
+ 6Q2C23  1597 6     6     301 -      MATCH 5  3     4     301 -      MATCH 5  KDABSB2G5ABAB        -    REDC   39   -    -    52 15 CRG    
+ 6Q2C23  1597 8     24    301 -      MATCH 5  4     20    301 -      MATCH 5  KDABSB2C1ABAB        -    REDC   39   -    -    52 15 CRG    
+ 6Q2C23  1597 28    32    301 -      MATCH 5  24    28    301 -      MATCH 5  KDABWB2CEABAB        -    REDC   39   -    -    52 15 CRG    
+ 6Q2C23  1597 36    42    301 -      MATCH 5  24    28    301 -      MATCH 5  KDABWB2CEACAB        -    REDC   39   -    -    52 15 CRG    
+ 6Q2C23  1597 42    42    301 -      MATCH 5  36    36    301 -      MATCH 5  KDABWB2CEACAC        -    REDC   39   -    -    52 15 CRG    
+
+! *** ECC. REDUCER ***
+ 6Q2C24  1    2     2.5   301 -      MATCH 5  1.5   1.5   301 -      MATCH 5  KEABSB2G1ABAC        -    REDE   39   -    -    52 15 ER     
+ 6Q2C24  1    2.5   2.5   301 -      MATCH 5  2     2     301 -      MATCH 5  KEABSB2G1ABAB        -    REDE   39   -    -    52 15 ER     
+ 6Q2C24  1    3     3     301 -      MATCH 5  1.5   1.5   301 -      MATCH 5  KEABSB2G1ABAC        -    REDE   39   -    -    52 15 ER     
+ 6Q2C24  1    3     6     301 -      MATCH 5  2     4     301 -      MATCH 5  KEABSB2G1ABAB        -    REDE   39   -    -    52 15 ER     
+ 6Q2C24  1    8     24    301 -      MATCH 5  4     20    301 -      MATCH 5  KEABSB200ABAB        -    REDE   39   -    -    52 15 ER     
+ 6Q2C24  1    28    32    301 -      MATCH 5  24    28    301 -      MATCH 5  KEABWB210ABAB        -    REDE   39   -    -    52 15 ER     
+ 6Q2C24  1    36    42    301 -      MATCH 5  24    28    301 -      MATCH 5  KEABWB210ACAB        -    REDE   39   -    -    52 15 ER     
+ 6Q2C24  1    42    42    301 -      MATCH 5  36    36    301 -      MATCH 5  KEABWB210ACAC        -    REDE   39   -    -    52 15 ER     
+
+! *** ECC. REDUCER(U/G) ***
+ 6Q2C24  1601 2     2.5   301 -      MATCH 5  1.5   1.5   301 -      MATCH 5  KEABSB2G6ABAC        -    REDE   39   -    -    52 15 ERG    
+ 6Q2C24  1601 2.5   2.5   301 -      MATCH 5  2     2     301 -      MATCH 5  KEABSB2G6ABAB        -    REDE   39   -    -    52 15 ERG    
+ 6Q2C24  1601 3     3     301 -      MATCH 5  1.5   1.5   301 -      MATCH 5  KEABSB2G6ABAC        -    REDE   39   -    -    52 15 ERG    
+ 6Q2C24  1601 3     4     301 -      MATCH 5  2     3     301 -      MATCH 5  KEABSB2G6ABAB        -    REDE   39   -    -    52 15 ERG    
+ 6Q2C24  1601 6     6     301 -      MATCH 5  3     4     301 -      MATCH 5  KEABSB2G5ABAB        -    REDE   39   -    -    52 15 ERG    
+ 6Q2C24  1601 8     24    301 -      MATCH 5  4     20    301 -      MATCH 5  KEABSB2C1ABAB        -    REDE   39   -    -    52 15 ERG    
+ 6Q2C24  1601 28    32    301 -      MATCH 5  24    28    301 -      MATCH 5  KEABWB2CEABAB        -    REDE   39   -    -    52 15 ERG    
+ 6Q2C24  1601 36    42    301 -      MATCH 5  24    28    301 -      MATCH 5  KEABWB2CEACAB        -    REDE   39   -    -    52 15 ERG    
+ 6Q2C24  1601 42    42    301 -      MATCH 5  36    36    301 -      MATCH 5  KEABWB2CEACAC        -    REDE   39   -    -    52 15 ERG    
+
+! *** CAP ***
+ 6Q2C21  1    0.5   1.5   421 CL3000 NREQD 5  -     -     -   -      -     -  KCAA2A1G1            -    CAPOT  5375 -    -    52 15 C      
+ 6Q2C21  1    2     6     301 -      MATCH 5  -     -     -   -      -     -  KCABSB2G1AB          -    CAPBV  5150 -    -    52 15 C      
+ 6Q2C21  1    8     34    301 -      MATCH 5  -     -     -   -      -     -  KCABSB200AB          -    CAPBV  5150 -    -    52 15 C      
+ 6Q2C21  1    36    42    301 -      MATCH 5  -     -     -   -      -     -  KCABSB200AC          -    CAPBV  5150 -    -    52 15 C      
+
+! *** FULL COUPLING ***
+ 6Q2C25  1    0.5   1.5   421 CL3000 NREQD 5  -     -     -   -      -     -  K6AA2A1G1            -    CPL    41   -    -    52 15 FCL    
+
+! *** PLUG ***
+ 6Q2C19  1    0.5   1.5   331 -      NREQD 5  -     -     -   -      -     -  KPAA0ABS4            -    PLUG   41   -    -    52 15 PL     
+
+! *** UNION ***
+ 6Q2C39  1    0.5   1.5   421 CL3000 NREQD 5  -     -     -   -      -     -  KUAA2A1G3            -    UN     5375 -    -    52 15 U      
+
+! *** SOCKOLET ***
+ 6Q3C74  1    2     42    301 -      NREQD 5  0.5   1.5   421 CL3000 NREQD 5  KVAA2A1G1            -    SOL    1575 -    -    52 15 SO     
+
+! *** WELDOLET ***
+ 6Q3C73  1    6     34    301 -      S-STD 5  2     3     301 -      S-STD 5  KWAA0A2G1ABAB        -    WOL    1575 -    -    52 15 WO     
+ 6Q3C73  1    36    42    301 -      S-STD 5  2     3     301 -      S-STD 5  KWAA0A2G1ACAB        -    WOL    1575 -    -    52 15 WO     
+
+! *** THREDOLET ***
+ 6Q3C75  1    2     24    301 -      NREQD 5  0.5   1     441 CL3000 NREQD 5  KXAA2AAG1            -    TOL    1575 -    -    52 15 TO     
+
+! *** ELBOLET ***
+ 6Q3C77  1    2     24    301 -      NREQD 5  0.5   1.5   421 CL3000 NREQD 5  KQAA2A1G1            -    EOLLR  1575 -    -    52 15 EO     
+
+! *** FLANGE ***
+ 6Q2C01  1    0.5   1.5   21  CL150  NREQD 5  -     -     421 CL150  MATCH 5  FSAA211G2AC          -    FSW    35   -    -    52 15 F      
+ 6Q2C01  1    2     6     21  CL150  NREQD 5  -     -     391 CL150  NREQD 5  FUAA211G2            -    FSO    35   -    -    52 15 F      
+ 6Q2C01  1    8     24    21  CL150  NREQD 5  -     -     391 CL150  NREQD 5  FUAA211A1            -    FSO    35   -    -    52 15 F      
+ 6Q2C01  1    26    34    21  CL150  NREQD 80 -     -     301 CL150  MATCH 80 FWAA211A2AB          -    FWN    254  -    -    52 15 F      
+ 6Q2C01  1    36    42    21  CL150  NREQD 80 -     -     301 CL150  MATCH 80 FWAA211A2AC          -    FWN    254  -    -    52 15 F      
+
+! *** FLANGE(#300) ***
+ 6Q2C01  1661 2     6     21  CL300  NREQD 5  -     -     391 CL300  NREQD 5  FUAA511G2            -    FSO    35   -    -    52 15 F3     
+
+! *** BLIND FLANGE ***
+ 6Q2C08  1    0.5   6     21  CL150  NREQD 5  -     -     -   -      -     -  FBAA211G2            -    FBLD   35   -    -    52 15 BF     
+ 6Q2C08  1    8     24    21  CL150  NREQD 5  -     -     -   -      -     -  FBAA211A1            -    FBLD   35   -    -    52 15 BF     
+ 6Q2C08  1    26    42    21  CL150  NREQD 80 -     -     -   -      -     -  FBAA211A2            -    FBLD   35   -    -    52 15 BF     
+
+! *** BOLT/NUT ***
+ 6Q3C97  1    0.5   24    21  150    -     5  -     -     -   -      -     -  B1A12204             -    -      81   1    -    52 -  BT   
+ 6Q3C97  1    26    42    21  150    -     80 -     -     -   -      -     -  B1A12204             -    -      81   1    -    52 -  BT   
+ 
+! *** GASKET ***
+ 6Q3C95  1    0.5   24    21  150    -     5  -     -     -   -      -     -  G3A2550052Z9         -    25     161  -    -    52 7  G      
+ 6Q3C95  1    26    42    21  150    -     80 -     -     -   -      -     -  G3A2550052ZG         -    25     161  -    -    52 7  G      
+ 6Q3C95  1    0.5   24    121 150    -     5  -     -     -   -      -     -  G3A2550052Z9         -    25     161  -    -    52 7  G      
+ 6Q3C95  1    26    42    121 150    -     80 -     -     -   -      -     -  G3A2550052ZG         -    25     161  -    -    52 7  G      
+
+! *** GASKET (300#) ***
+ 6Q3C95  1    0.5   24    21  300    -     5  -     -     -   -      -     -  G3A4550052Z9         -    -      161  -    -    52 7  G3     
+ 6Q3C95  1    0.5   24    121 300    -     5  -     -     -   -      -     -  G3A4550052Z9         -    -      161  -    -    52 7  G3     
+
+! *** TUBE MALE CONNECTOR ***
+ TUBING  1812 0.25  1     331 -      -     5  -     -     -   -      -     -  TCAS060T00           -    TUBING 100  100  -    52 15 TMC    
+
+! *** GATE VALVE ***
+ 6Q1C01  1    0.5   1.5   421 CL800  NREQD 5  -     -     -   -      -     -  VAAA81271C00         -    GATR   4625 3    -    52 15 GA     
+ 6Q1C01  1    2     10    21  CL150  NREQD 5  -     -     -   -      -     -  VAAB21283C00         -    GAT    40   3    -    52 7  GA     
+ 6Q1C01  1    12    24    21  CL150  NREQD 5  -     -     -   -      -     -  VAAB21283E00         -    GAT    40   33   -    52 7  GA     
+
+! === VENT(6Q9C60)/DRAIN(6Q9C70) ===
+ 6Q9C60  1    0.5   1.5   421 CL800  NREQD 5  -     -     -   -      -     -  VAAA81271C00         -    GATR   4625 3    -    52 15 GA     
+ 6Q9C70  1    0.5   1.5   421 CL800  NREQD 5  -     -     -   -      -     -  VAAA81271C00         -    GATR   4625 3    -    52 15 GA     
+
+! *** GATE VALVE (SW *SCR'D) ***
+ 6Q1C01  1713 0.5   1.5   421 CL800  NREQD 5  -     -     441 CL800  NREQD 5  VAAA81272C00         -    GATR   4625 3    -    52 15 GAD    
+
+! === VENT(6Q9C60)/DRAIN(6Q9C70) ===
+ 6Q9C60  1713 0.5   1.5   421 CL800  NREQD 5  -     -     441 CL800  NREQD 5  VAAA81272C00         -    GATR   4625 3    -    52 15 GAD    
+ 6Q9C70  1713 0.5   1.5   421 CL800  NREQD 5  -     -     441 CL800  NREQD 5  VAAA81272C00         -    GATR   4625 3    -    52 15 GAD    
+
+! *** GLOBE VALVE ***
+ 6Q1C11  1    0.5   1.5   421 CL600  NREQD 5  -     -     -   -      -     -  VLAA712J1C00         -    GLOR   4625 3    -    52 15 GL     
+ 6Q1C11  1    2     3     21  CL150  NREQD 5  -     -     -   -      -     -  VLAB212J3C00         -    GLO    40   3    -    52 7  GL     
+
+! === VENT(6Q9C80)/DRAIN(6Q9C90) ===
+ 6Q9C80  1    0.5   1.5   421 CL600  NREQD 5  -     -     -   -      -     -  VLAA712J1C00         -    GLOR   4625 3    -    52 15 GL     
+ 6Q9C90  1    0.5   1.5   421 CL600  NREQD 5  -     -     -   -      -     -  VLAA712J1C00         -    GLOR   4625 3    -    52 15 GL     
+
+! *** CHECK VALVE ***
+ 6Q1C38  1    0.5   1.5   421 CL600  NREQD 5  -     -     -   -      -     -  VCAA711M1K00         -    CKLR   4625 -    -    52 15 CH     
+ 6Q1C39  1    2     24    121 CL150  NREQD 5  -     -     -   -      -     -  VCAB211K8L00         -    CKWF   40   -    -    52 7  CH     
+
+! *** BALL VALVE ***
+ 6Q1C06  1    0.5   6     21  CL150  NREQD 5  -     -     -   -      -     -  VBAB21N33N00         -    BALSP  40   17   -    52 7  BA     
+ 6Q1C06  1    8     10    21  CL150  NREQD 5  -     -     -   -      -     -  VBAB21N33W00         -    BALSP  40   33   -    52 7  BA     
+
+! === VENT(6Q9C40)/DRAIN(6Q9C50) ===
+ 6Q9C40  1    0.5   1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VBAB21N33N00         -    BALSP  40   17   -    52 7  BA     
+ 6Q9C50  1    0.5   1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VBAB21N33N00         -    BALSP  40   17   -    52 7  BA     
+
+! *** BALL VALVE (EXT-STEM) ***
+ 6Q1C06  1756 0.5   6     21  CL150  NREQD 5  -     -     -   -      -     -  VBAB21N33N0C         -    BALSP  40   17   -    52 7  BAE    
+
+! === VENT(6Q9C40)/DRAIN(6Q9C50) ===
+ 6Q9C40  1756 0.5   1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VBAB21N33N0C         -    BALSP  40   17   -    52 7  BAE    
+ 6Q9C50  1756 0.5   1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VBAB21N33N0C         -    BALSP  40   17   -    52 7  BAE    
+
+! *** BUTTERFLY VALVE ***
+ 6Q1C26  1    2     6     121 CL150  NREQD 5  -     -     -   -      -     -  VUAQ26CBC900         -    BFYLP  6002 17   -    52 7  BU     
+ 6Q1C26  1    8     28    121 CL150  NREQD 5  -     -     -   -      -     -  VUAQ26CBCA00         -    BFYLP  6002 33   -    52 7  BU     
+
+! *** 3 WAY PLUG VALVE ***
+ 6Q1C18  1    0.5   3     21  CL150  NREQD 5  -     -     -   -      -     -  V9AB21NR39Z8         -    PLU3W  6000 17   -    52 7  3PV    
+ 6Q1C18  1    4     4     21  CL150  NREQD 5  -     -     -   -      -     -  V9AB21NR3AZ8         -    PLU3W  6000 33   -    52 7  3PV    
+
+! *** 3 WAY PLUG VALVE (EXT-STEM) ***
+ 6Q1C18  1774 0.5   3     21  CL150  NREQD 5  -     -     -   -      -     -  V9AB21NR39ZE         -    PLU3W  6000 17   -    52 7  3PVE   
+ 6Q1C18  1774 4     4     21  CL150  NREQD 5  -     -     -   -      -     -  V9AB21NR3AZE         -    PLU3W  6000 33   -    52 7  3PVE   
+
+! =======================================================================================================================================
+
+! *** PIPE END ***
+ 6Q2C22  1    0.5   1.5   421 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    0.5   1.5   421 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    0.5   1.5   421 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+ 6Q2C22  1    2     6     301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    2     6     301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    2     6     301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+ 6Q2C22  1    8     14    301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    8     14    301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    8     14    301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+ 6Q2C22  1    16    34    301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    16    34    301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    16    34    301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+ 6Q2C22  1    36    42    301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    36    42    301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    36    42    301 -      MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+! *** REINFORCING WELD ***
+ 6Q3C82  1    2.5   24    301 -      -     5  2     22    301 -      -     5  RWELD                -    RWELD  6    1    142  52 -  -   
+! *** REINFORCING R-PAD ***
+ 6Q3C80  1    2.5   20    301 -      -     5  2     18    301 -      -     5  RPAD                 -    RPAD   6    1    142  52 -  -   
+
+! *** FUNNEL ***
+ 6Q2C07  1    0.5   1.5   421 -      NREQD 5  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+ 6Q2C07  1    2     6     301 -      NREQD 5  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+ 6Q2C07  1    8     14    301 -      NREQD 5  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+ 6Q2C07  1    16    34    301 -      NREQD 5  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+ 6Q2C07  1    36    42    301 -      NREQD 5  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+
+! *** ORIFICE TAP END ***
+ 6Q9C52  1    0.5   1.5   331 -      NREQD 5  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+ 6Q9C53  1    0.5   1.5   391 -      NREQD 5  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+
+! *** ORIFICE FLANGE ***
+ 6Q2C06  1    0.5   1.5   21  CL300  NREQD 29 -     -     301 CL300  MATCH 5  ORIFICE              -    FOWNA  66   1    1080 52 -  -   
+ 6Q2C06  1    2     6     21  CL300  NREQD 29 -     -     301 CL300  MATCH 5  ORIFICE              -    FOWNA  66   1    1080 52 -  -   
+ 6Q2C06  1    8     24    21  CL300  NREQD 29 -     -     301 CL300  MATCH 5  ORIFICE              -    FOWNA  66   1    1080 52 -  -   
+ 6Q2C06  1    26    34    21  CL300  NREQD 29 -     -     301 CL300  MATCH 5  ORIFICE              -    FOWNA  66   1    1080 52 -  -   
+ 6Q2C06  1    36    42    21  CL300  NREQD 29 -     -     301 CL300  MATCH 5  ORIFICE              -    FOWNA  66   1    1080 52 -  -   

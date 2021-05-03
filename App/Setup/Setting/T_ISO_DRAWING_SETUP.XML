@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TABLE Name="T_ISO_DRAWING_SETUP">
+	<COLUMN Name="CATEGORY" DataType="VARCHAR(250)" Constraint="True"/>
+	<COLUMN Name="NAME" DataType="VARCHAR(250)"  Constraint="True"/>
+	<COLUMN Name="VALUE" DataType="VARCHAR(250)" />
+</TABLE>

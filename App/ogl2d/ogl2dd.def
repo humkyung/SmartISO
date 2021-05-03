@@ -1,0 +1,7 @@
+; ogl2d.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ogl2dd"
+DESCRIPTION  'ogl2dd Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

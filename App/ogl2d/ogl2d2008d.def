@@ -1,0 +1,7 @@
+; ogl2d2008d.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ogl2d_vc90_debug"
+DESCRIPTION  'ogl2d_vc90_debug Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

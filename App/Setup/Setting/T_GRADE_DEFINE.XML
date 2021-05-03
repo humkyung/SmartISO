@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TABLE Name="T_GRADE_DEFINE">
+	<COLUMN Name="GRADE_PREFIX" DataType="VARCHAR(50)" default="" English="grade prefix" Japanese="grade prefix" Constraint="True"/>
+	<COLUMN Name="GRADE_DESC" DataType="VARCHAR(250)" default="" English="grade desc" Japanese="grade desc" />
+	<COLUMN Name="SHOW_ON_REVISION_TABLE" DataType="SMALLINT" default="DEFAULT 1" English="" Japanese="" />
+</TABLE>

@@ -1,0 +1,6 @@
+; RevISO.def : Declares the module parameters for the DLL.
+
+LIBRARY      "SmartISODiff"
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TABLE Name="T_ISSUE_DATE">
+	<COLUMN Name="IDX" DataType="SERIAL" default="" English="Index" Japanese="Index" />
+	<COLUMN Name="ISSUE_DATE" DataType="VARCHAR(250)" default="" English="Issue Date" Japanese="Issue Date" />
+	<COLUMN Name="REAL_ISSUE_DATE" DataType="VARCHAR(250)" default="" English="Real Issue Date" Japanese="Real Issue Date" />
+</TABLE>

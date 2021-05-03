@@ -1,0 +1,89 @@
+! File Name : K.pcd                                                                                                       
+! Job.No.   :                  Revision : 0                      Date : 2008.08.01                                                  
+! Material Spec Class : K      Material : C.S                    Design Code : ASME B31.3   
+! Max Temp : -29/132           Flang Class : ASME 150#                                            
+! Service Note :                                                                                                                        
+  PIPING_MATERIALS_CLASS= K                                                                                               
+  Single_Spacing                                                                                                                        
+  Order= 1 6 2 3 9 11 13 21 4 5 10 12 14 22 18 7 16 19 15 8 20 23 24  *17 *25                                                           
+!                                                                                                                                       
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! AABBCC -----------------Green CP----------- ------------Red CP-------------       CMDTY               MODEL  GEO  MOD  Mat  Wt        
+! Code   Opt  FROM  TO    PRP RATING SC/TH TS FROM  TO    PRP RATING SC/TH TS       CODE           TMX  CODE   Std       Grd  Cd FC Nte 
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! APDX C CL400            CL330            CL576                              BMCS CODE                 APDX C CL575     CL145      ITEM
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! *** PIPE ***
+ PIPING  1    1     8     21  CL150  S-40  5  -     -     -   -      -     -  PPAASA20RCYA4        -    *FPIPE 100  100  -    52 15 P      
+ PIPING  1    10    20    21  CL150  S-40  5  -     -     -   -      -     -  PPAASA20RCMA4        -    *FPIPE 100  100  -    52 15 P      
+
+! *** 90 DEG. ELBOW ***
+ 6Q2C75  1    2     20    21  CL150  MATCH 5  -     -     -   -      -     -  K9ABSBRCYA4          -    E90TLR 35   -    -    52 15 E9     
+ 6Q2C76  1    1     20    21  CL150  MATCH 5  -     -     -   -      -     -  K9ABSBRCYA4          -    E90LR  35   -    -    52 15 E9     
+
+! *** 45 DEG. ELBOW ***
+ 6Q2C55  1    2     20    21  CL150  MATCH 5  -     -     -   -      -     -  K4ABSBRCYA4          -    E45TLR 35   -    -    52 15 E4     
+ 6Q2C56  1    1     20    21  CL150  MATCH 5  -     -     -   -      -     -  K4ABSBRCYA4          -    E45LR  35   -    -    52 15 E4     
+
+! *** STRAIGHT TEE ***
+ 6Q3C22  1    1     20    21  CL150  MATCH 5  -     -     -   -      -     -  KTABSBRCYA4          -    T      35   -    -    52 15 T      
+
+! *** REDUCING TEE ***
+ 6Q3C24  1    1.5   20    21  CL150  MATCH 5  1     18    21  CL150  MATCH 5  KRABSBRCYA4A4        -    TRB    35   -    -    52 15 RT     
+
+! *** CON. REDUCER ***
+ 6Q2C23  1    1.5   1.5   21  CL150  MATCH 5  0.75  0.75  21  CL150  -     5  KDABSBRCYA400        -    REDC   35   -    -    52 15 CR     
+ 6Q2C23  1    1.5   20    21  CL150  MATCH 5  1     18    21  CL150  -     5  KDABSBRCYA4A4        -    REDC   35   -    -    52 15 CR     
+
+! *** ECC. REDUCER ***
+ 6Q2C24  1    1.5   1.5   21  CL150  MATCH 5  0.75  0.75  21  CL150  -     5  KEABSBRCYA400        -    REDE   35   -    -    52 15 ER     
+ 6Q2C24  1    1.5   20    21  CL150  MATCH 5  1     18    21  CL150  -     5  KEABSBRCYA4A4        -    REDE   35   -    -    52 15 ER     
+
+! *** BLIND FLANGE ***
+ 6Q2C08  1    0.5   18    21  CL150  NREQD 5  -     -     -   -      -     -  FBAA211CP            -    FBLD   35   -    -    52 15 BF     
+
+! *** BOLT/NUT ***
+ 6Q3C97  1    0.5   20    21  150    -     5  -     -     -   -      -     -  B1A12204             -    -      81   1    -    52 -  BT     
+
+! *** GASKET ***
+ 6Q3C95  1    1     20    21  150    -     5  -     -     -   -      -     -  GRA2N0005201         -    -      161  -    -    52 7  G      
+ 6Q3C95  1    1     20    121 150    -     5  -     -     -   -      -     -  GRA2N0005201         -    -      161  -    -    52 7  G      
+
+! *** GASKET (SPECIAL) ***
+ 6Q3C95  881  1     20    21  150    -     5  -     -     -   -      -     -  GRA2E00052S1         -    -      161  -    -    52 7  GT     
+ 6Q3C95  881  1     20    121 150    -     5  -     -     -   -      -     -  GRA2E00052S1         -    -      161  -    -    52 7  GT     
+
+! *** GATE VALVE ***
+ 6Q1C01  1    1     10    21  CL150  NREQD 5  -     -     -   -      -     -  VAAD22H83C00         -    GAT    40   3    -    52 7  GA     
+ 6Q1C01  1    12    24    21  CL150  NREQD 5  -     -     -   -      -     -  VAAD22H83E00         -    GAT    40   33   -    52 7  GA     
+
+! === VENT(6Q9C60)/DRAIN(6Q9C70) ===
+ 6Q9C60  1    1     1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VAAD22H83C00         -    GAT    40   3    -    52 7  GA     
+ 6Q9C70  1    1     1.5   21  CL150  NREQD 5  -     -     -   -      -     -  VAAD22H83C00         -    GAT    40   3    -    52 7  GA     
+
+! *** DIAPHRAGM VALVE ***
+ 6Q1C30  1    1     8     21  CL150  NREQD 5  -     -     -   -      -     -  VDAB21A038L5         -    DIA    6000 3    -    52 7  DP     
+
+
+! =======================================================================================================================================
+
+! *** PIPE END ***
+ 6Q2C22  1    1     8     21  CL150  MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    1     8     21  CL150  MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    1     8     21  CL150  MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+ 6Q2C22  1    10    20    21  CL150  MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C29  1    10    20    21  CL150  MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+ 6Q2C31  1    10    20    21  CL150  MATCH 5  -     -     -   -      -     -  -                    -    PIPEND 41   -    142  52 -  -   
+
+! *** REINFORCING WELD ***
+ 6Q3C82  1    2.5   20    301 -      -     5  2     18    301 -      -     5  -                    -    RWELD  6    1    142  52 -  -   
+
+! *** FUNNEL ***
+ 6Q2C07  1    1     8     21  CL150  NREQD 5  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+ 6Q2C07  1    10    20    21  CL150  NREQD 5  -     -     -   -      -     -  -                    -    FUNNEL 41   -    142  52 -  -   
+
+! *** ORIFICE TAP END ***
+ 6Q9C52  1    0.5   1.5   331 -      NREQD 5  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+ 6Q9C53  1    0.5   1.5   391 -      NREQD 5  -     -     -   -      -     -  -                    -    ORIEND 41   -    142  52 -  -   
+

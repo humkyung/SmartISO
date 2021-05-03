@@ -1,0 +1,25 @@
+! File Name : L.pcd                                                                                                       
+! Job.No.   :                  Revision : 0                      Date : 2008.08.30                                                  
+! Material Spec Class : L      Material : C.S W/TEFLON LINED     Design Code : ASME B31.3   
+! Max Temp : 121               Flang Class : ASME 150#                                            
+! Service Note :                                                                                                                        
+  PIPING_MATERIALS_CLASS= CJH                                                                                               
+  Single_Spacing                                                                                                                        
+  Order= 1 6 2 3 9 11 13 21 4 5 10 12 14 22 18 7 16 19 15 8 20 23 24  *17 *25                                                           
+!                                                                                                                                       
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! AABBCC -----------------Green CP----------- ------------Red CP-------------       CMDTY               MODEL  GEO  MOD  Mat  Wt        
+! Code   Opt  FROM  TO    PRP RATING SC/TH TS FROM  TO    PRP RATING SC/TH TS       CODE           TMX  CODE   Std       Grd  Cd FC Nte 
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! APDX C CL400            CL330            CL576                              BMCS CODE                 APDX C CL575     CL145      ITEM
+!+=======+====+=====+=====+===+======+=====+==+=====+=====+===+======+=====+==+====================+====+======+====+====+====+==+==+===
+! *** PIPE ***
+ PIPING  1    0.5   8     21  CL150  S-40  5  -     -     -   -      -     -  PPAASA20RCQA4        -    *FPIPE 100  -    -    52 15 P      
+ PIPING  1    10    18    21  CL150  S-40  5  -     -     -   -      -     -  PPAASA20RCKA4        -    *FPIPE 100  -    -    52 15 P      
+
+! *** SPECIAL PIPE ***
+ PIPING  1501 0.5   18    21  CL150  S-40  5  -     -     -   -      -     -  PPAASA20RCWA4        -    *FPIPE 100  -    -    52 15 P1     
+
+! *** 90 DEG. ELBOW ***
+ 6Q2C75  1    2     18    21  CL150  NREQD 5  -     -     -   -      -     -  K9ABSBRCQA4          -    E90TLR 6000 -    -    52 15 E9     
+ 6Q2C76  1    0.5   18    21  CL150  NREQD 5  -     -     -   -      -     -  K9ABSBRCQA4          -    E90LR  6000 -    -    52 15 E9     

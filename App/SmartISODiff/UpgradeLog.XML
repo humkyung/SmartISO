@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SmartISODiff">
+</Property><Property Name="Solution File" Value="E:\PROJECT\SolutionWare\Projects\2011.10.SmartISO\App\SmartISODiff\SmartISODiff.sln">
+</Property><Property Name="Date" Value="2012년 1월 2일 월요일">
+</Property><Property Name="Time" Value="오후 22:23">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="SmartISODiff.sln" Description="File successfully backed up as E:\PROJECT\SolutionWare\Projects\2011.10.SmartISO\App\SmartISODiff\SmartISODiff.sln.old">
+</Event><Event ErrorLevel="2" Project="RevISO" Source="RevISO.vcproj" Description="Failed to upgrade project file 'E:\PROJECT\SolutionWare\Projects\2011.10.SmartISO\App\SmartISODiff\RevISO.vcproj'.  Please make sure the file exists and is not write-protected.">
+</Event><Event ErrorLevel="2" Project="RevISO" Source="RevISO.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="RevISO" Source="RevISO.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SmartISODiff.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SmartISODiff.sln" Description="Converted">
+</Event></UpgradeLog>

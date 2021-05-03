@@ -1,0 +1,9 @@
+# Microsoft Developer Studio Generated Dependency File, included by idms_ntr.mak
+
+.\idms_ntr.cpp : \
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	

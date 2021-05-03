@@ -1,0 +1,12 @@
+!               DEFINE SIZE DEPENDENT DATA
+ 
+  Single_Spacing
+  Sequence= 2 3 4 5 6 7 8 9 10 
+
+! Commodity          NPD              Sch/Thk      Vendor Number       Weld   Price  Labor
+!                Green   Red       Green     Red 
+!------------------------------------------------------------------------------------------
+  TUBT1G         1.375     1.375   S-STD     S-STD CHTUBT1G            -      -      -
+  BTNS43G        1.375     1.375   NREQD     NREQD CHTNS43G            -      -      -
+  FLGS1G         1.375     1.375   NREQD     NREQD CHFLGS1G            -      -      -
+  CNRS4G         1.375     1.375   -         -     CHCNRS4G            -      -      -

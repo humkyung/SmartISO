@@ -1,0 +1,7 @@
+; UserDLL.def : Declares the module parameters for the DLL.
+
+LIBRARY      "UserDLL"
+DESCRIPTION  'UserDLL Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

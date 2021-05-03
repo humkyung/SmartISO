@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<TABLE Name="T_ISO_BOM_DATA">
+	<COLUMN Name="KEY" DataType="VARCHAR(250)" default="" English="Key" Japanese="Key" />
+	<COLUMN Name="REV_NO" DataType="VARCHAR(250)" default="" English="Rev No" Japanese="Rev No" />
+	<COLUMN Name="DRAW_NO" DataType="VARCHAR(250)" default="" English="Drawing No" Japanese="Drawing No" />
+	<COLUMN Name="MATL_SPEC" DataType="VARCHAR(250)" default="" English="Material Spec" Japanese="Material Spec" />
+	<COLUMN Name="MATL_CODE" DataType="VARCHAR(250)" default="" English="Material Code" Japanese="Material Code" />
+	<COLUMN Name="SYMBOL" DataType="VARCHAR(250)" default="" English="Symbol" Japanese="Symbol" />
+	<COLUMN Name="MAIN_SIZE" DataType="VARCHAR(250)" default="" English="Main Size" Japanese="Main Size" />
+	<COLUMN Name="SUB_SIZE" DataType="VARCHAR(250)" default="" English="Sub Size" Japanese="Sub Size" />
+	<COLUMN Name="QTY" DataType="VARCHAR(250)" default="" English="QTY" Japanese="QTY" />
+	<COLUMN Name="BOLT_LENGTH" DataType="VARCHAR(250)" default="" English="Bolt Length" Japanese="Bolt Length" />
+	<COLUMN Name="MATL_DESC" DataType="VARCHAR(255)" default="" English="Material Description" Japanese="Material Description" />
+	<COLUMN Name="SHOP_FIELD" DataType="VARCHAR(8)" default="DEFAULT 'S'" English="Shop/Field" Japanese="Shop/Field" />
+	<COLUMN Name="ISSUE_NO" DataType="BIGINT" default="" English="Issue Index" Japanese="Issue Index" />
+</TABLE>

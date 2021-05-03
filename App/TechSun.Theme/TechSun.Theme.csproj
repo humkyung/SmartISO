@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A9BE55D-4D7C-402F-AD93-2DBA6E638D27}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TechSun.Theme</RootNamespace>
+    <AssemblyName>TechSun.Theme</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmInfomationYesNoCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfomationYesNoCancel.Designer.cs">
+      <DependentUpon>frmInfomationYesNoCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfomationYesNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfomationYesNo.Designer.cs">
+      <DependentUpon>frmInfomationYesNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfomation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfomation.Designer.cs">
+      <DependentUpon>frmInfomation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmProgress.designer.cs">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashScreen.designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWarning.Designer.cs">
+      <DependentUpon>frmWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechSun.Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeChangeable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmInfomationYesNoCancel.resx">
+      <DependentUpon>frmInfomationYesNoCancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfomationYesNo.resx">
+      <DependentUpon>frmInfomationYesNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfomation.resx">
+      <DependentUpon>frmInfomation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgress.resx">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWarning.resx">
+      <DependentUpon>frmWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world.png" />
+    <None Include="Resources\zone.png" />
+    <None Include="Resources\SPOOL.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\arrow2.png" />
+    <None Include="Resources\arrow.png" />
+    <Content Include="Resources\arrow_cdown.png" />
+    <Content Include="Resources\arrow_cdown_on.png" />
+    <Content Include="Resources\arrow_cup.png" />
+    <Content Include="Resources\arrow_cup_on.png" />
+    <Content Include="Resources\arrow_down.png" />
+    <Content Include="Resources\arrow_down_on.png" />
+    <Content Include="Resources\arrow_first.png" />
+    <Content Include="Resources\arrow_first_on.png" />
+    <Content Include="Resources\arrow_last.png" />
+    <Content Include="Resources\arrow_last_on.png" />
+    <Content Include="Resources\arrow_next.png" />
+    <Content Include="Resources\arrow_next_on.png" />
+    <Content Include="Resources\arrow_prev.png" />
+    <Content Include="Resources\arrow_prev_on.png" />
+    <Content Include="Resources\arrow_up.png" />
+    <Content Include="Resources\arrow_up_on.png" />
+    <None Include="Resources\SPPID.png" />
+    <None Include="Resources\SP3D.png" />
+    <None Include="Resources\close.gif" />
+    <None Include="Resources\cs_16.ico" />
+    <None Include="Resources\BigComment_Add.png" />
+    <None Include="Resources\BigComment_Convert.png" />
+    <None Include="Resources\BigComment_Delete.png" />
+    <None Include="Resources\BigComment_Edit.png" />
+    <None Include="Resources\BigComment_Search.png" />
+    <None Include="Resources\BigComment_Update.png" />
+    <None Include="Resources\BigDwg_Check.png" />
+    <None Include="Resources\BigDwg_Compare.png" />
+    <None Include="Resources\BigDwg_Load.png" />
+    <None Include="Resources\BigDwg_Update.png" />
+    <None Include="Resources\BigList_Add.png" />
+    <None Include="Resources\BigList_Backup.png" />
+    <None Include="Resources\BigList_Check.png" />
+    <None Include="Resources\BigList_Compare.png" />
+    <None Include="Resources\BigList_Convert.png" />
+    <None Include="Resources\BigList_Export.png" />
+    <None Include="Resources\BigList_Import.png" />
+    <None Include="Resources\BigList_Inform.png" />
+    <None Include="Resources\BigList_Mail.png" />
+    <None Include="Resources\BigList_Merge.png" />
+    <None Include="Resources\BigList_Restore.png" />
+    <None Include="Resources\BigList_RevUp.png" />
+    <None Include="Resources\BigList_Search.png" />
+    <None Include="Resources\BigList_Send.png" />
+    <None Include="Resources\BigList_Update.png" />
+    <None Include="Resources\BigListRevUp.png" />
+    <None Include="Resources\BigModel_Compare.png" />
+    <None Include="Resources\BigStatus_Delete.png" />
+    <None Include="Resources\BigStatus_Edit.png" />
+    <None Include="Resources\BigStatus_Search.png" />
+    <None Include="Resources\BigUser_Setup.png" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\BigDwg_Convert_Left.png" />
+    <None Include="Resources\BigDwg_Setting.png" />
+    <None Include="Resources\BigList_Setup.png" />
+    <Content Include="Resources\downsize2.gif" />
+    <None Include="Resources\ico_plusadd.png" />
+    <None Include="Resources\ico_plusadd_on.png" />
+    <None Include="Resources\ico_information.png" />
+    <None Include="Resources\fullsize.gif" />
+    <None Include="Resources\fullsize2.gif" />
+    <None Include="Resources\EDB.png" />
+    <None Include="Resources\excel.png" />
+    <None Include="Resources\ECS.png" />
+    <None Include="Resources\GEO.png" />
+    <Content Include="Resources\ico_warning.png" />
+    <None Include="Resources\ico_xdelect.png" />
+    <None Include="Resources\ico_xdelect_on.png" />
+    <None Include="Resources\no_data.jpg" />
+    <None Include="Resources\IDCS.png" />
+    <None Include="Resources\PDMS.png" />
+    <Content Include="Resources\Preloader_2.gif" />
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\refreshl.png" />
+    <None Include="Resources\site.png" />
+    <Content Include="Resources\smallMinus.png" />
+    <Content Include="Resources\smallPlus.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

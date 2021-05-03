@@ -1,0 +1,23 @@
+#     C:\Bentley\Workspace\system\tables\pen\SmartISO.tbl
+
+BEGIN_GLOBAL
+    VERSION       = 550
+    PLOTTING
+    VIEWS         = 1-8
+    SYMBOLOGY     = AsStored
+END_GLOBAL
+
+BEGIN PIPE_LINE
+    IN_COLOR      = 3
+    TYPE          = 4
+    OUT_COLOR     = 255
+    OUT_WEIGHT    = 3
+    PRIORITY      = 100
+END
+
+BEGIN OTHERS
+    TYPE          = 2-4,6,7,11,12,14-19,23,24,27,33,35,36,87
+    OUT_COLOR     = 255
+    OUT_WEIGHT    = 0
+    PRIORITY      = 200
+END
